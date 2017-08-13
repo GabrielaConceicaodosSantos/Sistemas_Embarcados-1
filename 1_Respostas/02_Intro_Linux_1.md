@@ -21,7 +21,7 @@ Super-usuário ou Root (raiz) refere-se a um tipo de usuário com privilégios a
 
 5. Qual botão do teclado completa o que o usuário escreve no terminal, de acordo com o contexto?
 
-**TAB**: TAB autocompleta a linha de um texto. Digamos que você deseja digitar cd ~/Dropbox/ `, você pode digitar somente `cd ~/Dr` e então apertar TAB para completar o comando. 
+**TAB**: TAB autocompleta a linha de um texto. Digamos que você deseja digitar ` cd ~/Dropbox/ `, você pode digitar somente `cd ~/Dr` e então apertar TAB para autocompletar o comando. 
 
 6. Quais botões do teclado apresentam instruções escritas anteriormente?
 
