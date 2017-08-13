@@ -167,9 +167,17 @@ ou
 
  (k) Mover pastas.
 
+- Mover todo o conteúdo dentro da pasta (arquivos e pastas) de teste1 para teste2. 
 
+```
+	$ mv teste1/* /home/leonardo/Documentos
+```
 
  (l) Renomear pastas.
+
+```
+	$ mv pasta1 pasta2
+```
 
  (m) Apresentar o conteúdo de um arquivo.
 
@@ -178,6 +186,10 @@ ou
 ```
  (n) Apresentar o tipo de um arquivo.
 
+```
+	$ file arquivo
+```
+
  (o) Limpar a tela do terminal.
 
 ```
@@ -185,10 +197,32 @@ ou
 ```
  (p) Encontrar ocorrências de palavras-chave em um arquivo-texto.
 
+```
+	$ cat arquivo.txt | grep "String"
+```
  (q) Ordenar informações em um arquivo-texto.
+
+```
+	$ sort [opcoes][arquivo] 
+```
+
 
  (r) Substituir ocorrências de palavras-chave em um arquivo-texto.
 
+- O comando sed:
+
+```
+	$ sed 's/palavra_p_substituir/palavra_nova/'
+```
  (s) Conferir se dois arquivos são iguais.
 
+```
+	$ diff arquivo1.txt arquivo2.txt
+```
+
  (t) Escrever algo na tela
+
+```
+	$ echo 'O que você quiser escrever.'
+```
+
