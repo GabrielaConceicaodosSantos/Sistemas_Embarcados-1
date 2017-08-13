@@ -18,9 +18,9 @@ Apresente os respectivos comandos no terminal para:
 
  (b) Apresentar uma lista com os arquivos dentro de uma pasta.
 
-'''sh
+'
 	$ ls
-'''
+'
 
  (c) Apresentar o caminho completo da pasta.
 
@@ -28,9 +28,9 @@ Apresente os respectivos comandos no terminal para:
 
  (e) Criar uma pasta.
 
-'''sh
+'
 	$ mkdir #nome_da_pasta
-'''
+'
 
  (f) Apagar arquivos definitivamente.
 
