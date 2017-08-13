@@ -21,14 +21,18 @@ Super-usuário ou Root (raiz) refere-se a um tipo de usuário com privilégios a
 
 5. Qual botão do teclado completa o que o usuário escreve no terminal, de acordo com o contexto?
 
-**TAB**: TAB autocompleta a linha de um texto. Digamos que você deseja digitar ` cd ~/Dropbox/ `, você pode digitar somente `cd ~/Dr` e então apertar TAB para autocompletar o comando. 
+- **TAB**: TAB autocompleta a linha de um texto. Digamos que você deseja digitar ` cd ~/Dropbox/ `, você pode digitar somente `cd ~/Dr` e então apertar TAB para autocompletar o comando. 
 
 6. Quais botões do teclado apresentam instruções escritas anteriormente?
 
-Apresente os respectivos comandos no terminal para:
+- **Seta para cima/Seta para baixo**: Com as setas para cima e para baixo pode-se mover pelo últimos comandos digitados. Basta ficar apertando seta pra cima/baixo e quando achar o comando digitado, apertar ENTER.  
+
+7. Apresente os respectivos comandos no terminal para:
 
  (a) Obter mais informações sobre um comando.
-
+```
+	man #nome_do_comando
+```
  (b) Apresentar uma lista com os arquivos dentro de uma pasta.
 
 ``` 
@@ -37,7 +41,48 @@ Apresente os respectivos comandos no terminal para:
 
  (c) Apresentar o caminho completo da pasta.
 
+```
+	$ pwd
+```
+
  (d) Trocar de pasta.
+
+- Ir para o diretório home do usuário logado:
+
+```
+	$ cd
+```
+- Ir para o diretório acima do atual: 
+
+```
+	$ cd ..
+```
+- Voltar para o diretório que estávamos antes do atual:
+
+```
+	$ cd -
+```
+
+- Mudar para o diretório raiz do sistema:
+
+```
+	$ cd /
+```
+- Ir para o diretório home do usuário logado:
+
+```
+	$ cd ~
+```
+- Estando dentro de um diretório, deseja-se entrar em outro pertecente ao diretório atual:
+
+```
+	$ cd #nome_da_pasta
+```
+- Entrando em um diretório que não pertence ao diretório atual:
+
+```
+	$ cd #caminho_para_diretorio_que_se_deseja_entrar
+```
 
  (e) Criar uma pasta.
 
@@ -47,24 +92,97 @@ Apresente os respectivos comandos no terminal para:
 
  (f) Apagar arquivos definitivamente.
 
+- Arquivo se encontra no diretório atual:
+
+```
+	$ rm #nome_do_arquivo
+```
+
+ou 
+
+```
+	$ rm arquivo1 arquivo2 arquivo3
+```
+
+- Arquivo se encontra em outra pasta:
+
+```
+	$ rm #caminho_para_arquivo
+```
+- Apagando arquivos com a mesma extensão:
+
+```
+	$ rm *.txt
+```
+
  (g) Apagar pastas definitivamente.
+
+- Apagar pasta inteira recursivamente: 
+
+```
+	$ rm -rf nomedapasta/
+```
+
+- Apagar arquivos e pastas do diretório atual:
+
+```
+	$ rm -rf *
+```
 
  (h) Copiar arquivos.
 
+- Copiar arquivo passwd do diretório /etc para o diretório /home/leonardo
+
+```
+	$ cp /etc/passwd /home/leonardo/
+```
+- Copiar o arquivo passwd do diretório /etc/ para o diretório /home/leonardo renomeando a cópia como usuarios.txt
+
+```
+	$ cp /etc/passwd /home/leonardo/usuarios.txt
+```
+
+- Copiar todos os arquivos cujo nome se inicia com a letra l no diretório /lib/ para o diretório atual:
+
+```
+	$ cp /lib/l*.
+```
+
  (i) Copiar pastas.
+
+- Copiar o diretório /home/leonardo/Downloads e todo o seu conteúdo recursivamente para o diretório /home/leonardo/Backup:
+
+```
+	$ cp -r /home/leonardo/Downloads /home/leonardo/Backup
+```
+
 
  (j) Mover arquivos.
 
+- Mover o arquivo passwd do diretório atual para o subdiretório Documentos:
+
+```
+	$ mv passwd ./Documentos/
+```
+
  (k) Mover pastas.
+
+
 
  (l) Renomear pastas.
 
  (m) Apresentar o conteúdo de um arquivo.
 
+```
+	$ cat #nome_do_arquivo
+```
  (n) Apresentar o tipo de um arquivo.
 
  (o) Limpar a tela do terminal.
 
+```
+	$ clear
+```
  (p) Encontrar ocorrências de palavras-chave em um arquivo-texto.
 
  (q) Ordenar informações em um arquivo-texto.
