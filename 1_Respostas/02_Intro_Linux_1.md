@@ -15,11 +15,15 @@
 Apresente os respectivos comandos no terminal para:
  (a) Obter mais informações sobre um comando.
  (b) Apresentar uma lista com os arquivos dentro de uma pasta.
+'''sh
 	$ ls
+'''
  (c) Apresentar o caminho completo da pasta.
  (d) Trocar de pasta.
  (e) Criar uma pasta.
+'''sh
 	$ mkdir #nome_da_pasta
+'''
  (f) Apagar arquivos definitivamente.
  (g) Apagar pastas definitivamente.
  (h) Copiar arquivos.
