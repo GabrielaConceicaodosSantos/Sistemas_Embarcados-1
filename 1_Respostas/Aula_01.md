@@ -45,7 +45,9 @@ CISC
 Diferentemente da RISC, a arquitetura CISC é capaz de executar centenas de instruções complexas diferentes, o que torna esta extremamente versátil. Por exemplo, na arquitetura CISC é possível em uma linha de código executar diversas instruções que um processador em arquitetura CISC levaria mais linhas.
 
 5. Por que usamos o Raspberry Pi na disciplina, ao invés de outro system-on-chip?
-
+- System-on-chip com o "preço mais acessível" do mercado; 
+- Já existem muitas bibliotecas implementadas, principalmente para estudantes;
+- A Raspeberry possui quase todas as funcionalidades de um computador pessoal de uso geral.
 
 
 
