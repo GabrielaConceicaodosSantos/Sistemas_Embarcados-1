@@ -229,7 +229,7 @@ int main(int argc, char *argv[])
 ```
 leonardo@leonardo-VirtualBox:~/Documents/Sistemas_Embarcados/1_Respostas/03_GCC$ ./ola_argumentos Eu Mesmo e Minha Pessoa
 Argumentos: Eu Mesmo e Minha Pessoa 
-```
+
 ```
 
 8. Crie uma função que retorna a quantidade de caracteres em uma string, usando o seguinte protótipo:
@@ -248,6 +248,7 @@ int Num_Caracs(char *string)
 	}
 	return i;
 }
+
 ```
 - Formato do header:
 
@@ -260,6 +261,7 @@ int Num_Caracs(char *string);
 
 ```
 gcc -c num_caracs.c
+
 ```
 
 9. Re-utilize o objeto criado na questão 8 para criar um código que imprime cada argumento de entrada e a quantidade de caracteres de cada um desses argumentos. Por exemplo, considerando que o código criado recebeu o nome de 'ola_num_caracs_1':
@@ -327,5 +329,41 @@ clean:
 $ ./ola_num_caracs_2 Eu Mesmo
 $ Total de caracteres de entrada: 25
 ```
+- Funcao criada:
+
+```
+int main(int argc, char *argv[])
+{
+	int i = 0;
+	int total_caracteres = 0;
+	for(i=0;i<argc;i++)
+	{
+		total_caracteres += Num_Caracs(argv[i]);
+	}
+	printf("Total de caracteres de entrada: %d\n",total_caracteres);
+	return 0;
+}
+```
+- Sequencia de comandos para compilacao:
+
+```
+$ gcc -c num_caracs.c
+$ gcc -c ola_num_caracs_2.c
+$ gcc -o ola_num_caracs_2 ola_num_caracs_2.o num_caracs.o
+
+```
 
 12. Crie um Makefile para a questão anterior.
+
+```
+all: ola_num_caracs_2
+
+ola_num_caracs_2: ola_num_caracs_2.o num_caracs.o
+	gcc -o ola_num_caracs_2 ola_num_caracs_2.o num_caracs.o
+ola_num_caracs_2.o: ola_num_caracs_2.c num_caracs.h
+	gcc -c ola_num_caracs_2.c
+num_caracs.o: num_caracs.c num_caracs.h
+	gcc -c num_caracs.c
+clean:
+	rm -f *.o ola_num_caracs_2
+```
