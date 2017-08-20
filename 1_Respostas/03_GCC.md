@@ -34,36 +34,40 @@ int main()
 $ ./ola_usuario_1
 $ Digite o seu nome: Eu Mesmo
 ```
+```
 leonardo@leonardo-VirtualBox:~/Documents/Sistemas_Embarcados/1_Respostas/03_GCC/Q2$ ./ola_usuario 
 Digite o seu nome: Eu mesmo
 Ola Eu mesmo
-
+```
 
 (b) Se o usuário insere mais de um nome entre aspas duplas. Por exemplo:
 ```bash
 $ ./ola_usuario_1
 $ Digite o seu nome: "Eu Mesmo"
 ```
-
+```
 leonardo@leonardo-VirtualBox:~/Documents/Sistemas_Embarcados/1_Respostas/03_GCC/Q2$ ./ola_usuario 
 Digite o seu nome: "Eu mesmo"
 Ola "Eu mesmo"
-
+```
 
 (c) Se é usado um pipe. Por exemplo:
 ```bash
 $ echo Eu | ./ola_usuario_1
 ```
+```
 leonardo@leonardo-VirtualBox:~/Documents/Sistemas_Embarcados/1_Respostas/03_GCC/Q2$ echo Eu | ./ola_usuario 
 Digite o seu nome: Ola Eu
+```
 
 (d) Se é usado um pipe com mais de um nome. Por exemplo:
 ```bash
 $ echo Eu Mesmo | ./ola_usuario_1
 ```
+```
 leonardo@leonardo-VirtualBox:~/Documents/Sistemas_Embarcados/1_Respostas/03_GCC/Q2$ echo Eu Mesmo | ./ola_usuario 
 Digite o seu nome: Ola Eu Mesmo
-
+```
 
 (e) Se é usado um pipe com mais de um nome entre aspas duplas. Por exemplo:
 ```bash
@@ -129,34 +133,37 @@ Ola Eu Mesmo
 ```bash
 $ ./ola_usuario_2 "Eu Mesmo"
 ```
+```
 leonardo@leonardo-VirtualBox:~/Documents/Sistemas_Embarcados/1_Respostas/03_GCC$ ./ola_usuario_2 "Eu Mesmo"
 Ola Eu Mesmo 
-
+```
 
 (c) Se é usado um pipe. Por exemplo:
 ```bash
 $ echo Eu | ./ola_usuario_2
 ```
+```
 leonardo@leonardo-VirtualBox:~/Documents/Sistemas_Embarcados/1_Respostas/03_GCC$ echo Eu | ./ola_usuario_2
 Ola 
-
+```
 
 (d) Se é usado um pipe com mais de um nome. Por exemplo:
 ```bash
 $ echo Eu Mesmo | ./ola_usuario_2
 ```
+```
 leonardo@leonardo-VirtualBox:~/Documents/Sistemas_Embarcados/1_Respostas/03_GCC$ echo Eu Mesmo | ./ola_usuario_2
 Ola 
-
+```
 
 (e) Se é usado um pipe com mais de um nome entre aspas duplas. Por exemplo:
 ```bash
 $ echo Eu Mesmo | ./ola_usuario_2
 ```
-
+```
 leonardo@leonardo-VirtualBox:~/Documents/Sistemas_Embarcados/1_Respostas/03_GCC$ echo "Eu Mesmo" | ./ola_usuario_2
 Ola 
-
+```
 
 (f) Se é usado o redirecionamento de arquivo. Por exemplo:
 ```bash
@@ -176,6 +183,27 @@ $ ./ola_usuario_3 Eu
 $ Ola Eu
 $ Numero de entradas = 2
 ```
+```
+#include<stdio.h>
+#include<stdlib.h>
+int main(int argc, char *argv[])
+	{
+		int i;
+		printf("Ola ");
+		for (i=1;i<argc;i++)
+		{
+			printf("%s ", argv[i]);
+		}
+		printf("\n");
+		printf("Numero de entradas = %d\n",argc);
+		return 0;
+	}
+```
+```
+leonardo@leonardo-VirtualBox:~/Documents/Sistemas_Embarcados/1_Respostas/03_GCC$ ./ola_usuario_3 Eu
+Ola Eu 
+Numero de entradas = 2
+```
 
 7. Crie um código em C que imprime todos os argumentos de entrada fornecidos pelo usuário. Por exemplo, considerando que o código criado recebeu o nome de 'ola_argumentos':
 
@@ -183,9 +211,56 @@ $ Numero de entradas = 2
 $ ./ola_argumentos Eu Mesmo e Minha Pessoa
 $ Argumentos: Eu Mesmo e Minha Pessoa
 ```
+```
+#include<stdio.h>
+#include<stdlib.h>
+int main(int argc, char *argv[])
+        {
+                int i;
+                printf("Argumentos: ");
+                for (i=1;i<argc;i++)
+                {
+                        printf("%s ", argv[i]);
+                }
+                printf("\n");
+                return 0;
+        }
+```
+```
+leonardo@leonardo-VirtualBox:~/Documents/Sistemas_Embarcados/1_Respostas/03_GCC$ ./ola_argumentos Eu Mesmo e Minha Pessoa
+Argumentos: Eu Mesmo e Minha Pessoa 
+```
+```
 
 8. Crie uma função que retorna a quantidade de caracteres em uma string, usando o seguinte protótipo:
 `int Num_Caracs(char *string);` Salve-a em um arquivo separado chamado 'num_caracs.c'. Salve o protótipo em um arquivo chamado 'num_caracs.h'. Compile 'num_caracs.c' para gerar o objeto 'num_caracs.o'.
+
+- Formato da Funcao:
+
+```
+#include "num_caracs.h"
+int Num_Caracs(char *string)
+{
+	int i = 0;
+	while(string[i]!='\0')
+	{
+		i++;
+	}
+	return i;
+}
+```
+- Formato do header:
+
+```
+int Num_Caracs(char *string);
+
+```
+
+- Comando utilizado:
+
+```
+gcc -c num_caracs.c
+```
 
 9. Re-utilize o objeto criado na questão 8 para criar um código que imprime cada argumento de entrada e a quantidade de caracteres de cada um desses argumentos. Por exemplo, considerando que o código criado recebeu o nome de 'ola_num_caracs_1':
 
@@ -196,7 +271,55 @@ $ Argumento: Eu / Numero de caracteres: 2
 $ Argumento: Mesmo / Numero de caracteres: 5
 ```
 
+- Programa em c criado:
+
+```
+#include<stdio.h>
+#include<stdlib.h>
+#include"num_caracs.h"
+
+int main(int argc, char *argv[])
+{
+	int i = 0;
+	for(i=0;i<argc;i++)
+	{
+		printf("Argumento: ");
+		printf("%s ",argv[i]);
+		printf("/ Numero de Caracteres: %d\n", Num_Caracs(argv[i]));
+	}
+	return 0;
+}
+
+```
+- Comando para compilacao:
+
+```
+$ gcc -c ola_num_caracs_1.c
+
+```
+- Comando para criar o programa
+
+```
+$ gcc -o ola_num_caracs_1 ola_num_caracs_1.o num_caracs.o
+
+```
+
 10. Crie um Makefile para a questão anterior.
+
+- Makefile criado:
+
+```
+all: ola_num_caracs_1
+
+ola_num_caracs_1: ola_num_caracs_1.o num_caracs.o
+	gcc -o ola_num_caracs_1 ola_num_caracs_1.o num_caracs.o
+ola_num_caracs_1.o: ola_num_caracs_1.c num_caracs.h
+	gcc -c ola_num_caracs_1.c
+num_caracs.o: num_caracs.c num_caracs.h
+	gcc -c num_caracs.c
+clean:
+	rm -f *.o ola_num_caracs_1
+```
 
 11. Re-utilize o objeto criado na questão 8 para criar um código que imprime o total de caracteres nos argumentos de entrada. Por exemplo, considerando que o código criado recebeu o nome de 'ola_num_caracs_2':
 
