@@ -18,8 +18,18 @@ void le_arq_texto(char *nome_arquivo, char *conteudo)
 {
 	/*Recebe o nome do arquivo e um vetor em que será retornado o conteúdo do arquivo.*/
 	int tamanho_arquivo = Tam_arq_text(nome_arquivo);
+	conteudo = (char*)malloc(tamanho_arquivo*sizeof(char));
 	FILE *fp;
 	fp = fopen(nome_arquivo,"r");
-	fgets(conteudo, tamanho_arquivo, fp);
+	if(!fp)
+	{
+		printf("Erro ao abrir o arquivo. Fim do programa.");
+		exit(1);
+	}
+	if(fgets(conteudo,sizeof(char)*tamanho_arquivo,fp)!=NULL);
+	{
+		puts(conteudo);
+	}
 	fclose(fp);
+	free(conteudo);
 }

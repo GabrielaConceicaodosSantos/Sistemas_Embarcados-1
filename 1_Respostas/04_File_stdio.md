@@ -2,6 +2,7 @@ Para todas as questões, compile-as com o gcc e execute-as via terminal.
 
 1. Crie um código em C para escrever "Ola mundo!" em um arquivo chamado 'ola_mundo.txt'.
 
+```
 int main()
 {
 	FILE *fp;
@@ -15,6 +16,7 @@ int main()
 	fclose(fp);
 	return 0;
 }
+```
 
 2. Crie um código em C que pergunta ao usuário seu nome e sua idade, e escreve este conteúdo em um arquivo com o seu nome e extensão '.txt'. Por exemplo, considerando que o código criado recebeu o nome de 'ola_usuario_1':
 
@@ -105,11 +107,22 @@ void le_arq_texto(char *nome_arquivo, char *conteudo)
 {
 	/*Recebe o nome do arquivo e um vetor em que será retornado o conteúdo do arquivo.*/
 	int tamanho_arquivo = Tam_arq_text(nome_arquivo);
+	conteudo = (char*)malloc(tamanho_arquivo*sizeof(char));
 	FILE *fp;
 	fp = fopen(nome_arquivo,"r");
-	fgets(conteudo, tamanho_arquivo, fp);
+	if(!fp)
+	{
+		printf("Erro ao abrir o arquivo. Fim do programa.");
+		exit(1);
+	}
+	if(fgets(conteudo,sizeof(char)*tamanho_arquivo,fp)!=NULL);
+	{
+		puts(conteudo);
+	}
 	fclose(fp);
+	free(conteudo);
 }
+
 ```
 
 6. Crie um código em C que copia a funcionalidade básica do comando `cat`: escrever o conteúdo de um arquivo-texto no terminal. Reaproveite as funções já criadas nas questões anteriores. Por exemplo, considerando que o código criado recebeu o nome de 'cat_falsificado':
@@ -119,6 +132,19 @@ $ echo Ola mundo cruel! Ola universo ingrato! > ola.txt
 $ ./cat_falsificado ola.txt
 $ Ola mundo cruel! Ola universo ingrato!
 ```
+```
+#include <stdio.h>
+#include <stdlib.h>
+#include "bib_arqs.h"
+
+int main (int argc, char *argv[])
+{
+	char *p;
+	le_arq_texto(argv[1],p);
+	return 0;
+}
+```
+
 
 7. Crie um código em C que conta a ocorrência de uma palavra-chave em um arquivo-texto, e escreve o resultado no terminal. Reaproveite as funções já criadas nas questões anteriores. Por exemplo, considerando que o código criado recebeu o nome de 'busca_e_conta':
 
