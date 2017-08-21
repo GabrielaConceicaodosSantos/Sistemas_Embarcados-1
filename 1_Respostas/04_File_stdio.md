@@ -60,7 +60,7 @@ $ cat Eu.txt
 $ Nome: Eu
 $ Idade: 30 anos
 ```
-``
+```
 #include<stdio.h>
 #include<stdlib.h>
 
