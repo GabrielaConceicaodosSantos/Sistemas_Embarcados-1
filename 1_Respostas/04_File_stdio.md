@@ -2,7 +2,7 @@ Para todas as questões, compile-as com o gcc e execute-as via terminal.
 
 1. Crie um código em C para escrever "Ola mundo!" em um arquivo chamado 'ola_mundo.txt'.
 
-```
+```C
 int main()
 {
 	FILE *fp;
@@ -30,7 +30,7 @@ $ Idade: 30 anos
 ```
 - Codigo criado:
 
-```
+```C
 int main()
 {
 	char nome[50];
@@ -60,7 +60,7 @@ $ cat Eu.txt
 $ Nome: Eu
 $ Idade: 30 anos
 ```
-```
+```C
 #include<stdio.h>
 #include<stdlib.h>
 
@@ -82,7 +82,7 @@ int main(int arc, char *argv[])
 
 4. Crie uma função que retorna o tamanho de um arquivo, usando o seguinte protótipo: `int tam_arq_texto(char *nome_arquivo);` Salve esta função em um arquivo separado chamado 'bib_arqs.c'. Salve o protótipo em um arquivo chamado 'bib_arqs.h'. Compile 'bib_arqs.c' para gerar o objeto 'bib_arqs.o'.
 
-```
+```C
 int Tam_arq_text(char *nome_arquivo)
 {
 	FILE *fp;
@@ -102,7 +102,7 @@ int Tam_arq_text(char *nome_arquivo)
 
 5. Crie uma função que lê o conteúdo de um arquivo-texto e o guarda em uma string, usando o seguinte protótipo: `void le_arq_texto(char *nome_arquivo, char *conteúdo);` Repare que o conteúdo do arquivo é armazenado no vetor `conteudo[]`. Ou seja, ele é passado por referência. Salve esta função no mesmo arquivo da questão 4, chamado 'bib_arqs.c'. Salve o protótipo no arquivo 'bib_arqs.h'. Compile 'bib_arqs.c' novamente para gerar o objeto 'bib_arqs.o'.
 
-```
+```C
 void le_arq_texto(char *nome_arquivo, char *conteudo)
 {
 	/*Recebe o nome do arquivo e um vetor em que será retornado o conteúdo do arquivo.*/
@@ -132,7 +132,7 @@ $ echo Ola mundo cruel! Ola universo ingrato! > ola.txt
 $ ./cat_falsificado ola.txt
 $ Ola mundo cruel! Ola universo ingrato!
 ```
-```
+```C
 #include <stdio.h>
 #include <stdlib.h>
 #include "bib_arqs.h"
@@ -153,7 +153,7 @@ $ echo Ola mundo cruel! Ola universo ingrato! > ola.txt
 $ ./busca_e_conta Ola ola.txt
 $ 'Ola' ocorre 2 vezes no arquivo 'ola.txt'.
 ```
-```
+```C
 #include<stdio.h>
 #include<stdlib.h>
 #include<string.h>

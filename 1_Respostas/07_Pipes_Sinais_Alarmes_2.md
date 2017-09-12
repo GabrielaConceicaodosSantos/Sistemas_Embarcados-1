@@ -1,6 +1,6 @@
 1. Crie um programa em C que cria um processo-filho e um pipe de comunicação. Faça com que o processo-pai envie os valores 1, 2, 3, 4, 5, 6, 7, 8, 9 e 10 para o processo-filho, com intervalos de 1 segundo entre cada envio. Depois de o processo-pai enviar o número 10, ele aguarda 1 segundo e termina a execução. O processo-filho escreve na tela cada valor recebido, e quando ele receber o valor 10, ele termina a execução.
 
-```
+```C
 #include<signal.h>
 #include<unistd.h>
 #include<stdio.h>
@@ -51,7 +51,7 @@ PAI: Sim, mas é uma coisa difícil de ser praticada até mesmo por um velho com
 ```
 Neste exercício, quem recebe a mensagem via pipe é quem as escreve no terminal.
 
-```
+```C
 #include<stdio.h>
 #include<stdlib.h>
 #include<unistd.h>
