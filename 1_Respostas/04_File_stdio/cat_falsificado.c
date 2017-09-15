@@ -4,7 +4,8 @@
 
 int main (int argc, char *argv[])
 {
-	char *p;
-	le_arq_texto(argv[1],p);
+	char *p = le_arq_texto(argv[1]);
+	puts(p);
+	free(p);
 	return 0;
 }

@@ -30,7 +30,7 @@ int main()
 		{
 			printf("Pai vai escrever %d no pipe.\n",i);
 			write(fd[1],&i,sizeof(int));
-			sleep(1);
+		//	sleep(1);
 		}
 		wait(NULL);
 	}

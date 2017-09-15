@@ -5,8 +5,6 @@
 #include<signal.h>
 #include<string.h>
 
-int fd_geral[2];
-
 void Escreve_Pipe(int fd,char mensagem[])
 {
 	if(write(fd,mensagem,strlen(mensagem)+1)<0)
@@ -29,24 +27,15 @@ void Ler_Pipe(int fd)
 	//usleep(1000);
 }
 
-void tratamento_SIGUSR1()
-{
-	Ler_Pipe(fd_geral[0]);
-	exit(1);
-}
-
 int main()
 {
 	int pid;
 	int fd[2];
-	int father_pid;
 	char nome[50];
-	signal(SIGUSR1, tratamento_SIGUSR1);
-	father_pid  = getpid();
 	// Cria o Pipe
 	pipe(fd);
-	fd_geral[0] = fd[0];
-	fd_geral[1] = fd[1];
+	//fd_geral[0] = fd[0];
+	//fd_geral[1] = fd[1];
 	// Cria o processo
 	pid = fork();
 	if(pid==0)
@@ -58,14 +47,14 @@ int main()
 		printf("Ok, seu nome e' %s. Agora o processo pai vai escrever seu nome.\n",nome);
 		Escreve_Pipe(fd[1],nome);
 		//Manda um SIGUSR1 pro pai.
-		kill(father_pid,SIGUSR1);
 	}
 	else
 	{
 		//Codigo do pai
 		//Pai vai aguardar o filho mandar um sinal SIGUSR1, quando este saberá que o filho terminou
 		//de escrever no pipe o que o usuário digitou
-		while(1);
+		Ler_Pipe(fd[0]);
+		wait(NULL);
 	}
 	return 0;
 }
