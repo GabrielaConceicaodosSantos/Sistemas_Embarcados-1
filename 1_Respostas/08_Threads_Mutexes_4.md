@@ -4,6 +4,9 @@
 
 (b) De forma paralela.
 
+[Código - Questão 1](/1_Respostas/08_Threads_Mutexes/Q5.c)
+
+
 Ao final do programa principal, compare os resultados obtidos pelos dois métodos.
 
 2. Repita o exercício anterior, mas calcule o produto matricial A*B.

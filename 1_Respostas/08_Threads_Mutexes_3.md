@@ -57,14 +57,48 @@ Upon successful return, **pclose()** shall return the termination status of the 
 
 (c) `fileno()`
 
+"stands for: file number"
 
+fileno - map a stram pointer to a file descriptor
+
+# Synopsis
+
+```C
+	#include <stdio.h>
+	int fileno(FILE *stram);
+```
+# Description 
+
+The *fileno()* function shall return the integer file descriptor associated with the stram ponted to by *stream*.
+
+# Return Value
+
+Upon succesful completion, *fileno()* shall return the integer value of the file descriptor associated with *stream*. Otherwise, the value -1 shall be returned and *errno* set to indicate the error.
+
+# ERRORS
+
+The *fileno()* function may fail if:
+
+The *stream* argument is not a valid stream.
 
 2. Quais são as vantagens e desvantagens em utilizar:
 
 (a) `popen()?`
 
+Vantagens:
 
+- Com esta função, o novo processo criado executa somente o comando que está dentro do argumento da função popen(), sendo possível executar a expansão de caracteres em uma string só ( ex.: "ls -l", ao invês de "ls","-l" em exec()), já que um shell é criado para isto;
+
+Desvantagens:
+
+- Perde-se a funcionalidade do fork(), pois o processo criado só executa o programa, não cria uma cópia 
 
 (b) `exec()?`
 
+Vantagens:
 
+- Após o fork() ser realizado, é possível realizar diversas tarefas ainda dentro do processo filho e só depois usar exec();
+
+Desvantagens:
+
+- A sintaxe para usar a função exec() é um pouco mais trabalhosa que para popen();
