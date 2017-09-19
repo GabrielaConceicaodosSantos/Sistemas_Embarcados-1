@@ -11,6 +11,8 @@
 
 Ao final do programa principal, compare os resultados obtidos pelos dois métodos.
 
+[Código - Questão 2](/1_Respostas/08_Threads_Mutexes/Q2.c)
+
 3. Repita o exercício anterior, mas calcule a média do vetor ao invés do valor máximo.
 
 4. Repita o exercício anterior, mas calcule a variância do vetor ao invés da média.
