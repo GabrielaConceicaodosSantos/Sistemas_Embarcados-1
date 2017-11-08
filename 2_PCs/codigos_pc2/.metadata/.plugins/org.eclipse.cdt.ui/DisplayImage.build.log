@@ -1,0 +1,24 @@
+02:32:31 **** Incremental Build of configuration Debug for project DisplayImage ****
+make all 
+Building file: ../src/DisplayImage.cpp
+Invoking: GCC C++ Compiler
+g++ -I/usr/local/include -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/DisplayImage.d" -MT"src/DisplayImage.d" -o "src/DisplayImage.o" "../src/DisplayImage.cpp"
+Finished building: ../src/DisplayImage.cpp
+ 
+Building file: ../src/FaceDetection.cpp
+Invoking: GCC C++ Compiler
+g++ -I/usr/local/include -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/FaceDetection.d" -MT"src/FaceDetection.d" -o "src/FaceDetection.o" "../src/FaceDetection.cpp"
+Finished building: ../src/FaceDetection.cpp
+ 
+Building target: DisplayImage
+Invoking: GCC C++ Linker
+g++ -L/usr/local/lib -o "DisplayImage"  ./src/DisplayImage.o ./src/FaceDetection.o   -lopencv_dnn -lopencv_ml -lopencv_objdetect -lopencv_shape -lopencv_stitching -lopencv_superres -lopencv_videostab -lopencv_calib3d -lopencv_features2d -lopencv_highgui -lopencv_videoio -lopencv_imgcodecs -lopencv_video -lopencv_photo -lopencv_imgproc -lopencv_flann -lopencv_core
+./src/FaceDetection.o: In function `cv::Size_<int>::Size_()':
+/home/pi/Documents/Sistemas_Embarcados/2_PCs/codigos_pc2/DisplayImage/Debug/../src/FaceDetection.cpp:16: multiple definition of `main'
+./src/DisplayImage.o:/home/pi/Documents/Sistemas_Embarcados/2_PCs/codigos_pc2/DisplayImage/Debug/../src/DisplayImage.cpp:10: first defined here
+makefile:45: recipe for target 'DisplayImage' failed
+collect2: error: ld returned 1 exit status
+make: *** [DisplayImage] Error 1
+
+02:32:44 Build Finished (took 13s.481ms)
+

@@ -1,0 +1,3 @@
+/home/pi/Documents/Sistemas_Embarcados/2_PCs/codigos_pc3/CMakeFiles/rebuild_cache.dir
+/home/pi/Documents/Sistemas_Embarcados/2_PCs/codigos_pc3/CMakeFiles/edit_cache.dir
+/home/pi/Documents/Sistemas_Embarcados/2_PCs/codigos_pc3/CMakeFiles/DisplayImage.dir

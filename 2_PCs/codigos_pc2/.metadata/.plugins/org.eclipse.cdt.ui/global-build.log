@@ -1,0 +1,102 @@
+01:45:58 **** Incremental Build of configuration Debug for project DisplayImage ****
+make all 
+Cannot run program "make": Unknown reason
+02:00:44 **** Build of configuration Debug for project VideoCapture ****
+make all 
+Building file: ../src/VideoCapture.cpp
+Invoking: GCC C++ Compiler
+g++ -I/usr/local/include -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/VideoCapture.d" -MT"src/VideoCapture.d" -o "src/VideoCapture.o" "../src/VideoCapture.cpp"
+Finished building: ../src/VideoCapture.cpp
+ 
+Building target: VideoCapture
+Invoking: GCC C++ Linker
+g++ -L/usr/local/lib -o "VideoCapture"  ./src/VideoCapture.o   -lopencv_dnn -lopencv_ml -lopencv_objdetect -lopencv_shape -lopencv_stitching -lopencv_superres -lopencv_videostab -lopencv_calib3d -lopencv_features2d -lopencv_highgui -lopencv_videoio -lopencv_imgcodecs -lopencv_video -lopencv_photo -lopencv_imgproc -lopencv_flann -lopencv_core
+Finished building target: VideoCapture
+ 
+02:23:05 **** Incremental Build of configuration Debug for project VideoCapture ****
+make all 
+Building file: ../src/DetectFaces.cpp
+Invoking: GCC C++ Compiler
+g++ -I/usr/local/include -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/DetectFaces.d" -MT"src/DetectFaces.d" -o "src/DetectFaces.o" "../src/DetectFaces.cpp"
+Finished building: ../src/DetectFaces.cpp
+ 
+Building file: ../src/VideoCapture.cpp
+Invoking: GCC C++ Compiler
+g++ -I/usr/local/include -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/VideoCapture.d" -MT"src/VideoCapture.d" -o "src/VideoCapture.o" "../src/VideoCapture.cpp"
+Finished building: ../src/VideoCapture.cpp
+ 
+Building target: VideoCapture
+Invoking: GCC C++ Linker
+g++ -L/usr/local/lib -o "VideoCapture"  ./src/DetectFaces.o ./src/VideoCapture.o   
+./src/VideoCapture.o: In function `cv::_InputArray::~_InputArray()':
+/home/pi/Documents/Sistemas_Embarcados/2_PCs/codigos_pc2/VideoCapture/Debug/../src/VideoCapture.cpp:8: multiple definition of `main'
+makefile:45: recipe for target 'VideoCapture' failed
+./src/DetectFaces.o:/home/pi/Documents/Sistemas_Embarcados/2_PCs/codigos_pc2/VideoCapture/Debug/../src/DetectFaces.cpp:16: first defined here
+./src/DetectFaces.o: In function `main':
+/home/pi/Documents/Sistemas_Embarcados/2_PCs/codigos_pc2/VideoCapture/Debug/../src/DetectFaces.cpp:17: undefined reference to `cv::VideoCapture::VideoCapture()'
+/home/pi/Documents/Sistemas_Embarcados/2_PCs/codigos_pc2/VideoCapture/Debug/../src/DetectFaces.cpp:20: undefined reference to `cv::CascadeClassifier::load(cv::String const&)'
+/home/pi/Documents/Sistemas_Embarcados/2_PCs/codigos_pc2/VideoCapture/Debug/../src/DetectFaces.cpp:21: undefined reference to `cv::CascadeClassifier::load(cv::String const&)'
+/home/pi/Documents/Sistemas_Embarcados/2_PCs/codigos_pc2/VideoCapture/Debug/../src/DetectFaces.cpp:23: undefined reference to `cv::VideoCapture::open(int)'
+/home/pi/Documents/Sistemas_Embarcados/2_PCs/codigos_pc2/VideoCapture/Debug/../src/DetectFaces.cpp:24: undefined reference to `cv::VideoCapture::isOpened() const'
+/home/pi/Documents/Sistemas_Embarcados/2_PCs/codigos_pc2/VideoCapture/Debug/../src/DetectFaces.cpp:25: undefined reference to `cv::VideoCapture::read(cv::_OutputArray const&)'
+/home/pi/Documents/Sistemas_Embarcados/2_PCs/codigos_pc2/VideoCapture/Debug/../src/DetectFaces.cpp:34: undefined reference to `cv::waitKey(int)'
+/home/pi/Documents/Sistemas_Embarcados/2_PCs/codigos_pc2/VideoCapture/Debug/../src/DetectFaces.cpp:17: undefined reference to `cv::VideoCapture::~VideoCapture()'
+/home/pi/Documents/Sistemas_Embarcados/2_PCs/codigos_pc2/VideoCapture/Debug/../src/DetectFaces.cpp:17: undefined reference to `cv::VideoCapture::~VideoCapture()'
+./src/DetectFaces.o: In function `detectAndDisplay(cv::Mat)':
+/home/pi/Documents/Sistemas_Embarcados/2_PCs/codigos_pc2/VideoCapture/Debug/../src/DetectFaces.cpp:43: undefined reference to `cv::cvtColor(cv::_InputArray const&, cv::_OutputArray const&, int, int)'
+/home/pi/Documents/Sistemas_Embarcados/2_PCs/codigos_pc2/VideoCapture/Debug/../src/DetectFaces.cpp:44: undefined reference to `cv::equalizeHist(cv::_InputArray const&, cv::_OutputArray const&)'
+/home/pi/Documents/Sistemas_Embarcados/2_PCs/codigos_pc2/VideoCapture/Debug/../src/DetectFaces.cpp:46: undefined reference to `cv::CascadeClassifier::detectMultiScale(cv::_InputArray const&, std::vector<cv::Rect_<int>, std::allocator<cv::Rect_<int> > >&, double, int, int, cv::Size_<int>, cv::Size_<int>)'
+/home/pi/Documents/Sistemas_Embarcados/2_PCs/codigos_pc2/VideoCapture/Debug/../src/DetectFaces.cpp:50: undefined reference to `cv::ellipse(cv::_InputOutputArray const&, cv::Point_<int>, cv::Size_<int>, double, double, double, cv::Scalar_<double> const&, int, int, int)'
+/home/pi/Documents/Sistemas_Embarcados/2_PCs/codigos_pc2/VideoCapture/Debug/../src/DetectFaces.cpp:54: undefined reference to `cv::CascadeClassifier::detectMultiScale(cv::_InputArray const&, std::vector<cv::Rect_<int>, std::allocator<cv::Rect_<int> > >&, double, int, int, cv::Size_<int>, cv::Size_<int>)'
+/home/pi/Documents/Sistemas_Embarcados/2_PCs/codigos_pc2/VideoCapture/Debug/../src/DetectFaces.cpp:59: undefined reference to `cv::circle(cv::_InputOutputArray const&, cv::Point_<int>, int, cv::Scalar_<double> const&, int, int, int)'
+/home/pi/Documents/Sistemas_Embarcados/2_PCs/codigos_pc2/VideoCapture/Debug/../src/DetectFaces.cpp:63: undefined reference to `cv::imshow(cv::String const&, cv::_InputArray const&)'
+./src/DetectFaces.o: In function `__static_initialization_and_destruction_0(int, int)':
+/home/pi/Documents/Sistemas_Embarcados/2_PCs/codigos_pc2/VideoCapture/Debug/../src/DetectFaces.cpp:12: undefined reference to `cv::CascadeClassifier::CascadeClassifier()'
+/home/pi/Documents/Sistemas_Embarcados/2_PCs/codigos_pc2/VideoCapture/Debug/../src/DetectFaces.cpp:13: undefined reference to `cv::CascadeClassifier::CascadeClassifier()'
+/home/pi/Documents/Sistemas_Embarcados/2_PCs/codigos_pc2/VideoCapture/Debug/../src/DetectFaces.cpp:64: undefined reference to `cv::CascadeClassifier::~CascadeClassifier()'
+./src/DetectFaces.o: In function `cv::String::String(char const*)':
+/usr/local/include/opencv2/core/cvstd.hpp:602: undefined reference to `cv::String::allocate(unsigned int)'
+./src/DetectFaces.o: In function `cv::String::~String()':
+/usr/local/include/opencv2/core/cvstd.hpp:648: undefined reference to `cv::String::deallocate()'
+./src/DetectFaces.o: In function `cv::Mat::Mat(cv::Mat const&)':
+/usr/local/include/opencv2/core/mat.inl.hpp:490: undefined reference to `cv::Mat::copySize(cv::Mat const&)'
+./src/DetectFaces.o: In function `cv::Mat::~Mat()':
+/usr/local/include/opencv2/core/mat.inl.hpp:692: undefined reference to `cv::fastFree(void*)'
+./src/DetectFaces.o: In function `cv::Mat::release()':
+/usr/local/include/opencv2/core/mat.inl.hpp:804: undefined reference to `cv::Mat::deallocate()'
+./src/DetectFaces.o: In function `cv::Mat::operator()(cv::Rect_<int> const&) const':
+/usr/local/include/opencv2/core/mat.inl.hpp:830: undefined reference to `cv::Mat::Mat(cv::Mat const&, cv::Rect_<int> const&)'
+./src/VideoCapture.o: In function `main':
+/home/pi/Documents/Sistemas_Embarcados/2_PCs/codigos_pc2/VideoCapture/Debug/../src/VideoCapture.cpp:9: undefined reference to `cv::VideoCapture::VideoCapture(int)'
+/home/pi/Documents/Sistemas_Embarcados/2_PCs/codigos_pc2/VideoCapture/Debug/../src/VideoCapture.cpp:11: undefined reference to `cv::VideoCapture::isOpened() const'
+/home/pi/Documents/Sistemas_Embarcados/2_PCs/codigos_pc2/VideoCapture/Debug/../src/VideoCapture.cpp:17: undefined reference to `cv::VideoCapture::get(int) const'
+/home/pi/Documents/Sistemas_Embarcados/2_PCs/codigos_pc2/VideoCapture/Debug/../src/VideoCapture.cpp:18: undefined reference to `cv::VideoCapture::get(int) const'
+/home/pi/Documents/Sistemas_Embarcados/2_PCs/codigos_pc2/VideoCapture/Debug/../src/VideoCapture.cpp:22: undefined reference to `cv::namedWindow(cv::String const&, int)'
+/home/pi/Documents/Sistemas_Embarcados/2_PCs/codigos_pc2/VideoCapture/Debug/../src/VideoCapture.cpp:28: undefined reference to `cv::VideoCapture::read(cv::_OutputArray const&)'
+/home/pi/Documents/Sistemas_Embarcados/2_PCs/codigos_pc2/VideoCapture/Debug/../src/VideoCapture.cpp:36: undefined reference to `cv::imshow(cv::String const&, cv::_InputArray const&)'
+/home/pi/Documents/Sistemas_Embarcados/2_PCs/codigos_pc2/VideoCapture/Debug/../src/VideoCapture.cpp:38: undefined reference to `cv::waitKey(int)'
+/home/pi/Documents/Sistemas_Embarcados/2_PCs/codigos_pc2/VideoCapture/Debug/../src/VideoCapture.cpp:9: undefined reference to `cv::VideoCapture::~VideoCapture()'
+/home/pi/Documents/Sistemas_Embarcados/2_PCs/codigos_pc2/VideoCapture/Debug/../src/VideoCapture.cpp:9: undefined reference to `cv::VideoCapture::~VideoCapture()'
+collect2: error: ld returned 1 exit status
+make: *** [VideoCapture] Error 1
+02:32:31 **** Incremental Build of configuration Debug for project DisplayImage ****
+make all 
+Building file: ../src/DisplayImage.cpp
+Invoking: GCC C++ Compiler
+g++ -I/usr/local/include -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/DisplayImage.d" -MT"src/DisplayImage.d" -o "src/DisplayImage.o" "../src/DisplayImage.cpp"
+Finished building: ../src/DisplayImage.cpp
+ 
+Building file: ../src/FaceDetection.cpp
+Invoking: GCC C++ Compiler
+g++ -I/usr/local/include -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/FaceDetection.d" -MT"src/FaceDetection.d" -o "src/FaceDetection.o" "../src/FaceDetection.cpp"
+Finished building: ../src/FaceDetection.cpp
+ 
+Building target: DisplayImage
+Invoking: GCC C++ Linker
+g++ -L/usr/local/lib -o "DisplayImage"  ./src/DisplayImage.o ./src/FaceDetection.o   -lopencv_dnn -lopencv_ml -lopencv_objdetect -lopencv_shape -lopencv_stitching -lopencv_superres -lopencv_videostab -lopencv_calib3d -lopencv_features2d -lopencv_highgui -lopencv_videoio -lopencv_imgcodecs -lopencv_video -lopencv_photo -lopencv_imgproc -lopencv_flann -lopencv_core
+./src/FaceDetection.o: In function `cv::Size_<int>::Size_()':
+/home/pi/Documents/Sistemas_Embarcados/2_PCs/codigos_pc2/DisplayImage/Debug/../src/FaceDetection.cpp:16: multiple definition of `main'
+./src/DisplayImage.o:/home/pi/Documents/Sistemas_Embarcados/2_PCs/codigos_pc2/DisplayImage/Debug/../src/DisplayImage.cpp:10: first defined here
+makefile:45: recipe for target 'DisplayImage' failed
+collect2: error: ld returned 1 exit status
+make: *** [DisplayImage] Error 1

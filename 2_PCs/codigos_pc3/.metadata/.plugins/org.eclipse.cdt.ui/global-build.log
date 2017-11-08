@@ -1,0 +1,175 @@
+15:08:41 **** Build of configuration Debug for project TakePicture ****
+make all 
+Building file: ../src/TakePicture.cpp
+Invoking: GCC C++ Compiler
+g++ -Iusr/local/include/opencv -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/TakePicture.d" -MT"src/TakePicture.d" -o "src/TakePicture.o" "../src/TakePicture.cpp"
+../src/TakePicture.cpp: In function ‘int main()’:
+../src/TakePicture.cpp:10:2: error: ‘Videocapture’ was not declared in this scope
+  Videocapture stream1(0);
+  ^~~~~~~~~~~~
+../src/TakePicture.cpp:11:6: error: ‘stream1’ was not declared in this scope
+  if(!stream1.isOpened(0))
+      ^~~~~~~
+../src/TakePicture.cpp:20:3: error: ‘stream’ was not declared in this scope
+   stream.read(cameraFrame);
+   ^~~~~~
+../src/TakePicture.cpp:22:16: error: ‘waitkey’ was not declared in this scope
+   if(waitkey(30) >= 0)
+                ^
+../src/TakePicture.cpp:26:31: error: ‘cameraFrame’ was not declared in this scope
+  imwrite("Image_Captured.jpg",cameraFrame);
+                               ^~~~~~~~~~~
+src/subdir.mk:18: recipe for target 'src/TakePicture.o' failed
+make: *** [src/TakePicture.o] Error 1
+15:10:23 **** Build of configuration Debug for project FaceDetection ****
+make all 
+make: Nothing to be done for 'all'.
+15:10:25 **** Incremental Build of configuration Debug for project TakePicture ****
+make all 
+Building file: ../src/TakePicture.cpp
+Invoking: GCC C++ Compiler
+g++ -Iusr/local/include/opencv -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/TakePicture.d" -MT"src/TakePicture.d" -o "src/TakePicture.o" "../src/TakePicture.cpp"
+../src/TakePicture.cpp: In function ‘int main()’:
+../src/TakePicture.cpp:10:2: error: ‘Videocapture’ was not declared in this scope
+  Videocapture stream1(0);
+  ^~~~~~~~~~~~
+../src/TakePicture.cpp:11:6: error: ‘stream1’ was not declared in this scope
+  if(!stream1.isOpened(0))
+      ^~~~~~~
+../src/TakePicture.cpp:20:3: error: ‘stream’ was not declared in this scope
+   stream.read(cameraFrame);
+   ^~~~~~
+../src/TakePicture.cpp:22:16: error: ‘waitkey’ was not declared in this scope
+   if(waitkey(30) >= 0)
+                ^
+../src/TakePicture.cpp:26:31: error: ‘cameraFrame’ was not declared in this scope
+  imwrite("Image_Captured.jpg",cameraFrame);
+                               ^~~~~~~~~~~
+make: *** [src/TakePicture.o] Error 1
+src/subdir.mk:18: recipe for target 'src/TakePicture.o' failed
+15:12:00 **** Incremental Build of configuration Debug for project FaceDetection ****
+make all 
+make: Nothing to be done for 'all'.
+15:12:01 **** Incremental Build of configuration Debug for project TakePicture ****
+make all 
+Building file: ../src/TakePicture.cpp
+Invoking: GCC C++ Compiler
+g++ -I/usr/local/include/opencv -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/TakePicture.d" -MT"src/TakePicture.d" -o "src/TakePicture.o" "../src/TakePicture.cpp"
+../src/TakePicture.cpp: In function ‘int main()’:
+../src/TakePicture.cpp:10:2: error: ‘Videocapture’ was not declared in this scope
+  Videocapture stream1(0);
+  ^~~~~~~~~~~~
+../src/TakePicture.cpp:11:6: error: ‘stream1’ was not declared in this scope
+  if(!stream1.isOpened(0))
+      ^~~~~~~
+../src/TakePicture.cpp:20:3: error: ‘stream’ was not declared in this scope
+   stream.read(cameraFrame);
+   ^~~~~~
+../src/TakePicture.cpp:22:16: error: ‘waitkey’ was not declared in this scope
+   if(waitkey(30) >= 0)
+                ^
+../src/TakePicture.cpp:26:31: error: ‘cameraFrame’ was not declared in this scope
+  imwrite("Image_Captured.jpg",cameraFrame);
+                               ^~~~~~~~~~~
+src/subdir.mk:18: recipe for target 'src/TakePicture.o' failed
+make: *** [src/TakePicture.o] Error 1
+15:14:35 **** Incremental Build of configuration Debug for project FaceDetection ****
+make all 
+make: Nothing to be done for 'all'.
+15:14:37 **** Incremental Build of configuration Debug for project TakePicture ****
+make all 
+Building file: ../src/TakePicture.cpp
+Invoking: GCC C++ Compiler
+g++ -I/usr/local/include/opencv -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/TakePicture.d" -MT"src/TakePicture.d" -o "src/TakePicture.o" "../src/TakePicture.cpp"
+../src/TakePicture.cpp: In function ‘int main()’:
+../src/TakePicture.cpp:10:2: error: ‘Videocapture’ was not declared in this scope
+  Videocapture stream1(0);
+  ^~~~~~~~~~~~
+../src/TakePicture.cpp:11:6: error: ‘stream1’ was not declared in this scope
+  if(!stream1.isOpened(0))
+      ^~~~~~~
+../src/TakePicture.cpp:20:3: error: ‘stream1’ was not declared in this scope
+   stream1.read(cameraFrame);
+   ^~~~~~~
+../src/TakePicture.cpp:22:16: error: ‘waitkey’ was not declared in this scope
+   if(waitkey(30) >= 0)
+                ^
+../src/TakePicture.cpp:26:31: error: ‘cameraFrame’ was not declared in this scope
+  imwrite("Image_Captured.jpg",cameraFrame);
+                               ^~~~~~~~~~~
+src/subdir.mk:18: recipe for target 'src/TakePicture.o' failed
+make: *** [src/TakePicture.o] Error 1
+15:17:25 **** Incremental Build of configuration Debug for project FaceDetection ****
+make all 
+make: Nothing to be done for 'all'.
+15:17:27 **** Incremental Build of configuration Debug for project TakePicture ****
+make all 
+Building file: ../src/TakePicture.cpp
+Invoking: GCC C++ Compiler
+g++ -I/usr/local/include/opencv -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/TakePicture.d" -MT"src/TakePicture.d" -o "src/TakePicture.o" "../src/TakePicture.cpp"
+../src/TakePicture.cpp: In function ‘int main()’:
+../src/TakePicture.cpp:12:24: error: no matching function for call to ‘cv::VideoCapture::isOpened(int)’
+  if(!stream1.isOpened(0))
+                        ^
+In file included from /usr/local/include/opencv2/highgui.hpp:51:0,
+                 from /usr/local/include/opencv2/highgui/highgui.hpp:48,
+                 from ../src/TakePicture.cpp:1:
+/usr/local/include/opencv2/videoio.hpp:687:26: note: candidate: virtual bool cv::VideoCapture::isOpened() const
+     CV_WRAP virtual bool isOpened() const;
+                          ^~~~~~~~
+/usr/local/include/opencv2/videoio.hpp:687:26: note:   candidate expects 0 arguments, 1 provided
+../src/TakePicture.cpp:23:16: error: ‘waitkey’ was not declared in this scope
+   if(waitkey(30) >= 0)
+                ^
+../src/TakePicture.cpp:27:31: error: ‘cameraFrame’ was not declared in this scope
+  imwrite("Image_Captured.jpg",cameraFrame);
+                               ^~~~~~~~~~~
+src/subdir.mk:18: recipe for target 'src/TakePicture.o' failed
+make: *** [src/TakePicture.o] Error 1
+15:19:32 **** Incremental Build of configuration Debug for project FaceDetection ****
+make all 
+make: Nothing to be done for 'all'.
+15:19:33 **** Incremental Build of configuration Debug for project TakePicture ****
+make all 
+Building file: ../src/TakePicture.cpp
+Invoking: GCC C++ Compiler
+g++ -I/usr/local/include/opencv -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/TakePicture.d" -MT"src/TakePicture.d" -o "src/TakePicture.o" "../src/TakePicture.cpp"
+../src/TakePicture.cpp: In function ‘int main()’:
+../src/TakePicture.cpp:23:16: error: ‘waitkey’ was not declared in this scope
+   if(waitkey(30) >= 0)
+                ^
+../src/TakePicture.cpp:27:31: error: ‘cameraFrame’ was not declared in this scope
+  imwrite("Image_Captured.jpg",cameraFrame);
+                               ^~~~~~~~~~~
+src/subdir.mk:18: recipe for target 'src/TakePicture.o' failed
+make: *** [src/TakePicture.o] Error 1
+15:33:04 **** Incremental Build of configuration Debug for project FaceDetection ****
+make all 
+make: Nothing to be done for 'all'.
+15:33:06 **** Incremental Build of configuration Debug for project TakePicture ****
+make all 
+Building file: ../src/TakePicture.cpp
+Invoking: GCC C++ Compiler
+g++ -I/usr/local/include/opencv -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/TakePicture.d" -MT"src/TakePicture.d" -o "src/TakePicture.o" "../src/TakePicture.cpp"
+Finished building: ../src/TakePicture.cpp
+ 
+Building target: TakePicture
+Invoking: GCC C++ Linker
+g++ -L/usr/local/lib -o "TakePicture"  ./src/TakePicture.o   -lopencv_dnn -lopencv_ml -lopencv_objdetect -lopencv_shape -lopencv_stitching -lopencv_superres -lopencv_videostab -lopencv_calib3d -lopencv_features2d -lopencv_highgui -lopencv_videoio -lopencv_imgcodecs -lopencv_video -lopencv_photo -lopencv_imgproc -lopencv_flann -lopencv_core
+Finished building target: TakePicture
+ 
+16:09:41 **** Incremental Build of configuration Debug for project FaceDetection ****
+make all 
+make: Nothing to be done for 'all'.
+16:09:43 **** Incremental Build of configuration Debug for project TakePicture ****
+make all 
+Building file: ../src/TakePicture.cpp
+Invoking: GCC C++ Compiler
+g++ -I/usr/local/include/opencv -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/TakePicture.d" -MT"src/TakePicture.d" -o "src/TakePicture.o" "../src/TakePicture.cpp"
+Finished building: ../src/TakePicture.cpp
+ 
+Building target: TakePicture
+Invoking: GCC C++ Linker
+g++ -L/usr/local/lib -o "TakePicture"  ./src/TakePicture.o   -lopencv_dnn -lopencv_ml -lopencv_objdetect -lopencv_shape -lopencv_stitching -lopencv_superres -lopencv_videostab -lopencv_calib3d -lopencv_features2d -lopencv_highgui -lopencv_videoio -lopencv_imgcodecs -lopencv_video -lopencv_photo -lopencv_imgproc -lopencv_flann -lopencv_core
+Finished building target: TakePicture
+ 

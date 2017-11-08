@@ -1,0 +1,15 @@
+16:09:43 **** Incremental Build of configuration Debug for project TakePicture ****
+make all 
+Building file: ../src/TakePicture.cpp
+Invoking: GCC C++ Compiler
+g++ -I/usr/local/include/opencv -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/TakePicture.d" -MT"src/TakePicture.d" -o "src/TakePicture.o" "../src/TakePicture.cpp"
+Finished building: ../src/TakePicture.cpp
+ 
+Building target: TakePicture
+Invoking: GCC C++ Linker
+g++ -L/usr/local/lib -o "TakePicture"  ./src/TakePicture.o   -lopencv_dnn -lopencv_ml -lopencv_objdetect -lopencv_shape -lopencv_stitching -lopencv_superres -lopencv_videostab -lopencv_calib3d -lopencv_features2d -lopencv_highgui -lopencv_videoio -lopencv_imgcodecs -lopencv_video -lopencv_photo -lopencv_imgproc -lopencv_flann -lopencv_core
+Finished building target: TakePicture
+ 
+
+16:09:58 Build Finished (took 15s.725ms)
+

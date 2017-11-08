@@ -1,0 +1,30 @@
+#include <opencv2/highgui/highgui.hpp>
+#include <opencv2/opencv.hpp>
+#include <opencv2/imgproc/imgproc.hpp>
+#include <iostream>
+using namespace cv;
+using namespace std;
+
+int main()
+{
+	Videocapture stream1(0);
+	if(!stream1.isOpened(0))
+	{
+		cout << "Cannot open camera!" << endl;
+		return -1;
+	}
+
+	while(true)
+	{
+		Mat cameraFrame;
+		stream.read(cameraFrame);
+		imshow("cam",cameraFrame);
+		if(waitkey(30) >= 0)
+			break;
+	}
+	imwrite("Image_Captured.jpg",cameraFrame);
+	return 0;
+}
+
+
+
