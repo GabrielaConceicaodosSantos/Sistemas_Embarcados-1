@@ -1,4 +1,10 @@
+# Questão sobre protocolo UART
+
 1. Considere um MSP430 sendo usado para leituras analógicas. O Raspberry Pi está conectado a ele via UART. O MSP430 foi programado para converter e enviar dados de 10 bits a cada 10 ms. Escreva o código para o Raspberry Pi receber estes dados, e cada 1 segundo apresentar no terminal a média das últimas 100 amostras.
+
+[Codigo - Questao 1](/1_Respostas/13_UART/Ex1.c)
+
+# Questão sobre protocolo SPI
 
 2. Considere um MSP430 sendo usado para leituras analógicas. O Raspberry Pi está conectado a ele via SPI, e é o mestre. O MSP430 foi programado para funcionar da seguinte forma:
 
