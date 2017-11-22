@@ -1,0 +1,3 @@
+TakePicture - Tira as 120 fotos em 4 segundos
+UseSamples - Utiliza o nome das 120 fotos para criar um um arquivo do tipo .dat para ser usado como amostras.
+StudentDetector - Verifica no repositorio de cascades.xml se existe um estudante com a face encontrada.

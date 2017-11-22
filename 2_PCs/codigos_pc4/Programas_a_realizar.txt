@@ -1,0 +1,73 @@
+1 - Criar um programa que tira 150 fotos após pressionar um botão. (OK)
+
+2 - Criar um programa que pega as 150 fotos, cria uma vetor usando o programa opencv_createsamples e treina um cascade usando o opencv_traincascade.
+
+3 - Criar um programa que recebe como argumento o nome de uma disciplina e sua turma por exemplo,
+
+./cadastro_nova_turma "Sistemas Embarcados" A
+ 
+e escreve em um arquivo .txt chamado de infoturmas.txt o nome da disciplina e sua turma e também dá um número pra turma especificada, da forma
+
+2
+Microcontroladores
+A
+1
+Sistemas Embarcados
+A
+
+
+Se o arquivo não existir, criar. Se já existir, ir acrescentando as turmas uma acima da outra. Além disso, o programa também deve criar uma pasta da turma, usando, por exemplo
+
+$ mkdir turma1 
+
+e dentro desse diretório, criar um arquivo em branco chamado, por exemplo,
+
+listaturma1.txt
+
+(Ok)
+
+
+4 - Criar um programa que exclui uma turma. Este deve excluir a turma do arquivo infoturmas.txt, atualizar a numeração no arquivo e excluir a pasta e todos os arquivos relacionados a turma especificada. Um possível método de rodar o programa pode ser
+
+$ ./excluir_turma 1
+
+Onde o programa recebe o número da turma especificada e o exclui.
+
+5 - Criar um programa que cadastra um novo aluno em uma turma. Este recebe o nome da turma e a matricula do aluno e escreve no arquivo localizado em, por exemplo
+
+turma1/infoturma1.txt
+
+1 150039921 
+2 150038895
+
+6 - Criar um programa que exclui um aluno de uma turma. Este recebe o numero da turma e o numero do aluno e exclui este. 
+
+7 - Criar um programa que registra a presença para um aluno determinado. Este recebe o numero da turma e o número do aluno e registra a presença no arquivo localizado em turma1/listaturma1.txt
+
+1 150039921 PPA
+2 150038895 PAP 
+
+8 - Criar um programa que registra ausência para um aluno determinado. Este recebe o número da turma e o número do aluno e registra ausência no arquivo localizado em turma1/listaturma1.txt
+
+1 150039921 PPAA
+1 150038895 PAPA
+
+9 - Criar um menu que tem as opções :
+ - Criar turma
+ - Excluir turma
+ - Adicionar Aluno
+ - Excluir Aluno
+ - Computar Presença
+ - Computar Ausência
+
+10 - Criar um programa que faça o polling de dois botoes usando threads. Quando um botao for pressionado, uma mensagem devera aparecer no terminal:
+
+Botao x pressionado.
+
+11 - Criar uma função que ao receber um caractere, retorna um valor em hexadecimal que deve ser inserido na entrada de dados do display de 16 x 2.  
+ 
+
+
+
+
+
