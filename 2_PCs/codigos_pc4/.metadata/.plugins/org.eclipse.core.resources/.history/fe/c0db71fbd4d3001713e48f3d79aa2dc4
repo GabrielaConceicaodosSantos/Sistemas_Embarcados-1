@@ -1,0 +1,28 @@
+/*
+ * main.cpp
+ *
+ *  Created on: Nov 27, 2017
+ *      Author: pi
+ */
+
+#include "Display.h"
+#include "Botao.h"
+using namespace std;
+
+int main() {
+	Display display;
+	Decisao decisao;
+	GPIO_Setup(13);
+	GPIO_Setup(19);
+	GPIO_Setup(26);
+
+
+
+	display.Setup();
+
+
+
+	return 0;
+}
+
+

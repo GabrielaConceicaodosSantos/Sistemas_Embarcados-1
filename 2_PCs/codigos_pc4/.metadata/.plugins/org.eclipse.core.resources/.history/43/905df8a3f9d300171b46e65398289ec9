@@ -1,0 +1,42 @@
+/*
+ * main.cpp
+ *
+ *  Created on: Nov 27, 2017
+ *      Author: pi
+ */
+
+#include "Display.h"
+#include "Botao.h"
+using namespace std;
+
+int main() {
+
+	struct Decisao decisao;
+	decisao.GPIO[0] = 16;
+	decisao.GPIO[1] = 20;
+	decisao.GPIO[2] = 21;
+	Configurar_Botoes(&decisao);
+
+	Display display;
+
+	while(1){
+
+		if(decisao.navegar == 0){
+			cout << "Botao de Navegacao pressionado" << endl;
+			usleep(500000);
+		}
+		if(decisao.selecionar == 0){
+			cout << "Botao de Selecao pressionado" << endl;
+			usleep(500000);
+		}
+		if(decisao.voltar == 0){
+			cout << "Botao de Voltar pressionado" << endl;
+			usleep(500000);
+		}
+	}
+
+	GPIO_free(&decisao);
+	return 0;
+}
+
+

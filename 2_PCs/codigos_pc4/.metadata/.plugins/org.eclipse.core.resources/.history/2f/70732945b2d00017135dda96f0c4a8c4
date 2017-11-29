@@ -1,0 +1,22 @@
+/*
+ * Display.h
+ *
+ *  Created on: Nov 23, 2017
+ *      Author: pi
+ */
+
+#ifndef DISPLAY_H_
+#define DISPLAY_H_
+
+#include <iostream>
+using namespace std;
+#include <string.h>
+
+class Display {
+public:
+	Display();
+	virtual ~Display();
+	void Setup();
+};
+
+#endif /* DISPLAY_H_ */

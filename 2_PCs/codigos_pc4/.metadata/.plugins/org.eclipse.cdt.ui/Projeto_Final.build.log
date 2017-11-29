@@ -1,0 +1,7 @@
+22:27:46 **** Clean-only build of configuration Debug for project Projeto_Final ****
+make clean 
+rm -rf  ./src/Botao.o ./src/Display.o ./src/ProjetoFinal.o ./src/main.o  ./src/Botao.d ./src/Display.d ./src/ProjetoFinal.d ./src/main.d  Projeto_Final
+ 
+
+22:27:47 Build Finished (took 573ms)
+

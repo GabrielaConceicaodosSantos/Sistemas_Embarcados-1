@@ -1,0 +1,7 @@
+22:27:48 **** Clean-only build of configuration Debug for project Take_Picture ****
+make clean 
+rm -rf  ./src/TakePicture.o  ./src/TakePicture.d  Take_Picture
+ 
+
+22:27:48 Build Finished (took 534ms)
+

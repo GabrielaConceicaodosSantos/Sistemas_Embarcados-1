@@ -1,0 +1,52 @@
+/*
+ * Display.h
+ *
+ *  Created on: Nov 23, 2017
+ *      Author: pi
+ */
+
+#ifndef DISPLAY_H_
+#define DISPLAY_H_
+
+#include <iostream>
+using namespace std;
+#include <stdio.h>
+#include <string.h>
+#include <fcntl.h>
+#include <unistd.h>
+
+/* DISPLAY	GPIO
+ * RS		2
+ * RW		3
+ * E		4
+ * DB0		17
+ * DB1		27
+ * DB2		22
+ * DB3		10
+ * DB4		9
+ * DB5		11
+ * DB6		5
+ * DB7		6
+ */
+
+#define WAIT_TIME 40000 //wait time 10ms
+
+class Display {
+private:
+	int GPIOs[11] = {2,3,4,17,27,22,10,9,11,5,6};
+	int GPIOs_value[11];
+
+public:
+	Display();
+	virtual ~Display();
+	void Setup(void);
+	void Init(void);
+	void Send_Data(int data);
+	void Selection(char selection);
+	void Enable();
+	void Print(char *word);
+	void Command(string command_name);
+	int Conversor(char caractere);
+};
+
+#endif /* DISPLAY_H_ */

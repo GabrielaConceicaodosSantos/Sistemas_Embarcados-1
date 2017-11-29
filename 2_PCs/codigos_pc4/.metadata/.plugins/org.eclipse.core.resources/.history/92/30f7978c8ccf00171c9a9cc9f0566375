@@ -1,0 +1,50 @@
+//============================================================================
+// Name        : Botoes.cpp
+// Author      : Leonardo Amorim
+// Version     :
+// Copyright   : Your copyright notice
+// Description : Hello World in C++, Ansi-style
+//============================================================================
+
+#include <iostream>
+using namespace std;
+#include "gpio_dev_mem.h"
+
+void GPIO_setup(int GPIOnum,char mode)
+{
+	char str[80];
+	if(mode == "out")
+	{
+		sprintf(str,"Configurando GPIO%d como saida digital...\n",GPIOnum);
+		puts(str);
+		sprintf(str,"echo %d > /sys/class/gpio/export",GPIOnum);
+		system(str);
+		sprintf(str,"echo out > /sys/class/gpio/gpio%d/direction",GPIOnum);
+		system(str);
+		puts("Configurado.\n");
+	}
+	else if(mode == "in")
+	{
+		sprintf(str,"Configurando GPIO%d como entrada digital...",GPIOnum);
+		puts(str);
+		sprintf(str,"echo %d > /sys/class/gpio/export",GPIOnum);
+		system(str);
+		sprintf(str,"echo in > /sys/class/gpio/gpio%d/direction",GPIOnum);
+		system(str);
+		puts("Configurado.\n");
+	}
+}
+
+void GPIO_free(int GPIO_num)
+{
+	char str[80];
+	sprintf(str,"echo %d > /sys/class/gpio/unexport",GPIO_num);
+	system(str);
+	printf("GPIO %d liberada.\n",GPIO_num);
+}
+
+
+int main() {
+	cout << "!!!Hello World!!!" << endl; // prints !!!Hello World!!!
+	return 0;
+}

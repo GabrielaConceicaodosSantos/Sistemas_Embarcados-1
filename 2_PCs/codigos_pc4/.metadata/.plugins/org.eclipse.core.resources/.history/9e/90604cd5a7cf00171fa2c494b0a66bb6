@@ -1,0 +1,111 @@
+//============================================================================
+// Name        : Botoes.cpp
+// Author      : Leonardo Amorim
+// Version     :
+// Copyright   : Your copyright notice
+// Description : Hello World in C++, Ansi-style
+//============================================================================
+
+#include <iostream>
+using namespace std;
+
+#include<stdio.h>
+#include<stdlib.h>
+#include<fcntl.h>
+#include<unistd.h>
+#include<signal.h>
+#include<string.h>
+#include<sys/wait.h>
+#include <pthread.h>
+
+void GPIO_setup(int GPIOnum, char *mode) {
+	char str[80];
+	if ((strncmp(mode,"out",3) == 0)) {
+		sprintf(str, "Configurando GPIO%d como saida digital...\n", GPIOnum);
+		puts(str);
+		sprintf(str, "echo %d > /sys/class/gpio/export", GPIOnum);
+		system(str);
+		sprintf(str, "echo out > /sys/class/gpio/gpio%d/direction", GPIOnum);
+		system(str);
+		puts("Configurado.\n");
+	} else if ((strncmp(mode,"in",2) == 0)) {
+		sprintf(str, "Configurando GPIO%d como entrada digital...", GPIOnum);
+		puts(str);
+		sprintf(str, "echo %d > /sys/class/gpio/export", GPIOnum);
+		system(str);
+		sprintf(str, "echo in > /sys/class/gpio/gpio%d/direction", GPIOnum);
+		system(str);
+		puts("Configurado.\n");
+	}
+}
+
+void GPIO_free(int GPIO_num) {
+	int fd;
+	char str[1];
+	sprintf(str, "%d", GPIO_num);
+	fd = open("/sys/class/gpio/unexṕort",O_WRONLY);
+
+	write(fd,str,1);
+	close()
+
+	printf("GPIO %d liberada.\n", GPIO_num);
+}
+
+int GPIO_get(int GPIO_num) {
+	int fd, iValue;
+	char caminho_gpio[50], cValue[1];
+	sprintf(caminho_gpio, "/sys/class/gpio/gpio%d/value", GPIO_num);
+	fd = open(caminho_gpio, O_RDONLY);
+	read(fd, cValue, 1);
+	close(fd);
+	iValue = atoi(cValue);
+	cout << iValue << endl;
+	return iValue;
+
+}
+
+void *verifica_botao(void *btn) {
+
+	int *botao = (int*) btn;
+
+	while (1) {
+		cout << "Pressione o botao " << *botao << "..." << endl;
+		while (GPIO_get(*botao));
+		puts("Botao pressionado");
+		usleep(150000);
+		while (GPIO_get(*botao) == 0)
+			;
+		puts("Botao solto");
+		usleep(150000);
+	}
+	return NULL;
+}
+
+int main() {
+
+	int BTN1 = 2, BTN2 = 3;
+	char mode[3] = "in";
+
+	GPIO_setup(BTN1, mode);
+	GPIO_setup(BTN2, mode);
+
+	pthread_t thread_id[1];
+	pthread_create(&thread_id[0], NULL, &verifica_botao, &BTN1);
+	pthread_create(&thread_id[1], NULL, &verifica_botao, &BTN2);
+	cout << "Digite \"sair\" para terminar a execucao do programa..." << endl;
+	string senha;
+	while (1) {
+		cin >> senha;
+		if (senha == "sair") {
+			break;
+		}
+	}
+
+	cout << "Encerrando..." << endl;
+	pthread_cancel(thread_id[0]);
+	pthread_cancel(thread_id[1]);
+	GPIO_free(BTN1);
+	GPIO_free(BTN2);
+
+	return 0;
+}

@@ -1,0 +1,48 @@
+/*
+ * main.cpp
+ *
+ *  Created on: Nov 27, 2017
+ *      Author: pi
+ */
+
+#include "Display.h"
+#include "Botao.h"
+#include "ProjetoFinal.h"
+using namespace std;
+
+int main() {
+
+	struct Decisao decisao;
+	decisao.GPIO[0] = 16; //Navegar
+	decisao.GPIO[1] = 20; //Selecao
+	decisao.GPIO[2] = 21; //Decisao
+	Configurar_Botoes(&decisao);
+
+	Display display;
+	display.Setup();
+
+	int i = 0;
+	string entrada;
+	while(1){
+		if(i == 40){
+			cout << "Digite \"sair\" se quiser sair." << endl;
+			cin >> entrada;
+			if(entrada == "sair")
+			{
+				break;
+			}
+			else{
+				i = 0;
+			}
+		}
+		Tomar_Decisao(&decisao);
+		usleep(500000);
+		Realizar_Acao(&decisao,&display);
+		i++;
+	}
+
+	GPIO_free(&decisao);
+	return 0;
+}
+
+

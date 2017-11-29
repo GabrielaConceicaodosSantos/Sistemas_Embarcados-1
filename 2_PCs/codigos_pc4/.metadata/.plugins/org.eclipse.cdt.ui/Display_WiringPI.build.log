@@ -1,0 +1,7 @@
+22:27:44 **** Clean-only build of configuration Debug for project Display_WiringPI ****
+make clean 
+rm -rf  ./src/Display_WiringPI.o  ./src/Display_WiringPI.d  Display_WiringPI
+ 
+
+22:27:45 Build Finished (took 1s.33ms)
+

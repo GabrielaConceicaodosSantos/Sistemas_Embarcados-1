@@ -1,0 +1,17 @@
+/*
+ * ProjetoFinal.h
+ *
+ *  Created on: Nov 28, 2017
+ *      Author: pi
+ */
+
+#ifndef PROJETOFINAL_H_
+#define PROJETOFINAL_H_
+
+#include "Botao.h"
+
+void Tomar_Decisao(struct Decisao *decisao);
+void Realizar_Acao(struct Decisao *decisao);
+
+
+#endif /* PROJETOFINAL_H_ */

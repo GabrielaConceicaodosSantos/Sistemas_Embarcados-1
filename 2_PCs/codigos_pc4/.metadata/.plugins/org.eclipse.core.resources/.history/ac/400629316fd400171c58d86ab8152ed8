@@ -1,0 +1,34 @@
+/*
+ * main.cpp
+ *
+ *  Created on: Nov 27, 2017
+ *      Author: pi
+ */
+
+#include "Display.h"
+#include "Botao.h"
+#include "ProjetoFinal.h"
+using namespace std;
+
+int main() {
+
+	struct Decisao decisao;
+	decisao.GPIO[0] = 16;
+	decisao.GPIO[1] = 20;
+	decisao.GPIO[2] = 21;
+	Configurar_Botoes(&decisao);
+
+	Display display;
+	display.Setup();
+
+	int i = 0;
+	string entrada;
+	while(1){
+
+	}
+
+	GPIO_free(&decisao);
+	return 0;
+}
+
+

@@ -1,0 +1,32 @@
+void Tomar_Decisao(struct Decisao *decisao) {
+
+	if (decisao->opcao == 0) {
+		if (decisao->navegar == 0) {
+			decisao->opcao = 1;
+		} else if (decisao->selecionar == 0) {
+			decisao->opcao = 2;
+		}
+	}
+
+	else if (decisao->opcao == 1) {
+		if (decisao->navegar == 0) {
+			decisao->opcao = 0;
+		} else if (decisao->selecionar == 0) {
+			decisao->opcao = 7;
+		}
+	}
+	else if (decisao->opcao == 2){
+		if(decisao->navegar == 0){
+			decisao->opcao = 3;
+		}
+		else if(decisao->selecionar == 0){
+			//Cadastrar_Turma
+			decisao->opcao = 0; //por enquanto nao esta configurado
+			//vai voltar para a tela inicial
+		}
+		else if(decisao->voltar == 0){
+			decisao->opcao = 0;
+		}
+	}
+
+}

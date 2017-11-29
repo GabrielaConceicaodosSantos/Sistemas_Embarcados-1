@@ -1,0 +1,7 @@
+22:27:43 **** Clean-only build of configuration Debug for project Display ****
+make clean 
+rm -rf  ./src/Display.o ./src/main.o  ./src/Display.d ./src/main.d  Display
+ 
+
+22:27:44 Build Finished (took 1s.48ms)
+

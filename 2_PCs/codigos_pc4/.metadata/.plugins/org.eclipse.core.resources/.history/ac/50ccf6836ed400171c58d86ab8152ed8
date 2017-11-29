@@ -1,0 +1,119 @@
+void Tomar_Decisao(struct Decisao *decisao) {
+
+	if (decisao->opcao == 0) {
+		if (decisao->navegar == 0) {
+			decisao->opcao = 1;
+		} else if (decisao->selecionar == 0) {
+			decisao->opcao = 2;
+		}
+	}
+
+	else if (decisao->opcao == 1) {
+		if (decisao->navegar == 0) {
+			decisao->opcao = 0;
+		} else if (decisao->selecionar == 0) {
+			decisao->opcao = 7;
+		}
+	} else if (decisao->opcao == 2) {
+		if (decisao->navegar == 0) {
+			decisao->opcao = 3;
+		} else if (decisao->selecionar == 0) {
+			//Cadastrar_Turma()
+			decisao->opcao = 0; //por enquanto nao esta configurado
+			//vai voltar para a tela inicial
+		} else if (decisao->voltar == 0) {
+			decisao->opcao = 0;
+		}
+	} else if (decisao->opcao == 3) {
+		if (decisao->navegar == 0) {
+			decisao->opcao = 4;
+		} else if (decisao->selecionar == 0) {
+			//Ver_Turmas()
+			decisao->opcao = 0; //por enquanto nao esta configurado
+			//vai voltar para a tela inicial
+		} else if (decisao->voltar == 0) {
+			decisao->opcao = 0;
+		}
+	} else if (decisao->opcao == 4) {
+		if (decisao->navegar == 0) {
+			decisao->opcao = 5;
+		} else if (decisao->selecionar == 0) {
+			//Excluir_Turma()
+			decisao->opcao = 0; //por enquanto nao esta configurado
+			//vai voltar para a tela inicial
+		} else if (decisao->voltar == 0) {
+			decisao->opcao = 0;
+		}
+	} else if (decisao->opcao == 5) {
+		if (decisao->navegar == 0) {
+			decisao->opcao = 6;
+		} else if (decisao->selecionar == 0) {
+			//Cadastrar_Aluno()
+			decisao->opcao = 0; //por enquanto nao esta configurado
+			//vai voltar para a tela inicial
+		} else if (decisao->voltar == 0) {
+			decisao->opcao = 0;
+		}
+	} else if (decisao->opcao == 6) {
+		if (decisao->navegar == 0) {
+			decisao->opcao = 2;
+		} else if (decisao->selecionar == 0) {
+			//Excluir_Aluno();
+			decisao->opcao = 0; //por enquanto nao esta configurado
+			//vai voltar para a tela inicial
+		} else if (decisao->voltar) {
+			decisao->opcao = 0;
+		}
+	} else if (decisao->opcao == 7) {
+		if (decisao->navegar == 0) {
+			decisao->opcao = 8;
+		} else if (decisao->selecionar == 0) {
+			//Registrar_Presenca()
+			decisao->opcao = 1; //ainda nao configurado
+		} else if (decisao->voltar == 1) {
+			decisao->opcao == 1;
+		}
+	} else if (decisao->opcao == 8) {
+		if (decisao->navegar == 0) {
+			decisao->opcao = 7;
+		} else if (decisao->selecionar == 0) {
+			//Ver Presencas()
+			decisao->opcao = 1; //ainda nao configurado
+		} else if (decisao->voltar == 0) {
+			decisao->opcao = 1;
+		}
+	}
+}
+
+void Realizar_Acao(struct Decisao *decisao, Display *display) {
+	if (decisao->opcao == 0) {
+		Acao_Display(display,"1. Op prof (x)","2. Op Alu ( )");
+	} else if (decisao->opcao == 1) {
+
+	} else if (decisao->opcao == 2) {
+
+	} else if (decisao->opcao == 3) {
+
+	} else if (decisao->opcao == 4) {
+
+	} else if (decisao->opcao == 5) {
+
+	} else if (decisao->opcao == 6) {
+
+	} else if (decisao->opcao == 7) {
+
+	} else if (decisao->opcao == 8) {
+
+	}
+}
+
+void Acao_Display(Display *display, char *str1, char *str2) {
+	display->Command("Clear screen");
+	display->Command("Go to first line");
+	display->Print(str1);
+	display->Command("Activate second line");
+	display->Command("Go to second line");
+	display->Command(str2);
+
+}
+

@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">&#x0A;<refactoring comment="Rename resource &apos;Botoes/src/gpio_dev_mem.c&apos; to &apos;gpio_dev_mem.cpp&apos;" description="Rename resource &apos;gpio_dev_mem.c&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="src/gpio_dev_mem.c" name="gpio_dev_mem.cpp" stamp="1511364908765" updateReferences="true"/>&#x0A;<refactoring comment="Rename resource &apos;Botoes/src/gpio_dev_mem.cpp&apos; to &apos;gpio_dev_mem.c&apos;" description="Rename resource &apos;gpio_dev_mem.cpp&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="src/gpio_dev_mem.cpp" name="gpio_dev_mem.c" stamp="1511365297302" updateReferences="true"/>
+</session>

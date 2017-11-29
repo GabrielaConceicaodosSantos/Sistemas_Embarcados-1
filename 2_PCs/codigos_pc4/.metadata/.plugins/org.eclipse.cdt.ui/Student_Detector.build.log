@@ -1,0 +1,7 @@
+22:27:47 **** Clean-only build of configuration Debug for project Student_Detector ****
+make clean 
+rm -rf  ./src/Student_Detector.o  ./src/Student_Detector.d  Student_Detector
+ 
+
+22:27:48 Build Finished (took 542ms)
+

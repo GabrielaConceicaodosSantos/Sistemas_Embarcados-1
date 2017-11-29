@@ -1,0 +1,399 @@
+//============================================================================
+// Name        : Display.cpp
+// Author      : Leonardo Amorim
+// Version     :
+// Copyright   : Your copyright notice
+// Description : Hello World in C++, Ansi-style
+//============================================================================
+
+#include "Display.h"
+
+Display::Display() {
+	// TODO Auto-generated constructor stub
+
+}
+
+Display::~Display() {
+	// TODO Auto-generated destructor stub
+
+	int fd = open("/sys/class/gpio/unexport", O_WRONLY);
+	if (fd == -1) {
+		cout << "Erro ao abrir o arquivo /sys/class/gpio/unexport" << endl;
+	} else {
+		for (int i = 0; i < 11; i++) {
+			//fechar todos os arquivos abertos dos values das GPIOs
+			close(GPIOs_value[i]);
+
+			//excluir as pastas do sistema usando o arquivo unexport
+			char str[1];
+			sprintf(str, "%d", GPIOs[i]);
+			write(fd, str, strlen(str));
+		}
+	}
+
+}
+
+void Display::Setup(void) {
+
+	int fd;
+
+	fd = open("/sys/class/gpio/export", O_WRONLY);
+
+	if (fd == -1) {
+
+		cout << "Erro ao abrir o arquivo /sys/class/gpio/export" << endl;
+
+	} else {
+
+		//criando as GPIOs e tornando-as como saida
+		for (int i = 0; i < 11; i++) {
+			char str[50];
+			sprintf(str, "%d", GPIOs[i]);
+			//cout << "Criando GPIO " << str << endl;
+			write(fd, str, strlen(str)); //escrevendo o numero da GPIO que se quer criar
+
+			//sprintf(str, "ls /sys/class/gpio/gpio%d", GPIOs[i]);
+			//system(str);
+
+			//cout << endl;
+
+			int GPIO_direction;
+			sprintf(str, "/sys/class/gpio/gpio%d/direction", GPIOs[i]);
+			//cout << "Abrindo " << str << endl;
+			GPIO_direction = open(str, O_WRONLY); //abrindo o arquivo direction da respectiva GPIO
+
+			if (GPIO_direction == -1) {
+				cout << "Erro ao setar direcao para o GPIO " << GPIOs[i]
+						<< endl;
+			} else {
+				write(GPIO_direction, "out", 3); //setando a direcao da GPIO como out
+				close(GPIO_direction); //fechando o arquivo de direcao
+				sprintf(str, "/sys/class/gpio/gpio%d/value", GPIOs[i]);
+				//cout << "Abrindo " << str << endl;
+				GPIOs_value[i] = open(str, O_WRONLY); //abrindo o arquivo value da GPIO como escrita
+
+			}
+		}
+		usleep(WAIT_TIME);
+	}
+
+	//inicializando o ENABLE com 1
+//	if (write(GPIOs_value[2], "1", 1) != 1) {
+//		cout << "Erro ao inicializar o ENABLE." << endl;
+//		cout << "Nao foi possivel escrever no arquivo /sys/class/gpio4/value"
+//				<< endl;
+//	}
+	//utilizando o modo de escrita (write)
+	//Nao vamos utilizar o modo de leitura (read)
+	if (write(GPIOs_value[1], "0", 1) != 1) {
+		cout << "Erro ao selecionar R/W como write (escrita)" << endl;
+		cout << "Nao foi possivel escrever no arquivo /sys/class/gpio3/value"
+				<< endl;
+	}
+
+	close(fd); //fechando arquivo o arquivo export
+	Init();
+}
+
+void Display::Selection(char selection) {
+	//Funcao que atualiza o pino Register Selection alternando entre os modos de comando e de leitura
+	if (selection == 'c') {
+		int rs = GPIOs_value[0];
+		if (write(rs, "0", 1) != 1) {
+			cout << "Nao foi possivel escrever no /sys/class/gpio2/value"
+					<< endl;
+
+		}
+		//cout << "Modo de comando selecionado." << endl;
+	} else if (selection == 'd') {
+		int rs = GPIOs_value[0];
+		if (write(rs, "1", 1) != 1) {
+			cout << "Nao foi possivel escrever no /sys/class/gpio2/value"
+					<< endl;
+		}
+		//cout << "Modo de dados selecionado." << endl;
+	} else {
+		cout << "Selection deve receber ou \"c\" ou \"d\"" << endl;
+	}
+}
+
+void Display::Init() {
+
+	//enviar 0x38 para inicializacao da linha de dados
+	Send_Data(0x38);
+	Selection('c');
+	Enable();
+	Enable();
+	Enable();
+	Enable();
+
+	//enviar 0x0F para fazer o LCD ON, CURSOR ON e CURSOR BLINKING ON
+	Send_Data(0x0F);
+	Selection('c');
+	Enable();
+
+	//enviar 0x06 para incrementar a posicao do cursor
+	Send_Data(0x06);
+	Selection('c');
+	Enable();
+
+	//enviar 0x01 para limpar o display e voltar o cursor
+	Send_Data(0x01);
+	Selection('c');
+	Enable();
+
+}
+
+void Display::Send_Data(int data) {
+	//funcao que recebe um dado em hexadecimal e escreve nos pinos DB0, DB1, DB2, ... DB7 os dados recebidos
+	int *DB = &GPIOs_value[3];
+	//cout << "Dados Recebidos: " << hex << data << endl;
+	for (int i = 0; i < 8; i++) {
+		int value;
+		char sValue[1];
+		value = data >> i;
+		value = 0x01 & value;
+		sprintf(sValue, "%d", value);
+		if (write(DB[i], sValue, 1) != 1) {
+			cout << "Nao foi possivel escrever no arquivo /sys/class/gpio" << i
+					<< "/value" << endl;
+		}
+	}
+}
+
+void Display::Enable() {
+	//funcao que gera um pulso no pino de ENABLE
+	int Enable = GPIOs_value[2];
+	usleep(WAIT_TIME);
+	if (write(Enable, "0", 1) != 1) {
+		cout << "Nao foi possivel escrever no arquivo /sys/class/gpio4/value"
+				<< endl;
+	}
+	usleep(WAIT_TIME);
+	if (write(Enable, "1", 1) != 1) {
+		cout << "Nao foi possivel escrever no arquivo /sys/class/gpio4/value"
+				<< endl;
+	}
+
+}
+
+void Display::Print(char *word) {
+	if ((strlen(word) - 1) > 32) {
+		//se o tamanho da palavra for maior que 32 bits (sem contar o /0)
+		//imprimir uma mensagem de erro
+		cout << "Erro. Insira uma palavra que tenha somente 32 caracteres."
+				<< endl;
+	} else {
+		//Command("Clear screen"); //Limpar a tela
+		//Command("Go to first line"); //volte para o inicio da primeira linha
+		for (unsigned int i = 0; i < (strlen(word)); i++) {
+			/*if (i == 16) {
+			 Command("Activate second line");
+			 Command("Go to second line");
+			 Command("LCD ON, Cursor ON, Cursor blinking ON");
+			 Send_Data(Conversor(word[i])); //enviar os dados para os pinos de dados
+			 Selection('d'); //selecao para dados
+			 Enable(); //Habilitar
+			 Command("Increment cursor");
+
+			 } else {
+			 */
+			Send_Data(word[i]); //enviar os dados para os pinos de dados
+			Selection('d'); //selecao para dados
+			Enable(); //Habilitar
+			//if (i != 15) {
+			Command("Increment cursor");
+			//}
+		}
+	}
+}
+
+void Display::Command(string command_name) {
+//Funcao que recebe os comandos a serem aplicados no display
+	if (command_name == "Increment cursor") {
+		Send_Data(0x06); //envia os dados do comando
+		Selection('c'); //atualiza o pino selecionando o modo de comando
+		Enable(); //Habilita o comando
+	} else if (command_name == "Clear screen") {
+		Send_Data(0x01); //envia os dados do comando
+		Selection('c'); //atualiza o pino selecionando o modo de comando
+		Enable(); //Habilita o comando
+	} else if (command_name == "Activate second line") {
+		Send_Data(0x3C);
+		Selection('c');
+		Enable();
+	} else if (command_name == "Go to second line") {
+		Send_Data(0xC0);
+		Selection('c');
+		Enable();
+	} else if (command_name == "LCD ON, Cursor ON, Cursor blinking ON") {
+		Send_Data(0x0F);
+		Selection('c');
+		Enable();
+	} else if (command_name == "Go to first line") {
+		Send_Data(0x80);
+		Selection('c');
+		Enable();
+	}
+
+}
+
+int Display::Conversor(char caractere) {
+//Converte um caracter um um numero em hexadecimal utilizado pelo registrador de dados
+//do display
+	if (caractere == 'a') {
+		return 0x61;
+	} else if (caractere == 'b') {
+		return 0x62;
+	} else if (caractere == 'c') {
+		return 0x63;
+	} else if (caractere == 'd') {
+		return 0x64;
+	} else if (caractere == 'e') {
+		return 0x65;
+	} else if (caractere == 'f') {
+		return 0x66;
+	} else if (caractere == 'g') {
+		return 0x67;
+	} else if (caractere == 'h') {
+		return 0x68;
+	} else if (caractere == 'i') {
+		return 0x69;
+	} else if (caractere == 'j') {
+		return 0x6A;
+	} else if (caractere == 'k') {
+		return 0x6B;
+	} else if (caractere == 'l') {
+		return 0x6C;
+	} else if (caractere == 'm') {
+		return 0x6D;
+	} else if (caractere == 'n') {
+		return 0x6E;
+	} else if (caractere == 'o') {
+		return 0x6F;
+	} else if (caractere == 'p') {
+		return 0x70;
+	} else if (caractere == 'q') {
+		return 0x71;
+	} else if (caractere == 'r') {
+		return 0x72;
+	} else if (caractere == 's') {
+		return 0x73;
+	} else if (caractere == 't') {
+		return 0x74;
+	} else if (caractere == 'u') {
+		return 0x75;
+	} else if (caractere == 'v') {
+		return 0x76;
+	} else if (caractere == 'w') {
+		return 0x77;
+	} else if (caractere == 'x') {
+		return 0x78;
+	} else if (caractere == 'y') {
+		return 0x79;
+	} else if (caractere == 'z') {
+		return 0x7A;
+	} else if (caractere == 'A') {
+		return 0x41;
+	} else if (caractere == 'B') {
+		return 0x42;
+	} else if (caractere == 'C') {
+		return 0x43;
+	} else if (caractere == 'D') {
+		return 0x44;
+	} else if (caractere == 'E') {
+		return 0x45;
+	} else if (caractere == 'F') {
+		return 0x46;
+	} else if (caractere == 'G') {
+		return 0x47;
+	} else if (caractere == 'H') {
+		return 0x48;
+	} else if (caractere == 'I') {
+		return 0x49;
+	} else if (caractere == 'J') {
+		return 0x4A;
+	} else if (caractere == 'K') {
+		return 0x4B;
+	} else if (caractere == 'L') {
+		return 0x4C;
+	} else if (caractere == 'M') {
+		return 0x4D;
+	} else if (caractere == 'N') {
+		return 0x4E;
+	} else if (caractere == 'O') {
+		return 0x4F;
+	} else if (caractere == 'P') {
+		return 0x50;
+	} else if (caractere == 'Q') {
+		return 0x51;
+	} else if (caractere == 'R') {
+		return 0x52;
+	} else if (caractere == 'S') {
+		return 0x53;
+	} else if (caractere == 'T') {
+		return 0x54;
+	} else if (caractere == 'U') {
+		return 0x55;
+	} else if (caractere == 'V') {
+		return 0x56;
+	} else if (caractere == 'W') {
+		return 0x57;
+	} else if (caractere == 'X') {
+		return 0x58;
+	} else if (caractere == 'Y') {
+		return 0x59;
+	} else if (caractere == 'Z') {
+		return 0x5A;
+	} else if (caractere == '0') {
+		return 0x30;
+	} else if (caractere == '1') {
+		return 0x31;
+	} else if (caractere == '2') {
+		return 0x32;
+	} else if (caractere == '3') {
+		return 0x33;
+	} else if (caractere == '4') {
+		return 0x34;
+	} else if (caractere == '5') {
+		return 0x35;
+	} else if (caractere == '6') {
+		return 0x36;
+	} else if (caractere == '7') {
+		return 0x37;
+	} else if (caractere == '8') {
+		return 0x38;
+	} else if (caractere == '9') {
+		return 0x39;
+	} else if (caractere == ':') {
+		return 0x3A;
+	} else if (caractere == ' ') {
+		return 0x20;
+	} else if (caractere == '*') {
+		return 0x2A;
+	} else if (caractere == '#') {
+		return 0x23;
+	} else if (caractere == ',') {
+		return 0x2C;
+	} else if (caractere == '.') {
+		return 0x2E;
+	} else if (caractere == '%') {
+		return 0x25;
+	} else if (caractere == '&') {
+		return 0x26;
+	} else if (caractere == '>') {
+		return 0x3E;
+	} else if (caractere == '<') {
+		return 0x3C;
+	} else if (caractere == '-') {
+		return 0x2D;
+	} else if (caractere == '!') {
+		return 0x21;
+	} else if (caractere == '?') {
+		return 0x3F;
+	} else {
+		return 0;
+	}
+
+}
+

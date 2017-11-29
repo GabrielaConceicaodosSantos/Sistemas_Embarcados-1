@@ -101,7 +101,7 @@ int main(void)
 	else
 	{
 		signal(SIGINT, ctrl_c);
-		pfd.fd = open("/sys/class/gpio/gpio5/value",O_RDONLY)
+		pfd.fd = open("/sys/class/gpio/gpio5/value",O_RDONLY);
 		pfd.events = POLLPRI | POLLERR;
 		pdf.revents = 0;
 		while(encerrar==0)

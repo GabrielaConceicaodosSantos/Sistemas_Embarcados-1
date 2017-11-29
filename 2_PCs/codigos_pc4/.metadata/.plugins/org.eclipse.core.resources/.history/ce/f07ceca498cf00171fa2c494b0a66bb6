@@ -1,0 +1,43 @@
+//============================================================================
+// Name        : Botoes.cpp
+// Author      : Leonardo Amorim
+// Version     :
+// Copyright   : Your copyright notice
+// Description : Hello World in C++, Ansi-style
+//============================================================================
+
+#include <iostream>
+using namespace std;
+#include "gpio_dev_mem.h"
+#include <pthread.h>
+
+#define BTN1 3
+#define BTN2 4
+
+void *verifica_botao(void){
+
+	while(1){
+		puts("Pressione o botao 1...");
+				while(GET_GPIO(BTN1));
+				puts("Botao pressionado");
+				usleep(150000);
+				while(GET_GPIO(BTN1)==0);
+				puts("Botao solto");
+				usleep(150000);
+	}
+
+}
+
+int main() {
+	setup_io();
+	INP_GPIO(BTN1);
+	INP_GPIO(BTN2);
+	pthread_t thread_id[1];
+
+
+
+
+
+
+	return 0;
+}

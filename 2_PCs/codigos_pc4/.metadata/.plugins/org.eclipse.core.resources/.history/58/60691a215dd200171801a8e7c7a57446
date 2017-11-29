@@ -1,0 +1,23 @@
+#include <iostream>
+#include "Display.h"
+using namespace std;
+
+int main(){
+
+	Display display;
+	display.Setup();
+	display.Print("Josy e Leo si ama!");
+
+	string entrada;
+	cout << "Digite \"sair\" para sair do programa." << endl;
+	while(1){
+		cin >> entrada;
+		if(entrada == "sair"){
+			break;
+		}
+	}
+
+	cout << "Saindo do programa." << endl;
+
+	return 0;
+}

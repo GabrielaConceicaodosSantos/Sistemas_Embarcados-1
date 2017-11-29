@@ -1,0 +1,1670 @@
+03:12:20 **** Incremental Build of configuration Debug for project Projeto_Final ****
+make all 
+Building file: ../src/main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.cpp"
+../src/main.cpp: In function ‘int main()’:
+../src/main.cpp:33:41: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+    display.Print("Navegacao pressionado");
+                                         ^
+../src/main.cpp:38:39: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+    display.Print("Selecao pressionado");
+                                       ^
+../src/main.cpp:43:38: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+    display.Print("Voltar pressionado");
+                                      ^
+Finished building: ../src/main.cpp
+ 
+Building target: Projeto_Final
+Invoking: GCC C++ Linker
+g++  -o "Projeto_Final"  ./src/Botao.o ./src/Display.o ./src/main.o   -lpthread
+Finished building target: Projeto_Final
+ 
+03:16:37 **** Incremental Build of configuration Debug for project Projeto_Final ****
+make all 
+Building file: ../src/Display.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Display.d" -MT"src/Display.d" -o "src/Display.o" "../src/Display.cpp"
+Finished building: ../src/Display.cpp
+ 
+Building file: ../src/main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.cpp"
+../src/main.cpp: In function ‘int main()’:
+../src/main.cpp:33:41: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+    display.Print("Navegacao pressionado");
+                                         ^
+../src/main.cpp:38:39: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+    display.Print("Selecao pressionado");
+                                       ^
+../src/main.cpp:43:38: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+    display.Print("Voltar pressionado");
+                                      ^
+Finished building: ../src/main.cpp
+ 
+Building target: Projeto_Final
+Invoking: GCC C++ Linker
+g++  -o "Projeto_Final"  ./src/Botao.o ./src/Display.o ./src/main.o   -lpthread
+Finished building target: Projeto_Final
+ 
+03:17:16 **** Incremental Build of configuration Debug for project Projeto_Final ****
+make all 
+make: Nothing to be done for 'all'.
+03:18:46 **** Incremental Build of configuration Debug for project Projeto_Final ****
+make all 
+Building file: ../src/main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.cpp"
+../src/main.cpp: In function ‘int main()’:
+../src/main.cpp:36:41: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+    display.Print("Navegacao pressionado");
+                                         ^
+../src/main.cpp:41:39: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+    display.Print("Selecao pressionado");
+                                       ^
+../src/main.cpp:46:38: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+    display.Print("Voltar pressionado");
+                                      ^
+Finished building: ../src/main.cpp
+ 
+Building target: Projeto_Final
+Invoking: GCC C++ Linker
+g++  -o "Projeto_Final"  ./src/Botao.o ./src/Display.o ./src/main.o   -lpthread
+Finished building target: Projeto_Final
+ 
+03:19:35 **** Incremental Build of configuration Debug for project Projeto_Final ****
+make all 
+Building file: ../src/Display.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Display.d" -MT"src/Display.d" -o "src/Display.o" "../src/Display.cpp"
+Finished building: ../src/Display.cpp
+ 
+Building file: ../src/main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.cpp"
+../src/main.cpp: In function ‘int main()’:
+../src/main.cpp:36:41: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+    display.Print("Navegacao pressionado");
+                                         ^
+../src/main.cpp:41:39: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+    display.Print("Selecao pressionado");
+                                       ^
+../src/main.cpp:46:38: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+    display.Print("Voltar pressionado");
+                                      ^
+Finished building: ../src/main.cpp
+ 
+Building target: Projeto_Final
+Invoking: GCC C++ Linker
+g++  -o "Projeto_Final"  ./src/Botao.o ./src/Display.o ./src/main.o   -lpthread
+Finished building target: Projeto_Final
+ 
+03:21:57 **** Incremental Build of configuration Debug for project Projeto_Final ****
+make all 
+Building file: ../src/Display.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Display.d" -MT"src/Display.d" -o "src/Display.o" "../src/Display.cpp"
+Finished building: ../src/Display.cpp
+ 
+Building file: ../src/main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.cpp"
+../src/main.cpp: In function ‘int main()’:
+../src/main.cpp:36:41: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+    display.Print("Navegacao pressionado");
+                                         ^
+../src/main.cpp:41:39: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+    display.Print("Selecao pressionado");
+                                       ^
+../src/main.cpp:46:38: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+    display.Print("Voltar pressionado");
+                                      ^
+Finished building: ../src/main.cpp
+ 
+Building target: Projeto_Final
+Invoking: GCC C++ Linker
+g++  -o "Projeto_Final"  ./src/Botao.o ./src/Display.o ./src/main.o   -lpthread
+Finished building target: Projeto_Final
+ 
+17:09:10 **** Incremental Build of configuration Debug for project Projeto_Final ****
+make all 
+Building file: ../src/Botao.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Botao.d" -MT"src/Botao.d" -o "src/Botao.o" "../src/Botao.cpp"
+Finished building: ../src/Botao.cpp
+ 
+Building file: ../src/Display.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Display.d" -MT"src/Display.d" -o "src/Display.o" "../src/Display.cpp"
+../src/Display.cpp:210:1: error: expected declaration before ‘}’ token
+ }
+ ^
+make: *** [src/Display.o] Error 1
+src/subdir.mk:27: recipe for target 'src/Display.o' failed
+17:10:51 **** Incremental Build of configuration Debug for project Projeto_Final ****
+make all 
+Building file: ../src/Display.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Display.d" -MT"src/Display.d" -o "src/Display.o" "../src/Display.cpp"
+Finished building: ../src/Display.cpp
+ 
+Building file: ../src/ProjetoFinal.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/ProjetoFinal.d" -MT"src/ProjetoFinal.d" -o "src/ProjetoFinal.o" "../src/ProjetoFinal.cpp"
+../src/ProjetoFinal.cpp: In function ‘void Tomar_Decisao(Decisao*)’:
+../src/ProjetoFinal.cpp:3:13: error: invalid use of incomplete type ‘struct Decisao’
+  if (decisao->opcao == 0) {
+             ^~
+src/subdir.mk:27: recipe for target 'src/ProjetoFinal.o' failed
+../src/ProjetoFinal.cpp:1:27: note: forward declaration of ‘struct Decisao’
+ void Tomar_Decisao(struct Decisao *decisao) {
+                           ^~~~~~~
+../src/ProjetoFinal.cpp:4:14: error: invalid use of incomplete type ‘struct Decisao’
+   if (decisao->navegar == 0) {
+              ^~
+../src/ProjetoFinal.cpp:1:27: note: forward declaration of ‘struct Decisao’
+ void Tomar_Decisao(struct Decisao *decisao) {
+                           ^~~~~~~
+../src/ProjetoFinal.cpp:5:11: error: invalid use of incomplete type ‘struct Decisao’
+    decisao->opcao = 1;
+           ^~
+../src/ProjetoFinal.cpp:1:27: note: forward declaration of ‘struct Decisao’
+ void Tomar_Decisao(struct Decisao *decisao) {
+                           ^~~~~~~
+../src/ProjetoFinal.cpp:6:21: error: invalid use of incomplete type ‘struct Decisao’
+   } else if (decisao->selecionar == 0) {
+                     ^~
+../src/ProjetoFinal.cpp:1:27: note: forward declaration of ‘struct Decisao’
+ void Tomar_Decisao(struct Decisao *decisao) {
+                           ^~~~~~~
+../src/ProjetoFinal.cpp:7:11: error: invalid use of incomplete type ‘struct Decisao’
+    decisao->opcao = 2;
+           ^~
+../src/ProjetoFinal.cpp:1:27: note: forward declaration of ‘struct Decisao’
+ void Tomar_Decisao(struct Decisao *decisao) {
+                           ^~~~~~~
+../src/ProjetoFinal.cpp:11:18: error: invalid use of incomplete type ‘struct Decisao’
+  else if (decisao->opcao == 1) {
+                  ^~
+../src/ProjetoFinal.cpp:1:27: note: forward declaration of ‘struct Decisao’
+ void Tomar_Decisao(struct Decisao *decisao) {
+                           ^~~~~~~
+../src/ProjetoFinal.cpp:12:14: error: invalid use of incomplete type ‘struct Decisao’
+   if (decisao->navegar == 0) {
+              ^~
+../src/ProjetoFinal.cpp:1:27: note: forward declaration of ‘struct Decisao’
+ void Tomar_Decisao(struct Decisao *decisao) {
+                           ^~~~~~~
+../src/ProjetoFinal.cpp:13:11: error: invalid use of incomplete type ‘struct Decisao’
+    decisao->opcao = 0;
+           ^~
+../src/ProjetoFinal.cpp:1:27: note: forward declaration of ‘struct Decisao’
+ void Tomar_Decisao(struct Decisao *decisao) {
+                           ^~~~~~~
+../src/ProjetoFinal.cpp:14:21: error: invalid use of incomplete type ‘struct Decisao’
+   } else if (decisao->selecionar == 0) {
+                     ^~
+../src/ProjetoFinal.cpp:1:27: note: forward declaration of ‘struct Decisao’
+ void Tomar_Decisao(struct Decisao *decisao) {
+                           ^~~~~~~
+../src/ProjetoFinal.cpp:15:11: error: invalid use of incomplete type ‘struct Decisao’
+    decisao->opcao = 7;
+           ^~
+../src/ProjetoFinal.cpp:1:27: note: forward declaration of ‘struct Decisao’
+ void Tomar_Decisao(struct Decisao *decisao) {
+                           ^~~~~~~
+../src/ProjetoFinal.cpp:17:20: error: invalid use of incomplete type ‘struct Decisao’
+  } else if (decisao->opcao == 2) {
+                    ^~
+../src/ProjetoFinal.cpp:1:27: note: forward declaration of ‘struct Decisao’
+ void Tomar_Decisao(struct Decisao *decisao) {
+                           ^~~~~~~
+../src/ProjetoFinal.cpp:18:14: error: invalid use of incomplete type ‘struct Decisao’
+   if (decisao->navegar == 0) {
+              ^~
+../src/ProjetoFinal.cpp:1:27: note: forward declaration of ‘struct Decisao’
+ void Tomar_Decisao(struct Decisao *decisao) {
+                           ^~~~~~~
+../src/ProjetoFinal.cpp:19:11: error: invalid use of incomplete type ‘struct Decisao’
+    decisao->opcao = 3;
+           ^~
+../src/ProjetoFinal.cpp:1:27: note: forward declaration of ‘struct Decisao’
+ void Tomar_Decisao(struct Decisao *decisao) {
+                           ^~~~~~~
+../src/ProjetoFinal.cpp:20:21: error: invalid use of incomplete type ‘struct Decisao’
+   } else if (decisao->selecionar == 0) {
+                     ^~
+../src/ProjetoFinal.cpp:1:27: note: forward declaration of ‘struct Decisao’
+ void Tomar_Decisao(struct Decisao *decisao) {
+                           ^~~~~~~
+../src/ProjetoFinal.cpp:22:11: error: invalid use of incomplete type ‘struct Decisao’
+    decisao->opcao = 0; //por enquanto nao esta configurado
+           ^~
+../src/ProjetoFinal.cpp:1:27: note: forward declaration of ‘struct Decisao’
+ void Tomar_Decisao(struct Decisao *decisao) {
+                           ^~~~~~~
+../src/ProjetoFinal.cpp:24:21: error: invalid use of incomplete type ‘struct Decisao’
+   } else if (decisao->voltar == 0) {
+                     ^~
+../src/ProjetoFinal.cpp:1:27: note: forward declaration of ‘struct Decisao’
+ void Tomar_Decisao(struct Decisao *decisao) {
+                           ^~~~~~~
+../src/ProjetoFinal.cpp:25:11: error: invalid use of incomplete type ‘struct Decisao’
+    decisao->opcao = 0;
+           ^~
+../src/ProjetoFinal.cpp:1:27: note: forward declaration of ‘struct Decisao’
+ void Tomar_Decisao(struct Decisao *decisao) {
+                           ^~~~~~~
+../src/ProjetoFinal.cpp:27:20: error: invalid use of incomplete type ‘struct Decisao’
+  } else if (decisao->opcao == 3) {
+                    ^~
+../src/ProjetoFinal.cpp:1:27: note: forward declaration of ‘struct Decisao’
+ void Tomar_Decisao(struct Decisao *decisao) {
+                           ^~~~~~~
+../src/ProjetoFinal.cpp:28:14: error: invalid use of incomplete type ‘struct Decisao’
+   if (decisao->navegar == 0) {
+              ^~
+../src/ProjetoFinal.cpp:1:27: note: forward declaration of ‘struct Decisao’
+ void Tomar_Decisao(struct Decisao *decisao) {
+                           ^~~~~~~
+../src/ProjetoFinal.cpp:29:11: error: invalid use of incomplete type ‘struct Decisao’
+    decisao->opcao = 4;
+           ^~
+../src/ProjetoFinal.cpp:1:27: note: forward declaration of ‘struct Decisao’
+ void Tomar_Decisao(struct Decisao *decisao) {
+                           ^~~~~~~
+../src/ProjetoFinal.cpp:30:21: error: invalid use of incomplete type ‘struct Decisao’
+   } else if (decisao->selecionar == 0) {
+                     ^~
+../src/ProjetoFinal.cpp:1:27: note: forward declaration of ‘struct Decisao’
+ void Tomar_Decisao(struct Decisao *decisao) {
+                           ^~~~~~~
+../src/ProjetoFinal.cpp:32:11: error: invalid use of incomplete type ‘struct Decisao’
+    decisao->opcao = 0; //por enquanto nao esta configurado
+           ^~
+../src/ProjetoFinal.cpp:1:27: note: forward declaration of ‘struct Decisao’
+ void Tomar_Decisao(struct Decisao *decisao) {
+                           ^~~~~~~
+../src/ProjetoFinal.cpp:34:21: error: invalid use of incomplete type ‘struct Decisao’
+   } else if (decisao->voltar == 0) {
+                     ^~
+../src/ProjetoFinal.cpp:1:27: note: forward declaration of ‘struct Decisao’
+ void Tomar_Decisao(struct Decisao *decisao) {
+                           ^~~~~~~
+../src/ProjetoFinal.cpp:35:11: error: invalid use of incomplete type ‘struct Decisao’
+    decisao->opcao = 0;
+           ^~
+../src/ProjetoFinal.cpp:1:27: note: forward declaration of ‘struct Decisao’
+ void Tomar_Decisao(struct Decisao *decisao) {
+                           ^~~~~~~
+../src/ProjetoFinal.cpp:37:20: error: invalid use of incomplete type ‘struct Decisao’
+  } else if (decisao->opcao == 4) {
+                    ^~
+../src/ProjetoFinal.cpp:1:27: note: forward declaration of ‘struct Decisao’
+ void Tomar_Decisao(struct Decisao *decisao) {
+                           ^~~~~~~
+../src/ProjetoFinal.cpp:38:14: error: invalid use of incomplete type ‘struct Decisao’
+   if (decisao->navegar == 0) {
+              ^~
+../src/ProjetoFinal.cpp:1:27: note: forward declaration of ‘struct Decisao’
+ void Tomar_Decisao(struct Decisao *decisao) {
+                           ^~~~~~~
+../src/ProjetoFinal.cpp:39:11: error: invalid use of incomplete type ‘struct Decisao’
+    decisao->opcao = 5;
+           ^~
+../src/ProjetoFinal.cpp:1:27: note: forward declaration of ‘struct Decisao’
+ void Tomar_Decisao(struct Decisao *decisao) {
+                           ^~~~~~~
+../src/ProjetoFinal.cpp:40:21: error: invalid use of incomplete type ‘struct Decisao’
+   } else if (decisao->selecionar == 0) {
+                     ^~
+../src/ProjetoFinal.cpp:1:27: note: forward declaration of ‘struct Decisao’
+ void Tomar_Decisao(struct Decisao *decisao) {
+                           ^~~~~~~
+../src/ProjetoFinal.cpp:42:11: error: invalid use of incomplete type ‘struct Decisao’
+    decisao->opcao = 0; //por enquanto nao esta configurado
+           ^~
+../src/ProjetoFinal.cpp:1:27: note: forward declaration of ‘struct Decisao’
+ void Tomar_Decisao(struct Decisao *decisao) {
+                           ^~~~~~~
+../src/ProjetoFinal.cpp:44:21: error: invalid use of incomplete type ‘struct Decisao’
+   } else if (decisao->voltar == 0) {
+                     ^~
+../src/ProjetoFinal.cpp:1:27: note: forward declaration of ‘struct Decisao’
+ void Tomar_Decisao(struct Decisao *decisao) {
+                           ^~~~~~~
+../src/ProjetoFinal.cpp:45:11: error: invalid use of incomplete type ‘struct Decisao’
+    decisao->opcao = 0;
+           ^~
+../src/ProjetoFinal.cpp:1:27: note: forward declaration of ‘struct Decisao’
+ void Tomar_Decisao(struct Decisao *decisao) {
+                           ^~~~~~~
+../src/ProjetoFinal.cpp:47:20: error: invalid use of incomplete type ‘struct Decisao’
+  } else if (decisao->opcao == 5) {
+                    ^~
+../src/ProjetoFinal.cpp:1:27: note: forward declaration of ‘struct Decisao’
+ void Tomar_Decisao(struct Decisao *decisao) {
+                           ^~~~~~~
+../src/ProjetoFinal.cpp:48:14: error: invalid use of incomplete type ‘struct Decisao’
+   if (decisao->navegar == 0) {
+              ^~
+../src/ProjetoFinal.cpp:1:27: note: forward declaration of ‘struct Decisao’
+ void Tomar_Decisao(struct Decisao *decisao) {
+                           ^~~~~~~
+../src/ProjetoFinal.cpp:49:11: error: invalid use of incomplete type ‘struct Decisao’
+    decisao->opcao = 6;
+           ^~
+../src/ProjetoFinal.cpp:1:27: note: forward declaration of ‘struct Decisao’
+ void Tomar_Decisao(struct Decisao *decisao) {
+                           ^~~~~~~
+../src/ProjetoFinal.cpp:50:21: error: invalid use of incomplete type ‘struct Decisao’
+   } else if (decisao->selecionar == 0) {
+                     ^~
+../src/ProjetoFinal.cpp:1:27: note: forward declaration of ‘struct Decisao’
+ void Tomar_Decisao(struct Decisao *decisao) {
+                           ^~~~~~~
+../src/ProjetoFinal.cpp:52:11: error: invalid use of incomplete type ‘struct Decisao’
+    decisao->opcao = 0; //por enquanto nao esta configurado
+           ^~
+../src/ProjetoFinal.cpp:1:27: note: forward declaration of ‘struct Decisao’
+ void Tomar_Decisao(struct Decisao *decisao) {
+                           ^~~~~~~
+../src/ProjetoFinal.cpp:54:21: error: invalid use of incomplete type ‘struct Decisao’
+   } else if (decisao->voltar == 0) {
+                     ^~
+../src/ProjetoFinal.cpp:1:27: note: forward declaration of ‘struct Decisao’
+ void Tomar_Decisao(struct Decisao *decisao) {
+                           ^~~~~~~
+../src/ProjetoFinal.cpp:55:11: error: invalid use of incomplete type ‘struct Decisao’
+    decisao->opcao = 0;
+           ^~
+../src/ProjetoFinal.cpp:1:27: note: forward declaration of ‘struct Decisao’
+ void Tomar_Decisao(struct Decisao *decisao) {
+                           ^~~~~~~
+../src/ProjetoFinal.cpp:57:20: error: invalid use of incomplete type ‘struct Decisao’
+  } else if (decisao->opcao == 6) {
+                    ^~
+../src/ProjetoFinal.cpp:1:27: note: forward declaration of ‘struct Decisao’
+ void Tomar_Decisao(struct Decisao *decisao) {
+                           ^~~~~~~
+../src/ProjetoFinal.cpp:58:14: error: invalid use of incomplete type ‘struct Decisao’
+   if (decisao->navegar == 0) {
+              ^~
+../src/ProjetoFinal.cpp:1:27: note: forward declaration of ‘struct Decisao’
+ void Tomar_Decisao(struct Decisao *decisao) {
+                           ^~~~~~~
+../src/ProjetoFinal.cpp:59:11: error: invalid use of incomplete type ‘struct Decisao’
+    decisao->opcao = 2;
+           ^~
+../src/ProjetoFinal.cpp:1:27: note: forward declaration of ‘struct Decisao’
+ void Tomar_Decisao(struct Decisao *decisao) {
+                           ^~~~~~~
+../src/ProjetoFinal.cpp:60:21: error: invalid use of incomplete type ‘struct Decisao’
+   } else if (decisao->selecionar == 0) {
+                     ^~
+../src/ProjetoFinal.cpp:1:27: note: forward declaration of ‘struct Decisao’
+ void Tomar_Decisao(struct Decisao *decisao) {
+                           ^~~~~~~
+../src/ProjetoFinal.cpp:62:11: error: invalid use of incomplete type ‘struct Decisao’
+    decisao->opcao = 0; //por enquanto nao esta configurado
+           ^~
+../src/ProjetoFinal.cpp:1:27: note: forward declaration of ‘struct Decisao’
+ void Tomar_Decisao(struct Decisao *decisao) {
+                           ^~~~~~~
+../src/ProjetoFinal.cpp:64:21: error: invalid use of incomplete type ‘struct Decisao’
+   } else if (decisao->voltar) {
+                     ^~
+../src/ProjetoFinal.cpp:1:27: note: forward declaration of ‘struct Decisao’
+ void Tomar_Decisao(struct Decisao *decisao) {
+                           ^~~~~~~
+../src/ProjetoFinal.cpp:65:11: error: invalid use of incomplete type ‘struct Decisao’
+    decisao->opcao = 0;
+           ^~
+../src/ProjetoFinal.cpp:1:27: note: forward declaration of ‘struct Decisao’
+ void Tomar_Decisao(struct Decisao *decisao) {
+                           ^~~~~~~
+../src/ProjetoFinal.cpp:67:20: error: invalid use of incomplete type ‘struct Decisao’
+  } else if (decisao->opcao == 7) {
+                    ^~
+../src/ProjetoFinal.cpp:1:27: note: forward declaration of ‘struct Decisao’
+ void Tomar_Decisao(struct Decisao *decisao) {
+                           ^~~~~~~
+../src/ProjetoFinal.cpp:68:14: error: invalid use of incomplete type ‘struct Decisao’
+   if (decisao->navegar == 0) {
+              ^~
+../src/ProjetoFinal.cpp:1:27: note: forward declaration of ‘struct Decisao’
+ void Tomar_Decisao(struct Decisao *decisao) {
+                           ^~~~~~~
+../src/ProjetoFinal.cpp:69:11: error: invalid use of incomplete type ‘struct Decisao’
+    decisao->opcao = 8;
+           ^~
+../src/ProjetoFinal.cpp:1:27: note: forward declaration of ‘struct Decisao’
+ void Tomar_Decisao(struct Decisao *decisao) {
+                           ^~~~~~~
+../src/ProjetoFinal.cpp:70:21: error: invalid use of incomplete type ‘struct Decisao’
+   } else if (decisao->selecionar == 0) {
+                     ^~
+../src/ProjetoFinal.cpp:1:27: note: forward declaration of ‘struct Decisao’
+ void Tomar_Decisao(struct Decisao *decisao) {
+                           ^~~~~~~
+../src/ProjetoFinal.cpp:72:11: error: invalid use of incomplete type ‘struct Decisao’
+    decisao->opcao = 1; //ainda nao configurado
+           ^~
+../src/ProjetoFinal.cpp:1:27: note: forward declaration of ‘struct Decisao’
+ void Tomar_Decisao(struct Decisao *decisao) {
+                           ^~~~~~~
+../src/ProjetoFinal.cpp:73:21: error: invalid use of incomplete type ‘struct Decisao’
+   } else if (decisao->voltar == 1) {
+                     ^~
+../src/ProjetoFinal.cpp:1:27: note: forward declaration of ‘struct Decisao’
+ void Tomar_Decisao(struct Decisao *decisao) {
+                           ^~~~~~~
+../src/ProjetoFinal.cpp:74:11: error: invalid use of incomplete type ‘struct Decisao’
+    decisao->opcao = 1;
+           ^~
+../src/ProjetoFinal.cpp:1:27: note: forward declaration of ‘struct Decisao’
+ void Tomar_Decisao(struct Decisao *decisao) {
+                           ^~~~~~~
+../src/ProjetoFinal.cpp:76:20: error: invalid use of incomplete type ‘struct Decisao’
+  } else if (decisao->opcao == 8) {
+                    ^~
+../src/ProjetoFinal.cpp:1:27: note: forward declaration of ‘struct Decisao’
+ void Tomar_Decisao(struct Decisao *decisao) {
+                           ^~~~~~~
+../src/ProjetoFinal.cpp:77:14: error: invalid use of incomplete type ‘struct Decisao’
+   if (decisao->navegar == 0) {
+              ^~
+../src/ProjetoFinal.cpp:1:27: note: forward declaration of ‘struct Decisao’
+ void Tomar_Decisao(struct Decisao *decisao) {
+                           ^~~~~~~
+../src/ProjetoFinal.cpp:78:11: error: invalid use of incomplete type ‘struct Decisao’
+    decisao->opcao = 7;
+           ^~
+../src/ProjetoFinal.cpp:1:27: note: forward declaration of ‘struct Decisao’
+ void Tomar_Decisao(struct Decisao *decisao) {
+                           ^~~~~~~
+../src/ProjetoFinal.cpp:79:21: error: invalid use of incomplete type ‘struct Decisao’
+   } else if (decisao->selecionar == 0) {
+                     ^~
+../src/ProjetoFinal.cpp:1:27: note: forward declaration of ‘struct Decisao’
+ void Tomar_Decisao(struct Decisao *decisao) {
+                           ^~~~~~~
+../src/ProjetoFinal.cpp:81:11: error: invalid use of incomplete type ‘struct Decisao’
+    decisao->opcao = 1; //ainda nao configurado
+           ^~
+../src/ProjetoFinal.cpp:1:27: note: forward declaration of ‘struct Decisao’
+ void Tomar_Decisao(struct Decisao *decisao) {
+                           ^~~~~~~
+../src/ProjetoFinal.cpp:82:21: error: invalid use of incomplete type ‘struct Decisao’
+   } else if (decisao->voltar == 0) {
+                     ^~
+../src/ProjetoFinal.cpp:1:27: note: forward declaration of ‘struct Decisao’
+ void Tomar_Decisao(struct Decisao *decisao) {
+                           ^~~~~~~
+../src/ProjetoFinal.cpp:83:11: error: invalid use of incomplete type ‘struct Decisao’
+    decisao->opcao = 1;
+           ^~
+../src/ProjetoFinal.cpp:1:27: note: forward declaration of ‘struct Decisao’
+ void Tomar_Decisao(struct Decisao *decisao) {
+                           ^~~~~~~
+../src/ProjetoFinal.cpp: At global scope:
+../src/ProjetoFinal.cpp:88:45: error: ‘Display’ has not been declared
+ void Realizar_Acao(struct Decisao *decisao, Display *display) {
+                                             ^~~~~~~
+../src/ProjetoFinal.cpp: In function ‘void Realizar_Acao(Decisao*, int*)’:
+../src/ProjetoFinal.cpp:89:13: error: invalid use of incomplete type ‘struct Decisao’
+  if (decisao->opcao == 0) {
+             ^~
+../src/ProjetoFinal.cpp:1:27: note: forward declaration of ‘struct Decisao’
+ void Tomar_Decisao(struct Decisao *decisao) {
+                           ^~~~~~~
+../src/ProjetoFinal.cpp:90:58: error: ‘Acao_Display’ was not declared in this scope
+   Acao_Display(display, "1. Op prof (x)", "2. Op Alu ( )");
+                                                          ^
+../src/ProjetoFinal.cpp:91:20: error: invalid use of incomplete type ‘struct Decisao’
+  } else if (decisao->opcao == 1) {
+                    ^~
+../src/ProjetoFinal.cpp:1:27: note: forward declaration of ‘struct Decisao’
+ void Tomar_Decisao(struct Decisao *decisao) {
+                           ^~~~~~~
+../src/ProjetoFinal.cpp:92:58: error: ‘Acao_Display’ was not declared in this scope
+   Acao_Display(display, "1. Op prof ( )", "2. Op Alu ( )");
+                                                          ^
+../src/ProjetoFinal.cpp:94:20: error: invalid use of incomplete type ‘struct Decisao’
+  } else if (decisao->opcao == 2) {
+                    ^~
+../src/ProjetoFinal.cpp:1:27: note: forward declaration of ‘struct Decisao’
+ void Tomar_Decisao(struct Decisao *decisao) {
+                           ^~~~~~~
+../src/ProjetoFinal.cpp:95:58: error: ‘Acao_Display’ was not declared in this scope
+   Acao_Display(display, "Cad Turma (x)", "Ver Turmas ( )");
+                                                          ^
+../src/ProjetoFinal.cpp:96:20: error: invalid use of incomplete type ‘struct Decisao’
+  } else if (decisao->opcao == 3) {
+                    ^~
+../src/ProjetoFinal.cpp:1:27: note: forward declaration of ‘struct Decisao’
+ void Tomar_Decisao(struct Decisao *decisao) {
+                           ^~~~~~~
+../src/ProjetoFinal.cpp:97:58: error: ‘Acao_Display’ was not declared in this scope
+   Acao_Display(display, "Cad Turma ( )", "Ver Turmas (x)");
+                                                          ^
+../src/ProjetoFinal.cpp:98:20: error: invalid use of incomplete type ‘struct Decisao’
+  } else if (decisao->opcao == 4) {
+                    ^~
+../src/ProjetoFinal.cpp:1:27: note: forward declaration of ‘struct Decisao’
+ void Tomar_Decisao(struct Decisao *decisao) {
+                           ^~~~~~~
+../src/ProjetoFinal.cpp:99:58: error: ‘Acao_Display’ was not declared in this scope
+   Acao_Display(display, "Excl Turma (x)", "Cad Aluno ( )");
+                                                          ^
+../src/ProjetoFinal.cpp:100:20: error: invalid use of incomplete type ‘struct Decisao’
+  } else if (decisao->opcao == 5) {
+                    ^~
+../src/ProjetoFinal.cpp:1:27: note: forward declaration of ‘struct Decisao’
+ void Tomar_Decisao(struct Decisao *decisao) {
+                           ^~~~~~~
+../src/ProjetoFinal.cpp:101:58: error: ‘Acao_Display’ was not declared in this scope
+   Acao_Display(display, "Excl Turma ( )", "Cad Aluno (x)");
+                                                          ^
+../src/ProjetoFinal.cpp:102:20: error: invalid use of incomplete type ‘struct Decisao’
+  } else if (decisao->opcao == 6) {
+                    ^~
+../src/ProjetoFinal.cpp:1:27: note: forward declaration of ‘struct Decisao’
+ void Tomar_Decisao(struct Decisao *decisao) {
+                           ^~~~~~~
+../src/ProjetoFinal.cpp:103:54: error: ‘Acao_Display’ was not declared in this scope
+   Acao_Display(display, "Excl Aluno (x)", "Voltar...");
+                                                      ^
+../src/ProjetoFinal.cpp:104:20: error: invalid use of incomplete type ‘struct Decisao’
+  } else if (decisao->opcao == 7) {
+                    ^~
+../src/ProjetoFinal.cpp:1:27: note: forward declaration of ‘struct Decisao’
+ void Tomar_Decisao(struct Decisao *decisao) {
+                           ^~~~~~~
+../src/ProjetoFinal.cpp:105:55: error: ‘Acao_Display’ was not declared in this scope
+   Acao_Display(display, "Reg Pres (x)", "Ver Pres ( )");
+                                                       ^
+../src/ProjetoFinal.cpp:106:20: error: invalid use of incomplete type ‘struct Decisao’
+  } else if (decisao->opcao == 8) {
+                    ^~
+../src/ProjetoFinal.cpp:1:27: note: forward declaration of ‘struct Decisao’
+ void Tomar_Decisao(struct Decisao *decisao) {
+                           ^~~~~~~
+../src/ProjetoFinal.cpp:107:55: error: ‘Acao_Display’ was not declared in this scope
+   Acao_Display(display, "Reg Pres ( )", "Ver Pres (x)");
+                                                       ^
+../src/ProjetoFinal.cpp: At global scope:
+../src/ProjetoFinal.cpp:111:19: error: variable or field ‘Acao_Display’ declared void
+ void Acao_Display(Display *display, char *str1, char *str2) {
+                   ^~~~~~~
+../src/ProjetoFinal.cpp:111:19: error: ‘Display’ was not declared in this scope
+../src/ProjetoFinal.cpp:111:28: error: ‘display’ was not declared in this scope
+ void Acao_Display(Display *display, char *str1, char *str2) {
+                            ^~~~~~~
+../src/ProjetoFinal.cpp:111:37: error: expected primary-expression before ‘char’
+ void Acao_Display(Display *display, char *str1, char *str2) {
+                                     ^~~~
+../src/ProjetoFinal.cpp:111:49: error: expected primary-expression before ‘char’
+ void Acao_Display(Display *display, char *str1, char *str2) {
+                                                 ^~~~
+make: *** [src/ProjetoFinal.o] Error 1
+17:12:11 **** Incremental Build of configuration Debug for project Projeto_Final ****
+make all 
+Building file: ../src/ProjetoFinal.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/ProjetoFinal.d" -MT"src/ProjetoFinal.d" -o "src/ProjetoFinal.o" "../src/ProjetoFinal.cpp"
+../src/ProjetoFinal.cpp:91:45: error: ‘Display’ has not been declared
+ void Realizar_Acao(struct Decisao *decisao, Display *display) {
+                                             ^~~~~~~
+../src/ProjetoFinal.cpp: In function ‘void Realizar_Acao(Decisao*, int*)’:
+../src/ProjetoFinal.cpp:93:58: error: cannot convert ‘int*’ to ‘Decisao*’ for argument ‘1’ to ‘void Acao_Display(Decisao*)’
+   Acao_Display(display, "1. Op prof (x)", "2. Op Alu ( )");
+                                                          ^
+../src/ProjetoFinal.cpp:95:58: error: cannot convert ‘int*’ to ‘Decisao*’ for argument ‘1’ to ‘void Acao_Display(Decisao*)’
+   Acao_Display(display, "1. Op prof ( )", "2. Op Alu ( )");
+                                                          ^
+../src/ProjetoFinal.cpp:98:58: error: cannot convert ‘int*’ to ‘Decisao*’ for argument ‘1’ to ‘void Acao_Display(Decisao*)’
+   Acao_Display(display, "Cad Turma (x)", "Ver Turmas ( )");
+                                                          ^
+../src/ProjetoFinal.cpp:100:58: error: cannot convert ‘int*’ to ‘Decisao*’ for argument ‘1’ to ‘void Acao_Display(Decisao*)’
+   Acao_Display(display, "Cad Turma ( )", "Ver Turmas (x)");
+                                                          ^
+../src/ProjetoFinal.cpp:102:58: error: cannot convert ‘int*’ to ‘Decisao*’ for argument ‘1’ to ‘void Acao_Display(Decisao*)’
+   Acao_Display(display, "Excl Turma (x)", "Cad Aluno ( )");
+                                                          ^
+../src/ProjetoFinal.cpp:104:58: error: cannot convert ‘int*’ to ‘Decisao*’ for argument ‘1’ to ‘void Acao_Display(Decisao*)’
+   Acao_Display(display, "Excl Turma ( )", "Cad Aluno (x)");
+                                                          ^
+../src/ProjetoFinal.cpp:106:54: error: cannot convert ‘int*’ to ‘Decisao*’ for argument ‘1’ to ‘void Acao_Display(Decisao*)’
+   Acao_Display(display, "Excl Aluno (x)", "Voltar...");
+                                                      ^
+../src/ProjetoFinal.cpp:108:55: error: cannot convert ‘int*’ to ‘Decisao*’ for argument ‘1’ to ‘void Acao_Display(Decisao*)’
+   Acao_Display(display, "Reg Pres (x)", "Ver Pres ( )");
+                                                       ^
+../src/ProjetoFinal.cpp:110:55: error: cannot convert ‘int*’ to ‘Decisao*’ for argument ‘1’ to ‘void Acao_Display(Decisao*)’
+   Acao_Display(display, "Reg Pres ( )", "Ver Pres (x)");
+                                                       ^
+../src/ProjetoFinal.cpp: At global scope:
+../src/ProjetoFinal.cpp:114:19: error: variable or field ‘Acao_Display’ declared void
+ void Acao_Display(Display *display, char *str1, char *str2) {
+                   ^~~~~~~
+../src/ProjetoFinal.cpp:114:19: error: ‘Display’ was not declared in this scope
+../src/ProjetoFinal.cpp:114:28: error: ‘display’ was not declared in this scope
+ void Acao_Display(Display *display, char *str1, char *str2) {
+                            ^~~~~~~
+../src/ProjetoFinal.cpp:114:37: error: expected primary-expression before ‘char’
+ void Acao_Display(Display *display, char *str1, char *str2) {
+                                     ^~~~
+../src/ProjetoFinal.cpp:114:49: error: expected primary-expression before ‘char’
+ void Acao_Display(Display *display, char *str1, char *str2) {
+                                                 ^~~~
+src/subdir.mk:27: recipe for target 'src/ProjetoFinal.o' failed
+make: *** [src/ProjetoFinal.o] Error 1
+17:12:43 **** Incremental Build of configuration Debug for project Projeto_Final ****
+make all 
+Building file: ../src/ProjetoFinal.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/ProjetoFinal.d" -MT"src/ProjetoFinal.d" -o "src/ProjetoFinal.o" "../src/ProjetoFinal.cpp"
+../src/ProjetoFinal.cpp: In function ‘void Realizar_Acao(Decisao*, Display*)’:
+../src/ProjetoFinal.cpp:93:58: error: cannot convert ‘Display*’ to ‘Decisao*’ for argument ‘1’ to ‘void Acao_Display(Decisao*)’
+   Acao_Display(display, "1. Op prof (x)", "2. Op Alu ( )");
+                                                          ^
+../src/ProjetoFinal.cpp:95:58: error: cannot convert ‘Display*’ to ‘Decisao*’ for argument ‘1’ to ‘void Acao_Display(Decisao*)’
+   Acao_Display(display, "1. Op prof ( )", "2. Op Alu ( )");
+                                                          ^
+../src/ProjetoFinal.cpp:98:58: error: cannot convert ‘Display*’ to ‘Decisao*’ for argument ‘1’ to ‘void Acao_Display(Decisao*)’
+   Acao_Display(display, "Cad Turma (x)", "Ver Turmas ( )");
+                                                          ^
+../src/ProjetoFinal.cpp:100:58: error: cannot convert ‘Display*’ to ‘Decisao*’ for argument ‘1’ to ‘void Acao_Display(Decisao*)’
+   Acao_Display(display, "Cad Turma ( )", "Ver Turmas (x)");
+                                                          ^
+../src/ProjetoFinal.cpp:102:58: error: cannot convert ‘Display*’ to ‘Decisao*’ for argument ‘1’ to ‘void Acao_Display(Decisao*)’
+   Acao_Display(display, "Excl Turma (x)", "Cad Aluno ( )");
+                                                          ^
+../src/ProjetoFinal.cpp:104:58: error: cannot convert ‘Display*’ to ‘Decisao*’ for argument ‘1’ to ‘void Acao_Display(Decisao*)’
+   Acao_Display(display, "Excl Turma ( )", "Cad Aluno (x)");
+                                                          ^
+../src/ProjetoFinal.cpp:106:54: error: cannot convert ‘Display*’ to ‘Decisao*’ for argument ‘1’ to ‘void Acao_Display(Decisao*)’
+   Acao_Display(display, "Excl Aluno (x)", "Voltar...");
+                                                      ^
+../src/ProjetoFinal.cpp:108:55: error: cannot convert ‘Display*’ to ‘Decisao*’ for argument ‘1’ to ‘void Acao_Display(Decisao*)’
+   Acao_Display(display, "Reg Pres (x)", "Ver Pres ( )");
+                                                       ^
+../src/ProjetoFinal.cpp:110:55: error: cannot convert ‘Display*’ to ‘Decisao*’ for argument ‘1’ to ‘void Acao_Display(Decisao*)’
+   Acao_Display(display, "Reg Pres ( )", "Ver Pres (x)");
+                                                       ^
+src/subdir.mk:27: recipe for target 'src/ProjetoFinal.o' failed
+make: *** [src/ProjetoFinal.o] Error 1
+17:14:34 **** Incremental Build of configuration Debug for project Projeto_Final ****
+make all 
+Building file: ../src/ProjetoFinal.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/ProjetoFinal.d" -MT"src/ProjetoFinal.d" -o "src/ProjetoFinal.o" "../src/ProjetoFinal.cpp"
+../src/ProjetoFinal.cpp: In function ‘void Realizar_Acao(Decisao*, Display*)’:
+../src/ProjetoFinal.cpp:93:58: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+   Acao_Display(display, "1. Op prof (x)", "2. Op Alu ( )");
+                                                          ^
+../src/ProjetoFinal.cpp:93:58: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+../src/ProjetoFinal.cpp:95:58: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+   Acao_Display(display, "1. Op prof ( )", "2. Op Alu ( )");
+                                                          ^
+../src/ProjetoFinal.cpp:95:58: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+../src/ProjetoFinal.cpp:98:58: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+   Acao_Display(display, "Cad Turma (x)", "Ver Turmas ( )");
+                                                          ^
+../src/ProjetoFinal.cpp:98:58: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+../src/ProjetoFinal.cpp:100:58: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+   Acao_Display(display, "Cad Turma ( )", "Ver Turmas (x)");
+                                                          ^
+../src/ProjetoFinal.cpp:100:58: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+../src/ProjetoFinal.cpp:102:58: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+   Acao_Display(display, "Excl Turma (x)", "Cad Aluno ( )");
+                                                          ^
+../src/ProjetoFinal.cpp:102:58: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+../src/ProjetoFinal.cpp:104:58: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+   Acao_Display(display, "Excl Turma ( )", "Cad Aluno (x)");
+                                                          ^
+../src/ProjetoFinal.cpp:104:58: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+../src/ProjetoFinal.cpp:106:54: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+   Acao_Display(display, "Excl Aluno (x)", "Voltar...");
+                                                      ^
+../src/ProjetoFinal.cpp:106:54: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+../src/ProjetoFinal.cpp:108:55: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+   Acao_Display(display, "Reg Pres (x)", "Ver Pres ( )");
+                                                       ^
+../src/ProjetoFinal.cpp:108:55: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+../src/ProjetoFinal.cpp:110:55: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+   Acao_Display(display, "Reg Pres ( )", "Ver Pres (x)");
+                                                       ^
+../src/ProjetoFinal.cpp:110:55: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+Finished building: ../src/ProjetoFinal.cpp
+ 
+Building file: ../src/main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.cpp"
+../src/main.cpp: In function ‘int main()’:
+../src/main.cpp:36:34: error: too many arguments to function ‘void Realizar_Acao(Decisao*)’
+   Realizar_Acao(&decisao,&display);
+                                  ^
+In file included from ../src/main.cpp:10:0:
+../src/ProjetoFinal.h:15:6: note: declared here
+ void Realizar_Acao(struct Decisao *decisao);
+      ^~~~~~~~~~~~~
+src/subdir.mk:27: recipe for target 'src/main.o' failed
+make: *** [src/main.o] Error 1
+17:15:35 **** Incremental Build of configuration Debug for project Projeto_Final ****
+make all 
+Building file: ../src/ProjetoFinal.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/ProjetoFinal.d" -MT"src/ProjetoFinal.d" -o "src/ProjetoFinal.o" "../src/ProjetoFinal.cpp"
+../src/ProjetoFinal.cpp: In function ‘void Realizar_Acao(Decisao*, Display*)’:
+../src/ProjetoFinal.cpp:93:58: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+   Acao_Display(display, "1. Op prof (x)", "2. Op Alu ( )");
+                                                          ^
+../src/ProjetoFinal.cpp:93:58: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+../src/ProjetoFinal.cpp:95:58: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+   Acao_Display(display, "1. Op prof ( )", "2. Op Alu ( )");
+                                                          ^
+../src/ProjetoFinal.cpp:95:58: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+../src/ProjetoFinal.cpp:98:58: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+   Acao_Display(display, "Cad Turma (x)", "Ver Turmas ( )");
+                                                          ^
+../src/ProjetoFinal.cpp:98:58: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+../src/ProjetoFinal.cpp:100:58: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+   Acao_Display(display, "Cad Turma ( )", "Ver Turmas (x)");
+                                                          ^
+../src/ProjetoFinal.cpp:100:58: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+../src/ProjetoFinal.cpp:102:58: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+   Acao_Display(display, "Excl Turma (x)", "Cad Aluno ( )");
+                                                          ^
+../src/ProjetoFinal.cpp:102:58: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+../src/ProjetoFinal.cpp:104:58: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+   Acao_Display(display, "Excl Turma ( )", "Cad Aluno (x)");
+                                                          ^
+../src/ProjetoFinal.cpp:104:58: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+../src/ProjetoFinal.cpp:106:54: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+   Acao_Display(display, "Excl Aluno (x)", "Voltar...");
+                                                      ^
+../src/ProjetoFinal.cpp:106:54: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+../src/ProjetoFinal.cpp:108:55: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+   Acao_Display(display, "Reg Pres (x)", "Ver Pres ( )");
+                                                       ^
+../src/ProjetoFinal.cpp:108:55: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+../src/ProjetoFinal.cpp:110:55: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+   Acao_Display(display, "Reg Pres ( )", "Ver Pres (x)");
+                                                       ^
+../src/ProjetoFinal.cpp:110:55: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+Finished building: ../src/ProjetoFinal.cpp
+ 
+Building file: ../src/main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.cpp"
+Finished building: ../src/main.cpp
+ 
+Building target: Projeto_Final
+Invoking: GCC C++ Linker
+g++  -o "Projeto_Final"  ./src/Botao.o ./src/Display.o ./src/ProjetoFinal.o ./src/main.o   -lpthread
+Finished building target: Projeto_Final
+ 
+17:19:15 **** Incremental Build of configuration Debug for project Projeto_Final ****
+make all 
+Building file: ../src/Display.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Display.d" -MT"src/Display.d" -o "src/Display.o" "../src/Display.cpp"
+Finished building: ../src/Display.cpp
+ 
+Building target: Projeto_Final
+Invoking: GCC C++ Linker
+g++  -o "Projeto_Final"  ./src/Botao.o ./src/Display.o ./src/ProjetoFinal.o ./src/main.o   -lpthread
+Finished building target: Projeto_Final
+ 
+17:23:05 **** Incremental Build of configuration Debug for project Projeto_Final ****
+make all 
+Building file: ../src/ProjetoFinal.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/ProjetoFinal.d" -MT"src/ProjetoFinal.d" -o "src/ProjetoFinal.o" "../src/ProjetoFinal.cpp"
+../src/ProjetoFinal.cpp: In function ‘void Realizar_Acao(Decisao*, Display*)’:
+../src/ProjetoFinal.cpp:93:58: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+   Acao_Display(display, "1. Op prof (x)", "2. Op Alu ( )");
+                                                          ^
+../src/ProjetoFinal.cpp:93:58: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+../src/ProjetoFinal.cpp:95:58: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+   Acao_Display(display, "1. Op prof ( )", "2. Op Alu ( )");
+                                                          ^
+../src/ProjetoFinal.cpp:95:58: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+../src/ProjetoFinal.cpp:98:58: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+   Acao_Display(display, "Cad Turma (x)", "Ver Turmas ( )");
+                                                          ^
+../src/ProjetoFinal.cpp:98:58: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+../src/ProjetoFinal.cpp:100:58: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+   Acao_Display(display, "Cad Turma ( )", "Ver Turmas (x)");
+                                                          ^
+../src/ProjetoFinal.cpp:100:58: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+../src/ProjetoFinal.cpp:102:58: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+   Acao_Display(display, "Excl Turma (x)", "Cad Aluno ( )");
+                                                          ^
+../src/ProjetoFinal.cpp:102:58: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+../src/ProjetoFinal.cpp:104:58: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+   Acao_Display(display, "Excl Turma ( )", "Cad Aluno (x)");
+                                                          ^
+../src/ProjetoFinal.cpp:104:58: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+../src/ProjetoFinal.cpp:106:54: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+   Acao_Display(display, "Excl Aluno (x)", "Voltar...");
+                                                      ^
+../src/ProjetoFinal.cpp:106:54: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+../src/ProjetoFinal.cpp:108:55: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+   Acao_Display(display, "Reg Pres (x)", "Ver Pres ( )");
+                                                       ^
+../src/ProjetoFinal.cpp:108:55: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+../src/ProjetoFinal.cpp:110:55: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+   Acao_Display(display, "Reg Pres ( )", "Ver Pres (x)");
+                                                       ^
+../src/ProjetoFinal.cpp:110:55: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+Finished building: ../src/ProjetoFinal.cpp
+ 
+Building target: Projeto_Final
+Invoking: GCC C++ Linker
+g++  -o "Projeto_Final"  ./src/Botao.o ./src/Display.o ./src/ProjetoFinal.o ./src/main.o   -lpthread
+Finished building target: Projeto_Final
+ 
+17:24:46 **** Incremental Build of configuration Debug for project Projeto_Final ****
+make all 
+Building file: ../src/ProjetoFinal.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/ProjetoFinal.d" -MT"src/ProjetoFinal.d" -o "src/ProjetoFinal.o" "../src/ProjetoFinal.cpp"
+../src/ProjetoFinal.cpp: In function ‘void Realizar_Acao(Decisao*, Display*)’:
+../src/ProjetoFinal.cpp:93:58: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+   Acao_Display(display, "1. Op prof (x)", "2. Op Alu ( )");
+                                                          ^
+../src/ProjetoFinal.cpp:93:58: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+../src/ProjetoFinal.cpp:95:58: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+   Acao_Display(display, "1. Op prof ( )", "2. Op Alu ( )");
+                                                          ^
+../src/ProjetoFinal.cpp:95:58: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+../src/ProjetoFinal.cpp:98:58: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+   Acao_Display(display, "Cad Turma (x)", "Ver Turmas ( )");
+                                                          ^
+../src/ProjetoFinal.cpp:98:58: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+../src/ProjetoFinal.cpp:100:58: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+   Acao_Display(display, "Cad Turma ( )", "Ver Turmas (x)");
+                                                          ^
+../src/ProjetoFinal.cpp:100:58: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+../src/ProjetoFinal.cpp:102:58: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+   Acao_Display(display, "Excl Turma (x)", "Cad Aluno ( )");
+                                                          ^
+../src/ProjetoFinal.cpp:102:58: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+../src/ProjetoFinal.cpp:104:58: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+   Acao_Display(display, "Excl Turma ( )", "Cad Aluno (x)");
+                                                          ^
+../src/ProjetoFinal.cpp:104:58: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+../src/ProjetoFinal.cpp:106:54: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+   Acao_Display(display, "Excl Aluno (x)", "Voltar...");
+                                                      ^
+../src/ProjetoFinal.cpp:106:54: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+../src/ProjetoFinal.cpp:108:55: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+   Acao_Display(display, "Reg Pres (x)", "Ver Pres ( )");
+                                                       ^
+../src/ProjetoFinal.cpp:108:55: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+../src/ProjetoFinal.cpp:110:55: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+   Acao_Display(display, "Reg Pres ( )", "Ver Pres (x)");
+                                                       ^
+../src/ProjetoFinal.cpp:110:55: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+Finished building: ../src/ProjetoFinal.cpp
+ 
+Building target: Projeto_Final
+Invoking: GCC C++ Linker
+g++  -o "Projeto_Final"  ./src/Botao.o ./src/Display.o ./src/ProjetoFinal.o ./src/main.o   -lpthread
+Finished building target: Projeto_Final
+ 
+17:31:15 **** Incremental Build of configuration Debug for project Projeto_Final ****
+make all 
+Building file: ../src/Display.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Display.d" -MT"src/Display.d" -o "src/Display.o" "../src/Display.cpp"
+Finished building: ../src/Display.cpp
+ 
+Building file: ../src/ProjetoFinal.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/ProjetoFinal.d" -MT"src/ProjetoFinal.d" -o "src/ProjetoFinal.o" "../src/ProjetoFinal.cpp"
+../src/ProjetoFinal.cpp: In function ‘void Realizar_Acao(Decisao*, Display*)’:
+../src/ProjetoFinal.cpp:93:58: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+   Acao_Display(display, "1. Op prof (x)", "2. Op Alu ( )");
+                                                          ^
+../src/ProjetoFinal.cpp:93:58: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+../src/ProjetoFinal.cpp:95:58: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+   Acao_Display(display, "1. Op prof ( )", "2. Op Alu ( )");
+                                                          ^
+../src/ProjetoFinal.cpp:95:58: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+../src/ProjetoFinal.cpp:98:58: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+   Acao_Display(display, "Cad Turma (x)", "Ver Turmas ( )");
+                                                          ^
+../src/ProjetoFinal.cpp:98:58: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+../src/ProjetoFinal.cpp:100:58: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+   Acao_Display(display, "Cad Turma ( )", "Ver Turmas (x)");
+                                                          ^
+../src/ProjetoFinal.cpp:100:58: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+../src/ProjetoFinal.cpp:102:58: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+   Acao_Display(display, "Excl Turma (x)", "Cad Aluno ( )");
+                                                          ^
+../src/ProjetoFinal.cpp:102:58: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+../src/ProjetoFinal.cpp:104:58: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+   Acao_Display(display, "Excl Turma ( )", "Cad Aluno (x)");
+                                                          ^
+../src/ProjetoFinal.cpp:104:58: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+../src/ProjetoFinal.cpp:106:54: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+   Acao_Display(display, "Excl Aluno (x)", "Voltar...");
+                                                      ^
+../src/ProjetoFinal.cpp:106:54: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+../src/ProjetoFinal.cpp:108:55: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+   Acao_Display(display, "Reg Pres (x)", "Ver Pres ( )");
+                                                       ^
+../src/ProjetoFinal.cpp:108:55: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+../src/ProjetoFinal.cpp:110:55: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+   Acao_Display(display, "Reg Pres ( )", "Ver Pres (x)");
+                                                       ^
+../src/ProjetoFinal.cpp:110:55: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+Finished building: ../src/ProjetoFinal.cpp
+ 
+Building target: Projeto_Final
+Invoking: GCC C++ Linker
+g++  -o "Projeto_Final"  ./src/Botao.o ./src/Display.o ./src/ProjetoFinal.o ./src/main.o   -lpthread
+Finished building target: Projeto_Final
+ 
+17:49:22 **** Incremental Build of configuration Debug for project Projeto_Final ****
+make all 
+Building file: ../src/Botao.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Botao.d" -MT"src/Botao.d" -o "src/Botao.o" "../src/Botao.cpp"
+Finished building: ../src/Botao.cpp
+ 
+Building file: ../src/ProjetoFinal.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/ProjetoFinal.d" -MT"src/ProjetoFinal.d" -o "src/ProjetoFinal.o" "../src/ProjetoFinal.cpp"
+../src/ProjetoFinal.cpp: In function ‘void Realizar_Acao(Decisao*, Display*)’:
+../src/ProjetoFinal.cpp:92:16: error: ‘struct Decisao’ has no member named ‘opcao’
+   if (decisao->opcao == 0) {
+                ^~~~~
+../src/ProjetoFinal.cpp:93:59: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+    Acao_Display(display, "1. Op prof (x)", "2. Op Alu ( )");
+                                                           ^
+../src/ProjetoFinal.cpp:93:59: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+../src/ProjetoFinal.cpp:95:59: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+    Acao_Display(display, "1. Op prof ( )", "2. Op Alu ( )");
+                                                           ^
+../src/ProjetoFinal.cpp:95:59: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+../src/ProjetoFinal.cpp:98:59: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+    Acao_Display(display, "Cad Turma (x)", "Ver Turmas ( )");
+                                                           ^
+../src/ProjetoFinal.cpp:98:59: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+../src/ProjetoFinal.cpp:100:59: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+    Acao_Display(display, "Cad Turma ( )", "Ver Turmas (x)");
+                                                           ^
+../src/ProjetoFinal.cpp:100:59: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+../src/ProjetoFinal.cpp:102:59: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+    Acao_Display(display, "Excl Turma (x)", "Cad Aluno ( )");
+                                                           ^
+../src/ProjetoFinal.cpp:102:59: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+../src/ProjetoFinal.cpp:104:59: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+    Acao_Display(display, "Excl Turma ( )", "Cad Aluno (x)");
+                                                           ^
+../src/ProjetoFinal.cpp:104:59: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+../src/ProjetoFinal.cpp:106:55: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+    Acao_Display(display, "Excl Aluno (x)", "Voltar...");
+                                                       ^
+../src/ProjetoFinal.cpp:106:55: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+../src/ProjetoFinal.cpp:108:56: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+    Acao_Display(display, "Reg Pres (x)", "Ver Pres ( )");
+                                                        ^
+../src/ProjetoFinal.cpp:108:56: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+../src/ProjetoFinal.cpp:110:56: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+    Acao_Display(display, "Reg Pres ( )", "Ver Pres (x)");
+                                                        ^
+../src/ProjetoFinal.cpp:110:56: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+src/subdir.mk:27: recipe for target 'src/ProjetoFinal.o' failed
+make: *** [src/ProjetoFinal.o] Error 1
+17:50:10 **** Incremental Build of configuration Debug for project Projeto_Final ****
+make all 
+Building file: ../src/ProjetoFinal.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/ProjetoFinal.d" -MT"src/ProjetoFinal.d" -o "src/ProjetoFinal.o" "../src/ProjetoFinal.cpp"
+../src/ProjetoFinal.cpp: In function ‘void Realizar_Acao(Decisao*, Display*)’:
+../src/ProjetoFinal.cpp:93:59: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+    Acao_Display(display, "1. Op prof (x)", "2. Op Alu ( )");
+                                                           ^
+../src/ProjetoFinal.cpp:93:59: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+../src/ProjetoFinal.cpp:95:59: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+    Acao_Display(display, "1. Op prof ( )", "2. Op Alu ( )");
+                                                           ^
+../src/ProjetoFinal.cpp:95:59: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+../src/ProjetoFinal.cpp:98:59: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+    Acao_Display(display, "Cad Turma (x)", "Ver Turmas ( )");
+                                                           ^
+../src/ProjetoFinal.cpp:98:59: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+../src/ProjetoFinal.cpp:100:59: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+    Acao_Display(display, "Cad Turma ( )", "Ver Turmas (x)");
+                                                           ^
+../src/ProjetoFinal.cpp:100:59: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+../src/ProjetoFinal.cpp:102:59: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+    Acao_Display(display, "Excl Turma (x)", "Cad Aluno ( )");
+                                                           ^
+../src/ProjetoFinal.cpp:102:59: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+../src/ProjetoFinal.cpp:104:59: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+    Acao_Display(display, "Excl Turma ( )", "Cad Aluno (x)");
+                                                           ^
+../src/ProjetoFinal.cpp:104:59: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+../src/ProjetoFinal.cpp:106:55: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+    Acao_Display(display, "Excl Aluno (x)", "Voltar...");
+                                                       ^
+../src/ProjetoFinal.cpp:106:55: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+../src/ProjetoFinal.cpp:108:56: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+    Acao_Display(display, "Reg Pres (x)", "Ver Pres ( )");
+                                                        ^
+../src/ProjetoFinal.cpp:108:56: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+../src/ProjetoFinal.cpp:110:56: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+    Acao_Display(display, "Reg Pres ( )", "Ver Pres (x)");
+                                                        ^
+../src/ProjetoFinal.cpp:110:56: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+Finished building: ../src/ProjetoFinal.cpp
+ 
+Building file: ../src/main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.cpp"
+Finished building: ../src/main.cpp
+ 
+Building target: Projeto_Final
+Invoking: GCC C++ Linker
+g++  -o "Projeto_Final"  ./src/Botao.o ./src/Display.o ./src/ProjetoFinal.o ./src/main.o   -lpthread
+Finished building target: Projeto_Final
+ 
+17:53:59 **** Incremental Build of configuration Debug for project Projeto_Final ****
+make all 
+Building file: ../src/Botao.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Botao.d" -MT"src/Botao.d" -o "src/Botao.o" "../src/Botao.cpp"
+Finished building: ../src/Botao.cpp
+ 
+Building target: Projeto_Final
+Invoking: GCC C++ Linker
+g++  -o "Projeto_Final"  ./src/Botao.o ./src/Display.o ./src/ProjetoFinal.o ./src/main.o   -lpthread
+Finished building target: Projeto_Final
+ 
+17:57:03 **** Incremental Build of configuration Debug for project Projeto_Final ****
+make all 
+Building file: ../src/main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.cpp"
+Finished building: ../src/main.cpp
+ 
+Building target: Projeto_Final
+Invoking: GCC C++ Linker
+g++  -o "Projeto_Final"  ./src/Botao.o ./src/Display.o ./src/ProjetoFinal.o ./src/main.o   -lpthread
+Finished building target: Projeto_Final
+ 
+18:02:04 **** Incremental Build of configuration Debug for project Projeto_Final ****
+make all 
+Building file: ../src/ProjetoFinal.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/ProjetoFinal.d" -MT"src/ProjetoFinal.d" -o "src/ProjetoFinal.o" "../src/ProjetoFinal.cpp"
+../src/ProjetoFinal.cpp: In function ‘void Realizar_Acao(Decisao*, Display*)’:
+../src/ProjetoFinal.cpp:93:59: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+    Acao_Display(display, "1. Op prof (x)", "2. Op Alu ( )");
+                                                           ^
+../src/ProjetoFinal.cpp:93:59: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+../src/ProjetoFinal.cpp:95:59: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+    Acao_Display(display, "1. Op prof ( )", "2. Op Alu (x)");
+                                                           ^
+../src/ProjetoFinal.cpp:95:59: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+../src/ProjetoFinal.cpp:98:59: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+    Acao_Display(display, "Cad Turma (x)", "Ver Turmas ( )");
+                                                           ^
+../src/ProjetoFinal.cpp:98:59: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+../src/ProjetoFinal.cpp:100:59: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+    Acao_Display(display, "Cad Turma ( )", "Ver Turmas (x)");
+                                                           ^
+../src/ProjetoFinal.cpp:100:59: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+../src/ProjetoFinal.cpp:102:59: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+    Acao_Display(display, "Excl Turma (x)", "Cad Aluno ( )");
+                                                           ^
+../src/ProjetoFinal.cpp:102:59: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+../src/ProjetoFinal.cpp:104:59: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+    Acao_Display(display, "Excl Turma ( )", "Cad Aluno (x)");
+                                                           ^
+../src/ProjetoFinal.cpp:104:59: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+../src/ProjetoFinal.cpp:106:55: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+    Acao_Display(display, "Excl Aluno (x)", "Voltar...");
+                                                       ^
+../src/ProjetoFinal.cpp:106:55: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+../src/ProjetoFinal.cpp:108:56: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+    Acao_Display(display, "Reg Pres (x)", "Ver Pres ( )");
+                                                        ^
+../src/ProjetoFinal.cpp:108:56: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+../src/ProjetoFinal.cpp:110:56: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+    Acao_Display(display, "Reg Pres ( )", "Ver Pres (x)");
+                                                        ^
+../src/ProjetoFinal.cpp:110:56: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+Finished building: ../src/ProjetoFinal.cpp
+ 
+Building file: ../src/main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.cpp"
+Finished building: ../src/main.cpp
+ 
+Building target: Projeto_Final
+Invoking: GCC C++ Linker
+g++  -o "Projeto_Final"  ./src/Botao.o ./src/Display.o ./src/ProjetoFinal.o ./src/main.o   -lpthread
+Finished building target: Projeto_Final
+ 
+18:05:03 **** Incremental Build of configuration Debug for project Projeto_Final ****
+make all 
+Building file: ../src/main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.cpp"
+Finished building: ../src/main.cpp
+ 
+Building target: Projeto_Final
+Invoking: GCC C++ Linker
+g++  -o "Projeto_Final"  ./src/Botao.o ./src/Display.o ./src/ProjetoFinal.o ./src/main.o   -lpthread
+Finished building target: Projeto_Final
+ 
+18:12:30 **** Incremental Build of configuration Debug for project Projeto_Final ****
+make all 
+Building file: ../src/main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.cpp"
+Finished building: ../src/main.cpp
+ 
+Building target: Projeto_Final
+Invoking: GCC C++ Linker
+g++  -o "Projeto_Final"  ./src/Botao.o ./src/Display.o ./src/ProjetoFinal.o ./src/main.o   -lpthread
+Finished building target: Projeto_Final
+ 
+18:15:10 **** Incremental Build of configuration Debug for project Projeto_Final ****
+make all 
+Building file: ../src/main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.cpp"
+Finished building: ../src/main.cpp
+ 
+Building target: Projeto_Final
+Invoking: GCC C++ Linker
+g++  -o "Projeto_Final"  ./src/Botao.o ./src/Display.o ./src/ProjetoFinal.o ./src/main.o   -lpthread
+Finished building target: Projeto_Final
+ 
+18:21:44 **** Incremental Build of configuration Debug for project Projeto_Final ****
+make all 
+Building file: ../src/Display.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Display.d" -MT"src/Display.d" -o "src/Display.o" "../src/Display.cpp"
+Finished building: ../src/Display.cpp
+ 
+Building file: ../src/ProjetoFinal.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/ProjetoFinal.d" -MT"src/ProjetoFinal.d" -o "src/ProjetoFinal.o" "../src/ProjetoFinal.cpp"
+../src/ProjetoFinal.cpp: In function ‘void Realizar_Acao(Decisao*, Display*)’:
+../src/ProjetoFinal.cpp:93:59: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+    Acao_Display(display, "1. Op prof (x)", "2. Op Alu ( )");
+                                                           ^
+../src/ProjetoFinal.cpp:93:59: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+../src/ProjetoFinal.cpp:95:59: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+    Acao_Display(display, "1. Op prof ( )", "2. Op Alu (x)");
+                                                           ^
+../src/ProjetoFinal.cpp:95:59: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+../src/ProjetoFinal.cpp:98:59: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+    Acao_Display(display, "Cad Turma (x)", "Ver Turmas ( )");
+                                                           ^
+../src/ProjetoFinal.cpp:98:59: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+../src/ProjetoFinal.cpp:100:59: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+    Acao_Display(display, "Cad Turma ( )", "Ver Turmas (x)");
+                                                           ^
+../src/ProjetoFinal.cpp:100:59: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+../src/ProjetoFinal.cpp:102:59: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+    Acao_Display(display, "Excl Turma (x)", "Cad Aluno ( )");
+                                                           ^
+../src/ProjetoFinal.cpp:102:59: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+../src/ProjetoFinal.cpp:104:59: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+    Acao_Display(display, "Excl Turma ( )", "Cad Aluno (x)");
+                                                           ^
+../src/ProjetoFinal.cpp:104:59: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+../src/ProjetoFinal.cpp:106:55: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+    Acao_Display(display, "Excl Aluno (x)", "Voltar...");
+                                                       ^
+../src/ProjetoFinal.cpp:106:55: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+../src/ProjetoFinal.cpp:108:56: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+    Acao_Display(display, "Reg Pres (x)", "Ver Pres ( )");
+                                                        ^
+../src/ProjetoFinal.cpp:108:56: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+../src/ProjetoFinal.cpp:110:56: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+    Acao_Display(display, "Reg Pres ( )", "Ver Pres (x)");
+                                                        ^
+../src/ProjetoFinal.cpp:110:56: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+Finished building: ../src/ProjetoFinal.cpp
+ 
+Building target: Projeto_Final
+Invoking: GCC C++ Linker
+g++  -o "Projeto_Final"  ./src/Botao.o ./src/Display.o ./src/ProjetoFinal.o ./src/main.o   -lpthread
+Finished building target: Projeto_Final
+ 
+18:25:40 **** Incremental Build of configuration Debug for project Projeto_Final ****
+make all 
+Building file: ../src/main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.cpp"
+Finished building: ../src/main.cpp
+ 
+Building target: Projeto_Final
+Invoking: GCC C++ Linker
+g++  -o "Projeto_Final"  ./src/Botao.o ./src/Display.o ./src/ProjetoFinal.o ./src/main.o   -lpthread
+Finished building target: Projeto_Final
+ 
+18:28:42 **** Incremental Build of configuration Debug for project Projeto_Final ****
+make all 
+Building file: ../src/ProjetoFinal.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/ProjetoFinal.d" -MT"src/ProjetoFinal.d" -o "src/ProjetoFinal.o" "../src/ProjetoFinal.cpp"
+../src/ProjetoFinal.cpp: In function ‘void Realizar_Acao(Decisao*, Display*)’:
+../src/ProjetoFinal.cpp:93:59: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+    Acao_Display(display, "1. Op prof (x)", "2. Op Alu ( )");
+                                                           ^
+../src/ProjetoFinal.cpp:93:59: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+../src/ProjetoFinal.cpp:95:59: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+    Acao_Display(display, "1. Op prof ( )", "2. Op Alu (x)");
+                                                           ^
+../src/ProjetoFinal.cpp:95:59: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+../src/ProjetoFinal.cpp:98:59: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+    Acao_Display(display, "Cad Turma (x)", "Ver Turmas ( )");
+                                                           ^
+../src/ProjetoFinal.cpp:98:59: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+../src/ProjetoFinal.cpp:100:59: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+    Acao_Display(display, "Cad Turma ( )", "Ver Turmas (x)");
+                                                           ^
+../src/ProjetoFinal.cpp:100:59: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+../src/ProjetoFinal.cpp:102:59: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+    Acao_Display(display, "Excl Turma (x)", "Cad Aluno ( )");
+                                                           ^
+../src/ProjetoFinal.cpp:102:59: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+../src/ProjetoFinal.cpp:104:59: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+    Acao_Display(display, "Excl Turma ( )", "Cad Aluno (x)");
+                                                           ^
+../src/ProjetoFinal.cpp:104:59: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+../src/ProjetoFinal.cpp:106:55: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+    Acao_Display(display, "Excl Aluno (x)", "Voltar...");
+                                                       ^
+../src/ProjetoFinal.cpp:106:55: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+../src/ProjetoFinal.cpp:108:56: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+    Acao_Display(display, "Reg Pres (x)", "Ver Pres ( )");
+                                                        ^
+../src/ProjetoFinal.cpp:108:56: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+../src/ProjetoFinal.cpp:110:56: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+    Acao_Display(display, "Reg Pres ( )", "Ver Pres (x)");
+                                                        ^
+../src/ProjetoFinal.cpp:110:56: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+Finished building: ../src/ProjetoFinal.cpp
+ 
+Building target: Projeto_Final
+Invoking: GCC C++ Linker
+g++  -o "Projeto_Final"  ./src/Botao.o ./src/Display.o ./src/ProjetoFinal.o ./src/main.o   -lpthread
+Finished building target: Projeto_Final
+ 
+19:11:31 **** Incremental Build of configuration Debug for project Projeto_Final ****
+make all 
+Building file: ../src/ProjetoFinal.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/ProjetoFinal.d" -MT"src/ProjetoFinal.d" -o "src/ProjetoFinal.o" "../src/ProjetoFinal.cpp"
+../src/ProjetoFinal.cpp: In function ‘void Realizar_Acao(Decisao*, Display*)’:
+../src/ProjetoFinal.cpp:93:59: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+    Acao_Display(display, "1. Op Prof (x)", "2. Op Alu ( )");
+                                                           ^
+../src/ProjetoFinal.cpp:93:59: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+../src/ProjetoFinal.cpp:95:59: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+    Acao_Display(display, "1. Op Prof ( )", "2. Op Alu (x)");
+                                                           ^
+../src/ProjetoFinal.cpp:95:59: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+../src/ProjetoFinal.cpp:98:59: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+    Acao_Display(display, "Cad Turma (x)", "Ver Turmas ( )");
+                                                           ^
+../src/ProjetoFinal.cpp:98:59: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+../src/ProjetoFinal.cpp:100:59: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+    Acao_Display(display, "Cad Turma ( )", "Ver Turmas (x)");
+                                                           ^
+../src/ProjetoFinal.cpp:100:59: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+../src/ProjetoFinal.cpp:102:59: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+    Acao_Display(display, "Excl Turma (x)", "Cad Aluno ( )");
+                                                           ^
+../src/ProjetoFinal.cpp:102:59: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+../src/ProjetoFinal.cpp:104:59: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+    Acao_Display(display, "Excl Turma ( )", "Cad Aluno (x)");
+                                                           ^
+../src/ProjetoFinal.cpp:104:59: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+../src/ProjetoFinal.cpp:106:55: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+    Acao_Display(display, "Excl Aluno (x)", "Voltar...");
+                                                       ^
+../src/ProjetoFinal.cpp:106:55: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+../src/ProjetoFinal.cpp:108:56: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+    Acao_Display(display, "Reg Pres (x)", "Ver Pres ( )");
+                                                        ^
+../src/ProjetoFinal.cpp:108:56: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+../src/ProjetoFinal.cpp:110:56: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+    Acao_Display(display, "Reg Pres ( )", "Ver Pres (x)");
+                                                        ^
+../src/ProjetoFinal.cpp:110:56: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+Finished building: ../src/ProjetoFinal.cpp
+ 
+Building target: Projeto_Final
+Invoking: GCC C++ Linker
+g++  -o "Projeto_Final"  ./src/Botao.o ./src/Display.o ./src/ProjetoFinal.o ./src/main.o   -lpthread
+Finished building target: Projeto_Final
+ 
+19:18:05 **** Incremental Build of configuration Debug for project Projeto_Final ****
+make all 
+Building file: ../src/Botao.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Botao.d" -MT"src/Botao.d" -o "src/Botao.o" "../src/Botao.cpp"
+Finished building: ../src/Botao.cpp
+ 
+Building file: ../src/ProjetoFinal.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/ProjetoFinal.d" -MT"src/ProjetoFinal.d" -o "src/ProjetoFinal.o" "../src/ProjetoFinal.cpp"
+../src/ProjetoFinal.cpp: In function ‘void Realizar_Acao(Decisao*, Display*)’:
+../src/ProjetoFinal.cpp:93:59: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+    Acao_Display(display, "1. Op Prof (x)", "2. Op Alu ( )");
+                                                           ^
+../src/ProjetoFinal.cpp:93:59: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+../src/ProjetoFinal.cpp:95:59: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+    Acao_Display(display, "1. Op Prof ( )", "2. Op Alu (x)");
+                                                           ^
+../src/ProjetoFinal.cpp:95:59: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+../src/ProjetoFinal.cpp:97:59: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+    Acao_Display(display, "Cad Turma (x)", "Ver Turmas ( )");
+                                                           ^
+../src/ProjetoFinal.cpp:97:59: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+../src/ProjetoFinal.cpp:99:59: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+    Acao_Display(display, "Cad Turma ( )", "Ver Turmas (x)");
+                                                           ^
+../src/ProjetoFinal.cpp:99:59: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+../src/ProjetoFinal.cpp:101:59: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+    Acao_Display(display, "Excl Turma (x)", "Cad Aluno ( )");
+                                                           ^
+../src/ProjetoFinal.cpp:101:59: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+../src/ProjetoFinal.cpp:103:59: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+    Acao_Display(display, "Excl Turma ( )", "Cad Aluno (x)");
+                                                           ^
+../src/ProjetoFinal.cpp:103:59: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+../src/ProjetoFinal.cpp:105:55: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+    Acao_Display(display, "Excl Aluno (x)", "Voltar...");
+                                                       ^
+../src/ProjetoFinal.cpp:105:55: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+../src/ProjetoFinal.cpp:107:56: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+    Acao_Display(display, "Reg Pres (x)", "Ver Pres ( )");
+                                                        ^
+../src/ProjetoFinal.cpp:107:56: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+../src/ProjetoFinal.cpp:109:56: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+    Acao_Display(display, "Reg Pres ( )", "Ver Pres (x)");
+                                                        ^
+../src/ProjetoFinal.cpp:109:56: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+Finished building: ../src/ProjetoFinal.cpp
+ 
+Building target: Projeto_Final
+Invoking: GCC C++ Linker
+g++  -o "Projeto_Final"  ./src/Botao.o ./src/Display.o ./src/ProjetoFinal.o ./src/main.o   -lpthread
+Finished building target: Projeto_Final
+ 
+19:22:41 **** Incremental Build of configuration Debug for project Projeto_Final ****
+make all 
+Building file: ../src/Display.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Display.d" -MT"src/Display.d" -o "src/Display.o" "../src/Display.cpp"
+Finished building: ../src/Display.cpp
+ 
+Building file: ../src/ProjetoFinal.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/ProjetoFinal.d" -MT"src/ProjetoFinal.d" -o "src/ProjetoFinal.o" "../src/ProjetoFinal.cpp"
+../src/ProjetoFinal.cpp: In function ‘void Realizar_Acao(Decisao*, Display*)’:
+../src/ProjetoFinal.cpp:93:59: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+    Acao_Display(display, "1. Op Prof (x)", "2. Op Alu ( )");
+                                                           ^
+../src/ProjetoFinal.cpp:93:59: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+../src/ProjetoFinal.cpp:95:59: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+    Acao_Display(display, "1. Op Prof ( )", "2. Op Alu (x)");
+                                                           ^
+../src/ProjetoFinal.cpp:95:59: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+../src/ProjetoFinal.cpp:97:59: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+    Acao_Display(display, "Cad Turma (x)", "Ver Turmas ( )");
+                                                           ^
+../src/ProjetoFinal.cpp:97:59: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+../src/ProjetoFinal.cpp:99:59: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+    Acao_Display(display, "Cad Turma ( )", "Ver Turmas (x)");
+                                                           ^
+../src/ProjetoFinal.cpp:99:59: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+../src/ProjetoFinal.cpp:101:59: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+    Acao_Display(display, "Excl Turma (x)", "Cad Aluno ( )");
+                                                           ^
+../src/ProjetoFinal.cpp:101:59: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+../src/ProjetoFinal.cpp:103:59: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+    Acao_Display(display, "Excl Turma ( )", "Cad Aluno (x)");
+                                                           ^
+../src/ProjetoFinal.cpp:103:59: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+../src/ProjetoFinal.cpp:105:55: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+    Acao_Display(display, "Excl Aluno (x)", "Voltar...");
+                                                       ^
+../src/ProjetoFinal.cpp:105:55: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+../src/ProjetoFinal.cpp:107:56: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+    Acao_Display(display, "Reg Pres (x)", "Ver Pres ( )");
+                                                        ^
+../src/ProjetoFinal.cpp:107:56: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+../src/ProjetoFinal.cpp:109:56: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+    Acao_Display(display, "Reg Pres ( )", "Ver Pres (x)");
+                                                        ^
+../src/ProjetoFinal.cpp:109:56: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+Finished building: ../src/ProjetoFinal.cpp
+ 
+Building file: ../src/main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.cpp"
+Finished building: ../src/main.cpp
+ 
+Building target: Projeto_Final
+Invoking: GCC C++ Linker
+g++  -o "Projeto_Final"  ./src/Botao.o ./src/Display.o ./src/ProjetoFinal.o ./src/main.o   -lpthread
+Finished building target: Projeto_Final
+ 
+19:26:26 **** Incremental Build of configuration Debug for project Projeto_Final ****
+make all 
+Building file: ../src/ProjetoFinal.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/ProjetoFinal.d" -MT"src/ProjetoFinal.d" -o "src/ProjetoFinal.o" "../src/ProjetoFinal.cpp"
+../src/ProjetoFinal.cpp: In function ‘void Realizar_Acao(Decisao*, Display*)’:
+../src/ProjetoFinal.cpp:93:59: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+    Acao_Display(display, "1. Op Prof (x)", "2. Op Alu ( )");
+                                                           ^
+../src/ProjetoFinal.cpp:93:59: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+../src/ProjetoFinal.cpp:95:59: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+    Acao_Display(display, "1. Op Prof ( )", "2. Op Alu (x)");
+                                                           ^
+../src/ProjetoFinal.cpp:95:59: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+../src/ProjetoFinal.cpp:97:59: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+    Acao_Display(display, "Cad Turma (x)", "Ver Turmas ( )");
+                                                           ^
+../src/ProjetoFinal.cpp:97:59: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+../src/ProjetoFinal.cpp:99:59: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+    Acao_Display(display, "Cad Turma ( )", "Ver Turmas (x)");
+                                                           ^
+../src/ProjetoFinal.cpp:99:59: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+../src/ProjetoFinal.cpp:101:59: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+    Acao_Display(display, "Excl Turma (x)", "Cad Aluno ( )");
+                                                           ^
+../src/ProjetoFinal.cpp:101:59: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+../src/ProjetoFinal.cpp:103:59: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+    Acao_Display(display, "Excl Turma ( )", "Cad Aluno (x)");
+                                                           ^
+../src/ProjetoFinal.cpp:103:59: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+../src/ProjetoFinal.cpp:105:55: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+    Acao_Display(display, "Excl Aluno (x)", "Voltar...");
+                                                       ^
+../src/ProjetoFinal.cpp:105:55: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+../src/ProjetoFinal.cpp:107:56: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+    Acao_Display(display, "Reg Pres (x)", "Ver Pres ( )");
+                                                        ^
+../src/ProjetoFinal.cpp:107:56: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+../src/ProjetoFinal.cpp:109:56: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+    Acao_Display(display, "Reg Pres ( )", "Ver Pres (x)");
+                                                        ^
+../src/ProjetoFinal.cpp:109:56: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+Finished building: ../src/ProjetoFinal.cpp
+ 
+Building file: ../src/main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.cpp"
+Finished building: ../src/main.cpp
+ 
+Building target: Projeto_Final
+Invoking: GCC C++ Linker
+g++  -o "Projeto_Final"  ./src/Botao.o ./src/Display.o ./src/ProjetoFinal.o ./src/main.o   -lpthread
+Finished building target: Projeto_Final
+ 
+19:31:42 **** Incremental Build of configuration Debug for project Projeto_Final ****
+make all 
+Building file: ../src/ProjetoFinal.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/ProjetoFinal.d" -MT"src/ProjetoFinal.d" -o "src/ProjetoFinal.o" "../src/ProjetoFinal.cpp"
+../src/ProjetoFinal.cpp: In function ‘void Realizar_Acao(Decisao*, Display*)’:
+../src/ProjetoFinal.cpp:95:59: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+    Acao_Display(display, "1. Op Prof (x)", "2. Op Alu ( )");
+                                                           ^
+../src/ProjetoFinal.cpp:95:59: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+../src/ProjetoFinal.cpp:97:59: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+    Acao_Display(display, "1. Op Prof ( )", "2. Op Alu (x)");
+                                                           ^
+../src/ProjetoFinal.cpp:97:59: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+../src/ProjetoFinal.cpp:99:59: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+    Acao_Display(display, "Cad Turma (x)", "Ver Turmas ( )");
+                                                           ^
+../src/ProjetoFinal.cpp:99:59: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+../src/ProjetoFinal.cpp:101:59: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+    Acao_Display(display, "Cad Turma ( )", "Ver Turmas (x)");
+                                                           ^
+../src/ProjetoFinal.cpp:101:59: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+../src/ProjetoFinal.cpp:103:59: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+    Acao_Display(display, "Excl Turma (x)", "Cad Aluno ( )");
+                                                           ^
+../src/ProjetoFinal.cpp:103:59: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+../src/ProjetoFinal.cpp:105:59: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+    Acao_Display(display, "Excl Turma ( )", "Cad Aluno (x)");
+                                                           ^
+../src/ProjetoFinal.cpp:105:59: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+../src/ProjetoFinal.cpp:107:55: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+    Acao_Display(display, "Excl Aluno (x)", "Voltar...");
+                                                       ^
+../src/ProjetoFinal.cpp:107:55: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+../src/ProjetoFinal.cpp:109:56: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+    Acao_Display(display, "Reg Pres (x)", "Ver Pres ( )");
+                                                        ^
+../src/ProjetoFinal.cpp:109:56: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+../src/ProjetoFinal.cpp:111:56: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+    Acao_Display(display, "Reg Pres ( )", "Ver Pres (x)");
+                                                        ^
+../src/ProjetoFinal.cpp:111:56: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+Finished building: ../src/ProjetoFinal.cpp
+ 
+Building file: ../src/main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.cpp"
+Finished building: ../src/main.cpp
+ 
+Building target: Projeto_Final
+Invoking: GCC C++ Linker
+g++  -o "Projeto_Final"  ./src/Botao.o ./src/Display.o ./src/ProjetoFinal.o ./src/main.o   -lpthread
+Finished building target: Projeto_Final
+ 
+19:33:07 **** Incremental Build of configuration Debug for project Projeto_Final ****
+make all 
+Building file: ../src/ProjetoFinal.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/ProjetoFinal.d" -MT"src/ProjetoFinal.d" -o "src/ProjetoFinal.o" "../src/ProjetoFinal.cpp"
+../src/ProjetoFinal.cpp: In function ‘void Realizar_Acao(Decisao*, Display*)’:
+../src/ProjetoFinal.cpp:95:59: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+    Acao_Display(display, "1. Op Prof (x)", "2. Op Alu ( )");
+                                                           ^
+../src/ProjetoFinal.cpp:95:59: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+../src/ProjetoFinal.cpp:97:59: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+    Acao_Display(display, "1. Op Prof ( )", "2. Op Alu (x)");
+                                                           ^
+../src/ProjetoFinal.cpp:97:59: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+../src/ProjetoFinal.cpp:99:59: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+    Acao_Display(display, "Cad Turma (x)", "Ver Turmas ( )");
+                                                           ^
+../src/ProjetoFinal.cpp:99:59: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+../src/ProjetoFinal.cpp:101:59: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+    Acao_Display(display, "Cad Turma ( )", "Ver Turmas (x)");
+                                                           ^
+../src/ProjetoFinal.cpp:101:59: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+../src/ProjetoFinal.cpp:103:59: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+    Acao_Display(display, "Excl Turma (x)", "Cad Aluno ( )");
+                                                           ^
+../src/ProjetoFinal.cpp:103:59: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+../src/ProjetoFinal.cpp:105:59: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+    Acao_Display(display, "Excl Turma ( )", "Cad Aluno (x)");
+                                                           ^
+../src/ProjetoFinal.cpp:105:59: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+../src/ProjetoFinal.cpp:107:55: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+    Acao_Display(display, "Excl Aluno (x)", "Voltar...");
+                                                       ^
+../src/ProjetoFinal.cpp:107:55: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+../src/ProjetoFinal.cpp:109:56: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+    Acao_Display(display, "Reg Pres (x)", "Ver Pres ( )");
+                                                        ^
+../src/ProjetoFinal.cpp:109:56: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+../src/ProjetoFinal.cpp:111:56: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+    Acao_Display(display, "Reg Pres ( )", "Ver Pres (x)");
+                                                        ^
+../src/ProjetoFinal.cpp:111:56: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+Finished building: ../src/ProjetoFinal.cpp
+ 
+Building target: Projeto_Final
+Invoking: GCC C++ Linker
+g++  -o "Projeto_Final"  ./src/Botao.o ./src/Display.o ./src/ProjetoFinal.o ./src/main.o   -lpthread
+Finished building target: Projeto_Final
+ 
+22:27:38 **** Clean-only build of configuration Debug for project Botoes ****
+make clean 
+rm -rf  ./src/Botoes.o ./src/gpio_dev_mem.o  ./src/Botoes.d  ./src/gpio_dev_mem.d  Botoes
+ 
+22:27:41 **** Clean-only build of configuration Debug for project Cadastro_Nova_Turma ****
+make clean 
+rm -rf  ./src/Cadastro_Nova_Turma.o  ./src/Cadastro_Nova_Turma.d  Cadastro_Nova_Turma
+ 
+22:27:42 **** Clean-only build of configuration Debug for project Cadastro_Novo_Aluno ****
+make clean 
+rm -rf  ./src/Cadastro_Novo_Aluno.o  ./src/Cadastro_Novo_Aluno.d  Cadastro_Novo_Aluno
+ 
+22:27:42 **** Clean-only build of configuration Debug for project Conversor ****
+make clean 
+rm -rf  ./src/Conversor.o  ./src/Conversor.d  Conversor
+ 
+22:27:43 **** Clean-only build of configuration Debug for project Display ****
+make clean 
+rm -rf  ./src/Display.o ./src/main.o  ./src/Display.d ./src/main.d  Display
+ 
+22:27:44 **** Clean-only build of configuration Debug for project Display_WiringPI ****
+make clean 
+rm -rf  ./src/Display_WiringPI.o  ./src/Display_WiringPI.d  Display_WiringPI
+ 
+22:27:45 **** Clean-only build of configuration Debug for project Face_Detection ****
+make clean 
+rm -rf  ./src/FaceDetection.o  ./src/FaceDetection.d  Face_Detection
+ 
+22:27:46 **** Clean-only build of configuration Debug for project Projeto_Final ****
+make clean 
+rm -rf  ./src/Botao.o ./src/Display.o ./src/ProjetoFinal.o ./src/main.o  ./src/Botao.d ./src/Display.d ./src/ProjetoFinal.d ./src/main.d  Projeto_Final
+ 
+22:27:47 **** Clean-only build of configuration Debug for project Student_Detector ****
+make clean 
+rm -rf  ./src/Student_Detector.o  ./src/Student_Detector.d  Student_Detector
+ 
+22:27:48 **** Clean-only build of configuration Debug for project Take_Picture ****
+make clean 
+rm -rf  ./src/TakePicture.o  ./src/TakePicture.d  Take_Picture
+ 
+22:27:48 **** Clean-only build of configuration Debug for project Use_Samples ****
+make clean 
+rm -rf  ./src/Use_Samples.o  ./src/Use_Samples.d  Use_Samples
+ 

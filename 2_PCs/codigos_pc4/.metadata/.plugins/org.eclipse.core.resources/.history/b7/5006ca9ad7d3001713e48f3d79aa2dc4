@@ -1,0 +1,39 @@
+/*
+ * Botao.h
+ *
+ *  Created on: Nov 27, 2017
+ *      Author: pi
+ */
+
+#ifndef BOTAO_H_
+#define BOTAO_H_
+
+/*
+ * BOTAOnum		TIPO		GPIO
+ * 1			NAVEGAR		13
+ * 2			SELECAO		19
+ * 3			VOLTAR		26
+ */
+
+#include <iostream>
+using namespace std;
+
+#include<stdio.h>
+#include<stdlib.h>
+#include<fcntl.h>
+#include<unistd.h>
+#include<signal.h>
+#include<string.h>
+#include<sys/wait.h>
+#include <pthread.h>
+
+struct Decisao{
+	int opcao,navegar,selecionar,voltar,GPIO[3];
+};
+
+void GPIO_setup();
+void *Verifica_Navegar(void *d);
+void *Verifica_Selecao(void *d);
+void *Verifica_Voltar(void *d);
+
+#endif /* BOTAO_H_ */

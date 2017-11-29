@@ -1,0 +1,7 @@
+22:27:41 **** Clean-only build of configuration Debug for project Cadastro_Nova_Turma ****
+make clean 
+rm -rf  ./src/Cadastro_Nova_Turma.o  ./src/Cadastro_Nova_Turma.d  Cadastro_Nova_Turma
+ 
+
+22:27:42 Build Finished (took 586ms)
+

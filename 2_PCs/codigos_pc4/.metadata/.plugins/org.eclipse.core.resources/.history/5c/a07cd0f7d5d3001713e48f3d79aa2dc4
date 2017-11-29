@@ -1,0 +1,31 @@
+/*
+ * main.cpp
+ *
+ *  Created on: Nov 27, 2017
+ *      Author: pi
+ */
+
+#include "Display.h"
+#include "Botao.h"
+using namespace std;
+
+int main() {
+
+	Decisao decisao;
+	decisao.GPIO[0] = 13;
+	decisao.GPIO[1] = 19;
+	decisao.GPIO[2] = 26;
+	GPIO_Setup(BTN_Navegar);
+	GPIO_Setup(BTN_Selecao);
+	GPIO_Setup(BTN_Voltar);
+	Decisao decisao;
+	decisao.GPIO;
+	pthread_t thread_id[3];
+	pthread_create(&thread_id[0], NULL, &Verifica_Botao, &decisao);
+	pthread_create(&thread_id[0], NULL, &Verifica_Botao, &decisao);
+
+
+	return 0;
+}
+
+

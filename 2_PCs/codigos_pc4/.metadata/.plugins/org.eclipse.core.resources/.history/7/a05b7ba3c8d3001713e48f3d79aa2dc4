@@ -1,0 +1,21 @@
+/*
+ * Botao.h
+ *
+ *  Created on: Nov 27, 2017
+ *      Author: pi
+ */
+
+#ifndef BOTAO_H_
+#define BOTAO_H_
+
+/*
+ * BOTAOnum		TIPO		GPIO
+ * 1			NAVEGAR		13
+ * 2			SELECAO		19
+ * 3			VOLTAR		26
+ */
+
+void Configurar_Botoes();
+
+
+#endif /* BOTAO_H_ */
