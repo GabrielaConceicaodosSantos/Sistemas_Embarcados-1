@@ -1,7 +1,80 @@
-22:27:46 **** Clean-only build of configuration Debug for project Projeto_Final ****
-make clean 
-rm -rf  ./src/Botao.o ./src/Display.o ./src/ProjetoFinal.o ./src/main.o  ./src/Botao.d ./src/Display.d ./src/ProjetoFinal.d ./src/main.d  Projeto_Final
+00:13:34 **** Incremental Build of configuration Debug for project Projeto_Final ****
+make all 
+Building file: ../src/ProjetoFinal.cpp
+Invoking: GCC C++ Compiler
+g++ -I/usr/local/include/opencv -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/ProjetoFinal.d" -MT"src/ProjetoFinal.d" -o "src/ProjetoFinal.o" "../src/ProjetoFinal.cpp"
+../src/ProjetoFinal.cpp: In function ‘void Realizar_Acao(Decisao*, Display*)’:
+../src/ProjetoFinal.cpp:97:59: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+    Acao_Display(display, "1. Op Prof (x)", "2. Op Alu ( )");
+                                                           ^
+../src/ProjetoFinal.cpp:97:59: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+../src/ProjetoFinal.cpp:99:59: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+    Acao_Display(display, "1. Op Prof ( )", "2. Op Alu (x)");
+                                                           ^
+../src/ProjetoFinal.cpp:99:59: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+../src/ProjetoFinal.cpp:101:59: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+    Acao_Display(display, "Cad Turma (x)", "Ver Turmas ( )");
+                                                           ^
+../src/ProjetoFinal.cpp:101:59: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+../src/ProjetoFinal.cpp:103:59: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+    Acao_Display(display, "Cad Turma ( )", "Ver Turmas (x)");
+                                                           ^
+../src/ProjetoFinal.cpp:103:59: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+../src/ProjetoFinal.cpp:105:59: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+    Acao_Display(display, "Excl Turma (x)", "Cad Aluno ( )");
+                                                           ^
+../src/ProjetoFinal.cpp:105:59: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+../src/ProjetoFinal.cpp:107:59: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+    Acao_Display(display, "Excl Turma ( )", "Cad Aluno (x)");
+                                                           ^
+../src/ProjetoFinal.cpp:107:59: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+../src/ProjetoFinal.cpp:109:55: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+    Acao_Display(display, "Excl Aluno (x)", "Voltar...");
+                                                       ^
+../src/ProjetoFinal.cpp:109:55: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+../src/ProjetoFinal.cpp:111:56: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+    Acao_Display(display, "Reg Pres (x)", "Ver Pres ( )");
+                                                        ^
+../src/ProjetoFinal.cpp:111:56: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+../src/ProjetoFinal.cpp:113:56: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+    Acao_Display(display, "Reg Pres ( )", "Ver Pres (x)");
+                                                        ^
+../src/ProjetoFinal.cpp:113:56: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+../src/ProjetoFinal.cpp: In function ‘int Registrar_Presenca(Display*)’:
+../src/ProjetoFinal.cpp:139:32: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+   display->Print("N da turma: ");
+                                ^
+../src/ProjetoFinal.cpp:154:31: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+  display->Print("Foto em 3...");
+                               ^
+../src/ProjetoFinal.cpp:158:31: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+  display->Print("Foto em 2...");
+                               ^
+../src/ProjetoFinal.cpp:162:31: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+  display->Print("Foto em 1...");
+                               ^
+../src/ProjetoFinal.cpp:166:33: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+  display->Print("Processando...");
+                                 ^
+../src/ProjetoFinal.cpp:188:32: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+   display->Print("Desconhecido");
+                                ^
+../src/ProjetoFinal.cpp:194:35: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+   display->Print("Presenca para: ");
+                                   ^
+../src/ProjetoFinal.cpp:179:10: warning: unused variable ‘i’ [-Wunused-variable]
+  int fd, i = 0;
+          ^
+../src/ProjetoFinal.cpp:180:7: warning: unused variable ‘c’ [-Wunused-variable]
+  char c;
+       ^
+Finished building: ../src/ProjetoFinal.cpp
+ 
+Building target: Projeto_Final
+Invoking: GCC C++ Linker
+g++ -L/usr/local/lib -o "Projeto_Final"  ./src/Botao.o ./src/Display.o ./src/ProjetoFinal.o ./src/main.o   -lpthread -lopencv_dnn -lopencv_ml -lopencv_objdetect -lopencv_shape -lopencv_stitching -lopencv_superres -lopencv_videostab -lopencv_calib3d -lopencv_features2d -lopencv_highgui -lopencv_videoio -lopencv_imgcodecs -lopencv_video -lopencv_photo -lopencv_imgproc -lopencv_flann -lopencv_core
+Finished building target: Projeto_Final
  
 
-22:27:47 Build Finished (took 573ms)
+00:13:50 Build Finished (took 16s.191ms)
 

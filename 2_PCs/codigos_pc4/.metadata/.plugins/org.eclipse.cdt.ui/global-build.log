@@ -1668,3 +1668,707 @@ rm -rf  ./src/TakePicture.o  ./src/TakePicture.d  Take_Picture
 make clean 
 rm -rf  ./src/Use_Samples.o  ./src/Use_Samples.d  Use_Samples
  
+23:54:18 **** Build of configuration Debug for project Projeto_Final ****
+make all 
+Building file: ../src/Botao.cpp
+Invoking: GCC C++ Compiler
+g++ -I/usr/local/include/opencv -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Botao.d" -MT"src/Botao.d" -o "src/Botao.o" "../src/Botao.cpp"
+Finished building: ../src/Botao.cpp
+ 
+Building file: ../src/Display.cpp
+Invoking: GCC C++ Compiler
+g++ -I/usr/local/include/opencv -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Display.d" -MT"src/Display.d" -o "src/Display.o" "../src/Display.cpp"
+Finished building: ../src/Display.cpp
+ 
+Building file: ../src/ProjetoFinal.cpp
+Invoking: GCC C++ Compiler
+g++ -I/usr/local/include/opencv -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/ProjetoFinal.d" -MT"src/ProjetoFinal.d" -o "src/ProjetoFinal.o" "../src/ProjetoFinal.cpp"
+../src/ProjetoFinal.cpp: In function ‘void Realizar_Acao(Decisao*, Display*)’:
+../src/ProjetoFinal.cpp:97:59: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+    Acao_Display(display, "1. Op Prof (x)", "2. Op Alu ( )");
+                                                           ^
+../src/ProjetoFinal.cpp:97:59: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+../src/ProjetoFinal.cpp:99:59: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+    Acao_Display(display, "1. Op Prof ( )", "2. Op Alu (x)");
+                                                           ^
+../src/ProjetoFinal.cpp:99:59: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+../src/ProjetoFinal.cpp:101:59: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+    Acao_Display(display, "Cad Turma (x)", "Ver Turmas ( )");
+                                                           ^
+../src/ProjetoFinal.cpp:101:59: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+../src/ProjetoFinal.cpp:103:59: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+    Acao_Display(display, "Cad Turma ( )", "Ver Turmas (x)");
+                                                           ^
+../src/ProjetoFinal.cpp:103:59: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+../src/ProjetoFinal.cpp:105:59: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+    Acao_Display(display, "Excl Turma (x)", "Cad Aluno ( )");
+                                                           ^
+../src/ProjetoFinal.cpp:105:59: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+../src/ProjetoFinal.cpp:107:59: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+    Acao_Display(display, "Excl Turma ( )", "Cad Aluno (x)");
+                                                           ^
+../src/ProjetoFinal.cpp:107:59: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+../src/ProjetoFinal.cpp:109:55: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+    Acao_Display(display, "Excl Aluno (x)", "Voltar...");
+                                                       ^
+../src/ProjetoFinal.cpp:109:55: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+../src/ProjetoFinal.cpp:111:56: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+    Acao_Display(display, "Reg Pres (x)", "Ver Pres ( )");
+                                                        ^
+../src/ProjetoFinal.cpp:111:56: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+../src/ProjetoFinal.cpp:113:56: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+    Acao_Display(display, "Reg Pres ( )", "Ver Pres (x)");
+                                                        ^
+../src/ProjetoFinal.cpp:113:56: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+../src/ProjetoFinal.cpp: In function ‘int Registrar_Presenca(Display*)’:
+../src/ProjetoFinal.cpp:139:32: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+   display->Print("N da turma: ");
+                                ^
+../src/ProjetoFinal.cpp:140:7: error: no match for ‘operator>’ (operand types are ‘std::istream {aka std::basic_istream<char>}’ and ‘int’)
+   cin > iTurma;
+   ~~~~^~~~~~~~
+../src/ProjetoFinal.cpp:140:7: note: candidate: operator>(int, int) <built-in>
+../src/ProjetoFinal.cpp:140:7: note:   no known conversion for argument 1 from ‘std::istream {aka std::basic_istream<char>}’ to ‘int’
+In file included from /usr/local/include/opencv2/core/base.hpp:58:0,
+                 from /usr/local/include/opencv2/core.hpp:54,
+                 from /usr/local/include/opencv2/opencv.hpp:52,
+                 from ../src/ProjetoFinal.h:15,
+                 from ../src/ProjetoFinal.cpp:1:
+/usr/local/include/opencv2/core/cvstd.hpp:1022:20: note: candidate: bool cv::operator>(const cv::String&, const cv::String&)
+ static inline bool operator>  (const String& lhs, const String& rhs) { return lhs.compare(rhs) >  0; }
+                    ^~~~~~~~
+/usr/local/include/opencv2/core/cvstd.hpp:1022:20: note:   no known conversion for argument 1 from ‘std::istream {aka std::basic_istream<char>}’ to ‘const cv::String&’
+/usr/local/include/opencv2/core/cvstd.hpp:1023:20: note: candidate: bool cv::operator>(const char*, const cv::String&)
+ static inline bool operator>  (const char*   lhs, const String& rhs) { return rhs.compare(lhs) <  0; }
+                    ^~~~~~~~
+/usr/local/include/opencv2/core/cvstd.hpp:1023:20: note:   no known conversion for argument 1 from ‘std::istream {aka std::basic_istream<char>}’ to ‘const char*’
+/usr/local/include/opencv2/core/cvstd.hpp:1024:20: note: candidate: bool cv::operator>(const cv::String&, const char*)
+ static inline bool operator>  (const String& lhs, const char*   rhs) { return lhs.compare(rhs) >  0; }
+                    ^~~~~~~~
+/usr/local/include/opencv2/core/cvstd.hpp:1024:20: note:   no known conversion for argument 1 from ‘std::istream {aka std::basic_istream<char>}’ to ‘const cv::String&’
+In file included from /usr/local/include/opencv2/core.hpp:59:0,
+                 from /usr/local/include/opencv2/opencv.hpp:52,
+                 from ../src/ProjetoFinal.h:15,
+                 from ../src/ProjetoFinal.cpp:1:
+/usr/local/include/opencv2/core/mat.hpp:3591:20: note: candidate: cv::MatExpr cv::operator>(const cv::Mat&, const cv::Mat&)
+ CV_EXPORTS MatExpr operator > (const Mat& a, const Mat& b);
+                    ^~~~~~~~
+/usr/local/include/opencv2/core/mat.hpp:3591:20: note:   no known conversion for argument 1 from ‘std::istream {aka std::basic_istream<char>}’ to ‘const cv::Mat&’
+/usr/local/include/opencv2/core/mat.hpp:3592:20: note: candidate: cv::MatExpr cv::operator>(const cv::Mat&, double)
+ CV_EXPORTS MatExpr operator > (const Mat& a, double s);
+                    ^~~~~~~~
+/usr/local/include/opencv2/core/mat.hpp:3592:20: note:   no known conversion for argument 1 from ‘std::istream {aka std::basic_istream<char>}’ to ‘const cv::Mat&’
+/usr/local/include/opencv2/core/mat.hpp:3593:20: note: candidate: cv::MatExpr cv::operator>(double, const cv::Mat&)
+ CV_EXPORTS MatExpr operator > (double s, const Mat& a);
+                    ^~~~~~~~
+/usr/local/include/opencv2/core/mat.hpp:3593:20: note:   no known conversion for argument 1 from ‘std::istream {aka std::basic_istream<char>}’ to ‘double’
+In file included from /usr/local/include/opencv2/core/mat.hpp:3639:0,
+                 from /usr/local/include/opencv2/core.hpp:59,
+                 from /usr/local/include/opencv2/opencv.hpp:52,
+                 from ../src/ProjetoFinal.h:15,
+                 from ../src/ProjetoFinal.cpp:1:
+/usr/local/include/opencv2/core/mat.inl.hpp:2695:6: note: candidate: bool cv::operator>(const cv::MatConstIterator&, const cv::MatConstIterator&)
+ bool operator > (const MatConstIterator& a, const MatConstIterator& b)
+      ^~~~~~~~
+/usr/local/include/opencv2/core/mat.inl.hpp:2695:6: note:   no known conversion for argument 1 from ‘std::istream {aka std::basic_istream<char>}’ to ‘const cv::MatConstIterator&’
+In file included from /usr/include/c++/6/queue:64:0,
+                 from /usr/local/include/opencv2/stitching/detail/util_inl.hpp:46,
+                 from /usr/local/include/opencv2/stitching/detail/util.hpp:119,
+                 from /usr/local/include/opencv2/stitching/detail/motion_estimators.hpp:48,
+                 from /usr/local/include/opencv2/stitching.hpp:50,
+                 from /usr/local/include/opencv2/opencv.hpp:86,
+                 from ../src/ProjetoFinal.h:15,
+                 from ../src/ProjetoFinal.cpp:1:
+/usr/include/c++/6/bits/stl_queue.h:328:5: note: candidate: template<class _Tp, class _Seq> bool std::operator>(const std::queue<_Tp, _Seq>&, const std::queue<_Tp, _Seq>&)
+     operator>(const queue<_Tp, _Seq>& __x, const queue<_Tp, _Seq>& __y)
+     ^~~~~~~~
+/usr/include/c++/6/bits/stl_queue.h:328:5: note:   template argument deduction/substitution failed:
+../src/ProjetoFinal.cpp:140:9: note:   ‘std::istream {aka std::basic_istream<char>}’ is not derived from ‘const std::queue<_Tp, _Seq>’
+   cin > iTurma;
+         ^~~~~~
+In file included from /usr/include/c++/6/list:63:0,
+                 from /usr/local/include/opencv2/stitching/detail/util.hpp:46,
+                 from /usr/local/include/opencv2/stitching/detail/motion_estimators.hpp:48,
+                 from /usr/local/include/opencv2/stitching.hpp:50,
+                 from /usr/local/include/opencv2/opencv.hpp:86,
+                 from ../src/ProjetoFinal.h:15,
+                 from ../src/ProjetoFinal.cpp:1:
+/usr/include/c++/6/bits/stl_list.h:1900:5: note: candidate: template<class _Tp, class _Alloc> bool std::operator>(const std::__cxx11::list<_Tp, _Alloc>&, const std::__cxx11::list<_Tp, _Alloc>&)
+     operator>(const list<_Tp, _Alloc>& __x, const list<_Tp, _Alloc>& __y)
+     ^~~~~~~~
+/usr/include/c++/6/bits/stl_list.h:1900:5: note:   template argument deduction/substitution failed:
+../src/ProjetoFinal.cpp:140:9: note:   ‘std::istream {aka std::basic_istream<char>}’ is not derived from ‘const std::__cxx11::list<_Tp, _Alloc>’
+   cin > iTurma;
+         ^~~~~~
+In file included from /usr/include/c++/6/deque:64:0,
+                 from /usr/local/include/opencv2/objdetect/objdetect_c.h:50,
+                 from /usr/local/include/opencv2/objdetect.hpp:680,
+                 from /usr/local/include/opencv2/opencv.hpp:77,
+                 from ../src/ProjetoFinal.h:15,
+                 from ../src/ProjetoFinal.cpp:1:
+/usr/include/c++/6/bits/stl_deque.h:2253:5: note: candidate: template<class _Tp, class _Alloc> bool std::operator>(const std::deque<_Tp, _Alloc>&, const std::deque<_Tp, _Alloc>&)
+     operator>(const deque<_Tp, _Alloc>& __x,
+     ^~~~~~~~
+/usr/include/c++/6/bits/stl_deque.h:2253:5: note:   template argument deduction/substitution failed:
+../src/ProjetoFinal.cpp:140:9: note:   ‘std::istream {aka std::basic_istream<char>}’ is not derived from ‘const std::deque<_Tp, _Alloc>’
+   cin > iTurma;
+         ^~~~~~
+In file included from /usr/include/c++/6/deque:64:0,
+                 from /usr/local/include/opencv2/objdetect/objdetect_c.h:50,
+                 from /usr/local/include/opencv2/objdetect.hpp:680,
+                 from /usr/local/include/opencv2/opencv.hpp:77,
+                 from ../src/ProjetoFinal.h:15,
+                 from ../src/ProjetoFinal.cpp:1:
+/usr/include/c++/6/bits/stl_deque.h:313:5: note: candidate: template<class _Tp, class _RefL, class _PtrL, class _RefR, class _PtrR> bool std::operator>(const std::_Deque_iterator<_Tp, _Ref, _Ptr>&, const std::_Deque_iterator<_Tp, _RefR, _PtrR>&)
+     operator>(const _Deque_iterator<_Tp, _RefL, _PtrL>& __x,
+     ^~~~~~~~
+/usr/include/c++/6/bits/stl_deque.h:313:5: note:   template argument deduction/substitution failed:
+../src/ProjetoFinal.cpp:140:9: note:   ‘std::istream {aka std::basic_istream<char>}’ is not derived from ‘const std::_Deque_iterator<_Tp, _Ref, _Ptr>’
+   cin > iTurma;
+         ^~~~~~
+In file included from /usr/include/c++/6/deque:64:0,
+                 from /usr/local/include/opencv2/objdetect/objdetect_c.h:50,
+                 from /usr/local/include/opencv2/objdetect.hpp:680,
+                 from /usr/local/include/opencv2/opencv.hpp:77,
+                 from ../src/ProjetoFinal.h:15,
+                 from ../src/ProjetoFinal.cpp:1:
+/usr/include/c++/6/bits/stl_deque.h:306:5: note: candidate: template<class _Tp, class _Ref, class _Ptr> bool std::operator>(const std::_Deque_iterator<_Tp, _Ref, _Ptr>&, const std::_Deque_iterator<_Tp, _Ref, _Ptr>&)
+     operator>(const _Deque_iterator<_Tp, _Ref, _Ptr>& __x,
+     ^~~~~~~~
+/usr/include/c++/6/bits/stl_deque.h:306:5: note:   template argument deduction/substitution failed:
+../src/ProjetoFinal.cpp:140:9: note:   ‘std::istream {aka std::basic_istream<char>}’ is not derived from ‘const std::_Deque_iterator<_Tp, _Ref, _Ptr>’
+   cin > iTurma;
+         ^~~~~~
+In file included from /usr/include/c++/6/bits/locale_conv.h:41:0,
+                 from /usr/include/c++/6/locale:43,
+                 from /usr/include/c++/6/iomanip:43,
+                 from /usr/local/include/opencv2/flann/lsh_table.h:40,
+                 from /usr/local/include/opencv2/flann/lsh_index.h:49,
+                 from /usr/local/include/opencv2/flann/all_indices.h:42,
+                 from /usr/local/include/opencv2/flann/flann_base.hpp:43,
+                 from /usr/local/include/opencv2/flann.hpp:48,
+                 from /usr/local/include/opencv2/opencv.hpp:62,
+                 from ../src/ProjetoFinal.h:15,
+                 from ../src/ProjetoFinal.cpp:1:
+/usr/include/c++/6/bits/unique_ptr.h:737:5: note: candidate: template<class _Tp, class _Dp> bool std::operator>(std::nullptr_t, const std::unique_ptr<_Tp, _Dp>&)
+     operator>(nullptr_t, const unique_ptr<_Tp, _Dp>& __x)
+     ^~~~~~~~
+/usr/include/c++/6/bits/unique_ptr.h:737:5: note:   template argument deduction/substitution failed:
+../src/ProjetoFinal.cpp:140:9: note:   mismatched types ‘const std::unique_ptr<_Tp, _Dp>’ and ‘int’
+   cin > iTurma;
+         ^~~~~~
+In file included from /usr/include/c++/6/bits/locale_conv.h:41:0,
+                 from /usr/include/c++/6/locale:43,
+                 from /usr/include/c++/6/iomanip:43,
+                 from /usr/local/include/opencv2/flann/lsh_table.h:40,
+                 from /usr/local/include/opencv2/flann/lsh_index.h:49,
+                 from /usr/local/include/opencv2/flann/all_indices.h:42,
+                 from /usr/local/include/opencv2/flann/flann_base.hpp:43,
+                 from /usr/local/include/opencv2/flann.hpp:48,
+                 from /usr/local/include/opencv2/opencv.hpp:62,
+                 from ../src/ProjetoFinal.h:15,
+                 from ../src/ProjetoFinal.cpp:1:
+/usr/include/c++/6/bits/unique_ptr.h:731:5: note: candidate: template<class _Tp, class _Dp> bool std::operator>(const std::unique_ptr<_Tp, _Dp>&, std::nullptr_t)
+     operator>(const unique_ptr<_Tp, _Dp>& __x, nullptr_t)
+     ^~~~~~~~
+/usr/include/c++/6/bits/unique_ptr.h:731:5: note:   template argument deduction/substitution failed:
+../src/ProjetoFinal.cpp:140:9: note:   ‘std::istream {aka std::basic_istream<char>}’ is not derived from ‘const std::unique_ptr<_Tp, _Dp>’
+   cin > iTurma;
+         ^~~~~~
+In file included from /usr/include/c++/6/bits/locale_conv.h:41:0,
+                 from /usr/include/c++/6/locale:43,
+                 from /usr/include/c++/6/iomanip:43,
+                 from /usr/local/include/opencv2/flann/lsh_table.h:40,
+                 from /usr/local/include/opencv2/flann/lsh_index.h:49,
+                 from /usr/local/include/opencv2/flann/all_indices.h:42,
+                 from /usr/local/include/opencv2/flann/flann_base.hpp:43,
+                 from /usr/local/include/opencv2/flann.hpp:48,
+                 from /usr/local/include/opencv2/opencv.hpp:62,
+                 from ../src/ProjetoFinal.h:15,
+                 from ../src/ProjetoFinal.cpp:1:
+/usr/include/c++/6/bits/unique_ptr.h:725:5: note: candidate: template<class _Tp, class _Dp, class _Up, class _Ep> bool std::operator>(const std::unique_ptr<_Tp, _Dp>&, const std::unique_ptr<_Up, _Ep>&)
+     operator>(const unique_ptr<_Tp, _Dp>& __x,
+     ^~~~~~~~
+/usr/include/c++/6/bits/unique_ptr.h:725:5: note:   template argument deduction/substitution failed:
+../src/ProjetoFinal.cpp:140:9: note:   ‘std::istream {aka std::basic_istream<char>}’ is not derived from ‘const std::unique_ptr<_Tp, _Dp>’
+   cin > iTurma;
+         ^~~~~~
+In file included from /usr/include/c++/6/set:62:0,
+                 from /usr/local/include/opencv2/flann/result_set.h:38,
+                 from /usr/local/include/opencv2/flann/nn_index.h:36,
+                 from /usr/local/include/opencv2/flann/saving.h:36,
+                 from /usr/local/include/opencv2/flann/flann_base.hpp:41,
+                 from /usr/local/include/opencv2/flann.hpp:48,
+                 from /usr/local/include/opencv2/opencv.hpp:62,
+                 from ../src/ProjetoFinal.h:15,
+                 from ../src/ProjetoFinal.cpp:1:
+/usr/include/c++/6/bits/stl_multiset.h:854:5: note: candidate: template<class _Key, class _Compare, class _Alloc> bool std::operator>(const std::multiset<_Key, _Compare, _Alloc>&, const std::multiset<_Key, _Compare, _Alloc>&)
+     operator>(const multiset<_Key,_Compare,_Alloc>& __x,
+     ^~~~~~~~
+/usr/include/c++/6/bits/stl_multiset.h:854:5: note:   template argument deduction/substitution failed:
+../src/ProjetoFinal.cpp:140:9: note:   ‘std::istream {aka std::basic_istream<char>}’ is not derived from ‘const std::multiset<_Key, _Compare, _Alloc>’
+   cin > iTurma;
+         ^~~~~~
+In file included from /usr/include/c++/6/set:61:0,
+                 from /usr/local/include/opencv2/flann/result_set.h:38,
+                 from /usr/local/include/opencv2/flann/nn_index.h:36,
+                 from /usr/local/include/opencv2/flann/saving.h:36,
+                 from /usr/local/include/opencv2/flann/flann_base.hpp:41,
+                 from /usr/local/include/opencv2/flann.hpp:48,
+                 from /usr/local/include/opencv2/opencv.hpp:62,
+                 from ../src/ProjetoFinal.h:15,
+                 from ../src/ProjetoFinal.cpp:1:
+/usr/include/c++/6/bits/stl_set.h:871:5: note: candidate: template<class _Key, class _Compare, class _Alloc> bool std::operator>(const std::set<_Key, _Compare, _Alloc>&, const std::set<_Key, _Compare, _Alloc>&)
+     operator>(const set<_Key, _Compare, _Alloc>& __x,
+     ^~~~~~~~
+/usr/include/c++/6/bits/stl_set.h:871:5: note:   template argument deduction/substitution failed:
+../src/ProjetoFinal.cpp:140:9: note:   ‘std::istream {aka std::basic_istream<char>}’ is not derived from ‘const std::set<_Key, _Compare, _Alloc>’
+   cin > iTurma;
+         ^~~~~~
+In file included from /usr/include/c++/6/map:62:0,
+                 from /usr/local/include/opencv2/flann/params.h:36,
+                 from /usr/local/include/opencv2/flann/flann_base.hpp:40,
+                 from /usr/local/include/opencv2/flann.hpp:48,
+                 from /usr/local/include/opencv2/opencv.hpp:62,
+                 from ../src/ProjetoFinal.h:15,
+                 from ../src/ProjetoFinal.cpp:1:
+/usr/include/c++/6/bits/stl_multimap.h:1007:5: note: candidate: template<class _Key, class _Tp, class _Compare, class _Alloc> bool std::operator>(const std::multimap<_Key, _Tp, _Compare, _Alloc>&, const std::multimap<_Key, _Tp, _Compare, _Alloc>&)
+     operator>(const multimap<_Key, _Tp, _Compare, _Alloc>& __x,
+     ^~~~~~~~
+/usr/include/c++/6/bits/stl_multimap.h:1007:5: note:   template argument deduction/substitution failed:
+../src/ProjetoFinal.cpp:140:9: note:   ‘std::istream {aka std::basic_istream<char>}’ is not derived from ‘const std::multimap<_Key, _Tp, _Compare, _Alloc>’
+   cin > iTurma;
+         ^~~~~~
+In file included from /usr/include/c++/6/map:61:0,
+                 from /usr/local/include/opencv2/flann/params.h:36,
+                 from /usr/local/include/opencv2/flann/flann_base.hpp:40,
+                 from /usr/local/include/opencv2/flann.hpp:48,
+                 from /usr/local/include/opencv2/opencv.hpp:62,
+                 from ../src/ProjetoFinal.h:15,
+                 from ../src/ProjetoFinal.cpp:1:
+/usr/include/c++/6/bits/stl_map.h:1342:5: note: candidate: template<class _Key, class _Tp, class _Compare, class _Alloc> bool std::operator>(const std::map<_Key, _Tp, _Compare, _Alloc>&, const std::map<_Key, _Tp, _Compare, _Alloc>&)
+     operator>(const map<_Key, _Tp, _Compare, _Alloc>& __x,
+     ^~~~~~~~
+/usr/include/c++/6/bits/stl_map.h:1342:5: note:   template argument deduction/substitution failed:
+../src/ProjetoFinal.cpp:140:9: note:   ‘std::istream {aka std::basic_istream<char>}’ is not derived from ‘const std::map<_Key, _Tp, _Compare, _Alloc>’
+   cin > iTurma;
+         ^~~~~~
+In file included from /usr/include/c++/6/map:60:0,
+                 from /usr/local/include/opencv2/flann/params.h:36,
+                 from /usr/local/include/opencv2/flann/flann_base.hpp:40,
+                 from /usr/local/include/opencv2/flann.hpp:48,
+                 from /usr/local/include/opencv2/opencv.hpp:62,
+                 from ../src/ProjetoFinal.h:15,
+                 from ../src/ProjetoFinal.cpp:1:
+/usr/include/c++/6/bits/stl_tree.h:1309:5: note: candidate: template<class _Key, class _Val, class _KeyOfValue, class _Compare, class _Alloc> bool std::operator>(const std::_Rb_tree<_Key, _Val, _KeyOfValue, _Compare, _Alloc>&, const std::_Rb_tree<_Key, _Val, _KeyOfValue, _Compare, _Alloc>&)
+     operator>(const _Rb_tree<_Key, _Val, _KeyOfValue, _Compare, _Alloc>& __x,
+     ^~~~~~~~
+/usr/include/c++/6/bits/stl_tree.h:1309:5: note:   template argument deduction/substitution failed:
+../src/ProjetoFinal.cpp:140:9: note:   ‘std::istream {aka std::basic_istream<char>}’ is not derived from ‘const std::_Rb_tree<_Key, _Val, _KeyOfValue, _Compare, _Alloc>’
+   cin > iTurma;
+         ^~~~~~
+In file included from /usr/include/c++/6/functional:55:0,
+                 from /usr/local/include/opencv2/core/utility.hpp:60,
+                 from /usr/local/include/opencv2/core.hpp:3276,
+                 from /usr/local/include/opencv2/opencv.hpp:52,
+                 from ../src/ProjetoFinal.h:15,
+                 from ../src/ProjetoFinal.cpp:1:
+/usr/include/c++/6/tuple:1373:5: note: candidate: template<class ... _TElements, class ... _UElements> constexpr bool std::operator>(const std::tuple<_Elements ...>&, const std::tuple<_Elements ...>&)
+     operator>(const tuple<_TElements...>& __t,
+     ^~~~~~~~
+/usr/include/c++/6/tuple:1373:5: note:   template argument deduction/substitution failed:
+../src/ProjetoFinal.cpp:140:9: note:   ‘std::istream {aka std::basic_istream<char>}’ is not derived from ‘const std::tuple<_Elements ...>’
+   cin > iTurma;
+         ^~~~~~
+In file included from /usr/include/c++/6/vector:64:0,
+                 from /usr/local/include/opencv2/core/types.hpp:53,
+                 from /usr/local/include/opencv2/core.hpp:58,
+                 from /usr/local/include/opencv2/opencv.hpp:52,
+                 from ../src/ProjetoFinal.h:15,
+                 from ../src/ProjetoFinal.cpp:1:
+/usr/include/c++/6/bits/stl_vector.h:1539:5: note: candidate: template<class _Tp, class _Alloc> bool std::operator>(const std::vector<_Tp, _Alloc>&, const std::vector<_Tp, _Alloc>&)
+     operator>(const vector<_Tp, _Alloc>& __x, const vector<_Tp, _Alloc>& __y)
+     ^~~~~~~~
+/usr/include/c++/6/bits/stl_vector.h:1539:5: note:   template argument deduction/substitution failed:
+../src/ProjetoFinal.cpp:140:9: note:   ‘std::istream {aka std::basic_istream<char>}’ is not derived from ‘const std::vector<_Tp, _Alloc>’
+   cin > iTurma;
+         ^~~~~~
+In file included from /usr/local/include/opencv2/core/cvdef.h:428:0,
+                 from /usr/local/include/opencv2/core.hpp:52,
+                 from /usr/local/include/opencv2/opencv.hpp:52,
+                 from ../src/ProjetoFinal.h:15,
+                 from ../src/ProjetoFinal.cpp:1:
+/usr/include/c++/6/array:259:5: note: candidate: template<class _Tp, unsigned int _Nm> bool std::operator>(const std::array<_Tp, _Nm>&, const std::array<_Tp, _Nm>&)
+     operator>(const array<_Tp, _Nm>& __one, const array<_Tp, _Nm>& __two)
+     ^~~~~~~~
+/usr/include/c++/6/array:259:5: note:   template argument deduction/substitution failed:
+../src/ProjetoFinal.cpp:140:9: note:   ‘std::istream {aka std::basic_istream<char>}’ is not derived from ‘const std::array<_Tp, _Nm>’
+   cin > iTurma;
+         ^~~~~~
+In file included from /usr/include/c++/6/string:52:0,
+                 from /usr/include/c++/6/bits/locale_classes.h:40,
+                 from /usr/include/c++/6/bits/ios_base.h:41,
+                 from /usr/include/c++/6/ios:42,
+                 from /usr/include/c++/6/ostream:38,
+                 from /usr/include/c++/6/iostream:39,
+                 from ../src/Botao.h:18,
+                 from ../src/ProjetoFinal.h:11,
+                 from ../src/ProjetoFinal.cpp:1:
+/usr/include/c++/6/bits/basic_string.h:5213:5: note: candidate: template<class _CharT, class _Traits, class _Alloc> bool std::operator>(const _CharT*, const std::__cxx11::basic_string<_CharT, _Traits, _Alloc>&)
+     operator>(const _CharT* __lhs,
+     ^~~~~~~~
+/usr/include/c++/6/bits/basic_string.h:5213:5: note:   template argument deduction/substitution failed:
+../src/ProjetoFinal.cpp:140:9: note:   mismatched types ‘const _CharT*’ and ‘std::basic_istream<char>’
+   cin > iTurma;
+         ^~~~~~
+In file included from /usr/include/c++/6/string:52:0,
+                 from /usr/include/c++/6/bits/locale_classes.h:40,
+                 from /usr/include/c++/6/bits/ios_base.h:41,
+                 from /usr/include/c++/6/ios:42,
+                 from /usr/include/c++/6/ostream:38,
+                 from /usr/include/c++/6/iostream:39,
+                 from ../src/Botao.h:18,
+                 from ../src/ProjetoFinal.h:11,
+                 from ../src/ProjetoFinal.cpp:1:
+/usr/include/c++/6/bits/basic_string.h:5201:5: note: candidate: template<class _CharT, class _Traits, class _Alloc> bool std::operator>(const std::__cxx11::basic_string<_CharT, _Traits, _Alloc>&, const _CharT*)
+     operator>(const basic_string<_CharT, _Traits, _Alloc>& __lhs,
+     ^~~~~~~~
+/usr/include/c++/6/bits/basic_string.h:5201:5: note:   template argument deduction/substitution failed:
+../src/ProjetoFinal.cpp:140:9: note:   ‘std::istream {aka std::basic_istream<char>}’ is not derived from ‘const std::__cxx11::basic_string<_CharT, _Traits, _Alloc>’
+   cin > iTurma;
+         ^~~~~~
+In file included from /usr/include/c++/6/string:52:0,
+                 from /usr/include/c++/6/bits/locale_classes.h:40,
+                 from /usr/include/c++/6/bits/ios_base.h:41,
+                 from /usr/include/c++/6/ios:42,
+                 from /usr/include/c++/6/ostream:38,
+                 from /usr/include/c++/6/iostream:39,
+                 from ../src/Botao.h:18,
+                 from ../src/ProjetoFinal.h:11,
+                 from ../src/ProjetoFinal.cpp:1:
+/usr/include/c++/6/bits/basic_string.h:5188:5: note: candidate: template<class _CharT, class _Traits, class _Alloc> bool std::operator>(const std::__cxx11::basic_string<_CharT, _Traits, _Alloc>&, const std::__cxx11::basic_string<_CharT, _Traits, _Alloc>&)
+     operator>(const basic_string<_CharT, _Traits, _Alloc>& __lhs,
+     ^~~~~~~~
+/usr/include/c++/6/bits/basic_string.h:5188:5: note:   template argument deduction/substitution failed:
+../src/ProjetoFinal.cpp:140:9: note:   ‘std::istream {aka std::basic_istream<char>}’ is not derived from ‘const std::__cxx11::basic_string<_CharT, _Traits, _Alloc>’
+   cin > iTurma;
+         ^~~~~~
+In file included from /usr/include/c++/6/bits/stl_algobase.h:67:0,
+                 from /usr/include/c++/6/bits/char_traits.h:39,
+                 from /usr/include/c++/6/ios:40,
+                 from /usr/include/c++/6/ostream:38,
+                 from /usr/include/c++/6/iostream:39,
+                 from ../src/Botao.h:18,
+                 from ../src/ProjetoFinal.h:11,
+                 from ../src/ProjetoFinal.cpp:1:
+/usr/include/c++/6/bits/stl_iterator.h:1167:5: note: candidate: template<class _Iterator> bool std::operator>(const std::move_iterator<_IteratorL>&, const std::move_iterator<_IteratorL>&)
+     operator>(const move_iterator<_Iterator>& __x,
+     ^~~~~~~~
+/usr/include/c++/6/bits/stl_iterator.h:1167:5: note:   template argument deduction/substitution failed:
+../src/ProjetoFinal.cpp:140:9: note:   ‘std::istream {aka std::basic_istream<char>}’ is not derived from ‘const std::move_iterator<_IteratorL>’
+   cin > iTurma;
+         ^~~~~~
+In file included from /usr/include/c++/6/bits/stl_algobase.h:67:0,
+                 from /usr/include/c++/6/bits/char_traits.h:39,
+                 from /usr/include/c++/6/ios:40,
+                 from /usr/include/c++/6/ostream:38,
+                 from /usr/include/c++/6/iostream:39,
+                 from ../src/Botao.h:18,
+                 from ../src/ProjetoFinal.h:11,
+                 from ../src/ProjetoFinal.cpp:1:
+/usr/include/c++/6/bits/stl_iterator.h:1161:5: note: candidate: template<class _IteratorL, class _IteratorR> bool std::operator>(const std::move_iterator<_IteratorL>&, const std::move_iterator<_IteratorR>&)
+     operator>(const move_iterator<_IteratorL>& __x,
+     ^~~~~~~~
+/usr/include/c++/6/bits/stl_iterator.h:1161:5: note:   template argument deduction/substitution failed:
+../src/ProjetoFinal.cpp:140:9: note:   ‘std::istream {aka std::basic_istream<char>}’ is not derived from ‘const std::move_iterator<_IteratorL>’
+   cin > iTurma;
+         ^~~~~~
+In file included from /usr/include/c++/6/bits/stl_algobase.h:67:0,
+                 from /usr/include/c++/6/bits/char_traits.h:39,
+                 from /usr/include/c++/6/ios:40,
+                 from /usr/include/c++/6/ostream:38,
+                 from /usr/include/c++/6/iostream:39,
+                 from ../src/Botao.h:18,
+                 from ../src/ProjetoFinal.h:11,
+                 from ../src/ProjetoFinal.cpp:1:
+/usr/include/c++/6/bits/stl_iterator.h:367:5: note: candidate: template<class _IteratorL, class _IteratorR> bool std::operator>(const std::reverse_iterator<_Iterator>&, const std::reverse_iterator<_IteratorR>&)
+     operator>(const reverse_iterator<_IteratorL>& __x,
+     ^~~~~~~~
+/usr/include/c++/6/bits/stl_iterator.h:367:5: note:   template argument deduction/substitution failed:
+../src/ProjetoFinal.cpp:140:9: note:   ‘std::istream {aka std::basic_istream<char>}’ is not derived from ‘const std::reverse_iterator<_Iterator>’
+   cin > iTurma;
+         ^~~~~~
+In file included from /usr/include/c++/6/bits/stl_algobase.h:67:0,
+                 from /usr/include/c++/6/bits/char_traits.h:39,
+                 from /usr/include/c++/6/ios:40,
+                 from /usr/include/c++/6/ostream:38,
+                 from /usr/include/c++/6/iostream:39,
+                 from ../src/Botao.h:18,
+                 from ../src/ProjetoFinal.h:11,
+                 from ../src/ProjetoFinal.cpp:1:
+/usr/include/c++/6/bits/stl_iterator.h:310:5: note: candidate: template<class _Iterator> bool std::operator>(const std::reverse_iterator<_Iterator>&, const std::reverse_iterator<_Iterator>&)
+     operator>(const reverse_iterator<_Iterator>& __x,
+     ^~~~~~~~
+/usr/include/c++/6/bits/stl_iterator.h:310:5: note:   template argument deduction/substitution failed:
+../src/ProjetoFinal.cpp:140:9: note:   ‘std::istream {aka std::basic_istream<char>}’ is not derived from ‘const std::reverse_iterator<_Iterator>’
+   cin > iTurma;
+         ^~~~~~
+In file included from /usr/include/c++/6/bits/stl_algobase.h:64:0,
+                 from /usr/include/c++/6/bits/char_traits.h:39,
+                 from /usr/include/c++/6/ios:40,
+                 from /usr/include/c++/6/ostream:38,
+                 from /usr/include/c++/6/iostream:39,
+                 from ../src/Botao.h:18,
+                 from ../src/ProjetoFinal.h:11,
+                 from ../src/ProjetoFinal.cpp:1:
+/usr/include/c++/6/bits/stl_pair.h:454:5: note: candidate: template<class _T1, class _T2> constexpr bool std::operator>(const std::pair<_T1, _T2>&, const std::pair<_T1, _T2>&)
+     operator>(const pair<_T1, _T2>& __x, const pair<_T1, _T2>& __y)
+     ^~~~~~~~
+/usr/include/c++/6/bits/stl_pair.h:454:5: note:   template argument deduction/substitution failed:
+../src/ProjetoFinal.cpp:140:9: note:   ‘std::istream {aka std::basic_istream<char>}’ is not derived from ‘const std::pair<_T1, _T2>’
+   cin > iTurma;
+         ^~~~~~
+../src/ProjetoFinal.cpp:154:31: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+  display->Print("Foto em 3...");
+                               ^
+../src/ProjetoFinal.cpp:158:31: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+  display->Print("Foto em 2...");
+                               ^
+../src/ProjetoFinal.cpp:162:31: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+  display->Print("Foto em 1...");
+                               ^
+../src/ProjetoFinal.cpp:166:33: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+  display->Print("Processando...");
+                                 ^
+../src/ProjetoFinal.cpp:189:32: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+   display->Print("Desconhecido");
+                                ^
+../src/ProjetoFinal.cpp:195:35: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+   display->Print("Presenca para: ");
+                                   ^
+src/subdir.mk:27: recipe for target 'src/ProjetoFinal.o' failed
+make: *** [src/ProjetoFinal.o] Error 1
+23:55:15 **** Incremental Build of configuration Debug for project Projeto_Final ****
+make all 
+Building file: ../src/ProjetoFinal.cpp
+Invoking: GCC C++ Compiler
+g++ -I/usr/local/include/opencv -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/ProjetoFinal.d" -MT"src/ProjetoFinal.d" -o "src/ProjetoFinal.o" "../src/ProjetoFinal.cpp"
+../src/ProjetoFinal.cpp: In function ‘void Realizar_Acao(Decisao*, Display*)’:
+../src/ProjetoFinal.cpp:97:59: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+    Acao_Display(display, "1. Op Prof (x)", "2. Op Alu ( )");
+                                                           ^
+../src/ProjetoFinal.cpp:97:59: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+../src/ProjetoFinal.cpp:99:59: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+    Acao_Display(display, "1. Op Prof ( )", "2. Op Alu (x)");
+                                                           ^
+../src/ProjetoFinal.cpp:99:59: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+../src/ProjetoFinal.cpp:101:59: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+    Acao_Display(display, "Cad Turma (x)", "Ver Turmas ( )");
+                                                           ^
+../src/ProjetoFinal.cpp:101:59: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+../src/ProjetoFinal.cpp:103:59: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+    Acao_Display(display, "Cad Turma ( )", "Ver Turmas (x)");
+                                                           ^
+../src/ProjetoFinal.cpp:103:59: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+../src/ProjetoFinal.cpp:105:59: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+    Acao_Display(display, "Excl Turma (x)", "Cad Aluno ( )");
+                                                           ^
+../src/ProjetoFinal.cpp:105:59: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+../src/ProjetoFinal.cpp:107:59: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+    Acao_Display(display, "Excl Turma ( )", "Cad Aluno (x)");
+                                                           ^
+../src/ProjetoFinal.cpp:107:59: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+../src/ProjetoFinal.cpp:109:55: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+    Acao_Display(display, "Excl Aluno (x)", "Voltar...");
+                                                       ^
+../src/ProjetoFinal.cpp:109:55: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+../src/ProjetoFinal.cpp:111:56: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+    Acao_Display(display, "Reg Pres (x)", "Ver Pres ( )");
+                                                        ^
+../src/ProjetoFinal.cpp:111:56: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+../src/ProjetoFinal.cpp:113:56: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+    Acao_Display(display, "Reg Pres ( )", "Ver Pres (x)");
+                                                        ^
+../src/ProjetoFinal.cpp:113:56: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+../src/ProjetoFinal.cpp: In function ‘int Registrar_Presenca(Display*)’:
+../src/ProjetoFinal.cpp:139:32: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+   display->Print("N da turma: ");
+                                ^
+../src/ProjetoFinal.cpp:154:31: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+  display->Print("Foto em 3...");
+                               ^
+../src/ProjetoFinal.cpp:158:31: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+  display->Print("Foto em 2...");
+                               ^
+../src/ProjetoFinal.cpp:162:31: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+  display->Print("Foto em 1...");
+                               ^
+../src/ProjetoFinal.cpp:166:33: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+  display->Print("Processando...");
+                                 ^
+../src/ProjetoFinal.cpp:189:32: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+   display->Print("Desconhecido");
+                                ^
+../src/ProjetoFinal.cpp:195:35: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+   display->Print("Presenca para: ");
+                                   ^
+Finished building: ../src/ProjetoFinal.cpp
+ 
+Building file: ../src/main.cpp
+Invoking: GCC C++ Compiler
+g++ -I/usr/local/include/opencv -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.cpp"
+Finished building: ../src/main.cpp
+ 
+Building target: Projeto_Final
+Invoking: GCC C++ Linker
+g++ -L/usr/local/lib -o "Projeto_Final"  ./src/Botao.o ./src/Display.o ./src/ProjetoFinal.o ./src/main.o   -lpthread -lopencv_dnn -lopencv_ml -lopencv_objdetect -lopencv_shape -lopencv_stitching -lopencv_superres -lopencv_videostab -lopencv_calib3d -lopencv_features2d -lopencv_highgui -lopencv_videoio -lopencv_imgcodecs -lopencv_video -lopencv_photo -lopencv_imgproc -lopencv_flann -lopencv_core
+Finished building target: Projeto_Final
+ 
+00:04:22 **** Incremental Build of configuration Debug for project Projeto_Final ****
+make all 
+Building file: ../src/ProjetoFinal.cpp
+Invoking: GCC C++ Compiler
+g++ -I/usr/local/include/opencv -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/ProjetoFinal.d" -MT"src/ProjetoFinal.d" -o "src/ProjetoFinal.o" "../src/ProjetoFinal.cpp"
+../src/ProjetoFinal.cpp: In function ‘void Realizar_Acao(Decisao*, Display*)’:
+../src/ProjetoFinal.cpp:97:59: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+    Acao_Display(display, "1. Op Prof (x)", "2. Op Alu ( )");
+                                                           ^
+../src/ProjetoFinal.cpp:97:59: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+../src/ProjetoFinal.cpp:99:59: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+    Acao_Display(display, "1. Op Prof ( )", "2. Op Alu (x)");
+                                                           ^
+../src/ProjetoFinal.cpp:99:59: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+../src/ProjetoFinal.cpp:101:59: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+    Acao_Display(display, "Cad Turma (x)", "Ver Turmas ( )");
+                                                           ^
+../src/ProjetoFinal.cpp:101:59: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+../src/ProjetoFinal.cpp:103:59: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+    Acao_Display(display, "Cad Turma ( )", "Ver Turmas (x)");
+                                                           ^
+../src/ProjetoFinal.cpp:103:59: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+../src/ProjetoFinal.cpp:105:59: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+    Acao_Display(display, "Excl Turma (x)", "Cad Aluno ( )");
+                                                           ^
+../src/ProjetoFinal.cpp:105:59: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+../src/ProjetoFinal.cpp:107:59: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+    Acao_Display(display, "Excl Turma ( )", "Cad Aluno (x)");
+                                                           ^
+../src/ProjetoFinal.cpp:107:59: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+../src/ProjetoFinal.cpp:109:55: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+    Acao_Display(display, "Excl Aluno (x)", "Voltar...");
+                                                       ^
+../src/ProjetoFinal.cpp:109:55: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+../src/ProjetoFinal.cpp:111:56: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+    Acao_Display(display, "Reg Pres (x)", "Ver Pres ( )");
+                                                        ^
+../src/ProjetoFinal.cpp:111:56: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+../src/ProjetoFinal.cpp:113:56: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+    Acao_Display(display, "Reg Pres ( )", "Ver Pres (x)");
+                                                        ^
+../src/ProjetoFinal.cpp:113:56: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+../src/ProjetoFinal.cpp: In function ‘int Registrar_Presenca(Display*)’:
+../src/ProjetoFinal.cpp:139:32: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+   display->Print("N da turma: ");
+                                ^
+../src/ProjetoFinal.cpp:154:31: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+  display->Print("Foto em 3...");
+                               ^
+../src/ProjetoFinal.cpp:158:31: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+  display->Print("Foto em 2...");
+                               ^
+../src/ProjetoFinal.cpp:162:31: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+  display->Print("Foto em 1...");
+                               ^
+../src/ProjetoFinal.cpp:166:33: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+  display->Print("Processando...");
+                                 ^
+../src/ProjetoFinal.cpp:190:32: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+   display->Print("Desconhecido");
+                                ^
+../src/ProjetoFinal.cpp:196:35: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+   display->Print("Presenca para: ");
+                                   ^
+Finished building: ../src/ProjetoFinal.cpp
+ 
+Building target: Projeto_Final
+Invoking: GCC C++ Linker
+g++ -L/usr/local/lib -o "Projeto_Final"  ./src/Botao.o ./src/Display.o ./src/ProjetoFinal.o ./src/main.o   -lpthread -lopencv_dnn -lopencv_ml -lopencv_objdetect -lopencv_shape -lopencv_stitching -lopencv_superres -lopencv_videostab -lopencv_calib3d -lopencv_features2d -lopencv_highgui -lopencv_videoio -lopencv_imgcodecs -lopencv_video -lopencv_photo -lopencv_imgproc -lopencv_flann -lopencv_core
+Finished building target: Projeto_Final
+ 
+00:13:34 **** Incremental Build of configuration Debug for project Projeto_Final ****
+make all 
+Building file: ../src/ProjetoFinal.cpp
+Invoking: GCC C++ Compiler
+g++ -I/usr/local/include/opencv -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/ProjetoFinal.d" -MT"src/ProjetoFinal.d" -o "src/ProjetoFinal.o" "../src/ProjetoFinal.cpp"
+../src/ProjetoFinal.cpp: In function ‘void Realizar_Acao(Decisao*, Display*)’:
+../src/ProjetoFinal.cpp:97:59: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+    Acao_Display(display, "1. Op Prof (x)", "2. Op Alu ( )");
+                                                           ^
+../src/ProjetoFinal.cpp:97:59: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+../src/ProjetoFinal.cpp:99:59: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+    Acao_Display(display, "1. Op Prof ( )", "2. Op Alu (x)");
+                                                           ^
+../src/ProjetoFinal.cpp:99:59: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+../src/ProjetoFinal.cpp:101:59: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+    Acao_Display(display, "Cad Turma (x)", "Ver Turmas ( )");
+                                                           ^
+../src/ProjetoFinal.cpp:101:59: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+../src/ProjetoFinal.cpp:103:59: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+    Acao_Display(display, "Cad Turma ( )", "Ver Turmas (x)");
+                                                           ^
+../src/ProjetoFinal.cpp:103:59: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+../src/ProjetoFinal.cpp:105:59: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+    Acao_Display(display, "Excl Turma (x)", "Cad Aluno ( )");
+                                                           ^
+../src/ProjetoFinal.cpp:105:59: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+../src/ProjetoFinal.cpp:107:59: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+    Acao_Display(display, "Excl Turma ( )", "Cad Aluno (x)");
+                                                           ^
+../src/ProjetoFinal.cpp:107:59: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+../src/ProjetoFinal.cpp:109:55: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+    Acao_Display(display, "Excl Aluno (x)", "Voltar...");
+                                                       ^
+../src/ProjetoFinal.cpp:109:55: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+../src/ProjetoFinal.cpp:111:56: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+    Acao_Display(display, "Reg Pres (x)", "Ver Pres ( )");
+                                                        ^
+../src/ProjetoFinal.cpp:111:56: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+../src/ProjetoFinal.cpp:113:56: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+    Acao_Display(display, "Reg Pres ( )", "Ver Pres (x)");
+                                                        ^
+../src/ProjetoFinal.cpp:113:56: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+../src/ProjetoFinal.cpp: In function ‘int Registrar_Presenca(Display*)’:
+../src/ProjetoFinal.cpp:139:32: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+   display->Print("N da turma: ");
+                                ^
+../src/ProjetoFinal.cpp:154:31: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+  display->Print("Foto em 3...");
+                               ^
+../src/ProjetoFinal.cpp:158:31: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+  display->Print("Foto em 2...");
+                               ^
+../src/ProjetoFinal.cpp:162:31: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+  display->Print("Foto em 1...");
+                               ^
+../src/ProjetoFinal.cpp:166:33: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+  display->Print("Processando...");
+                                 ^
+../src/ProjetoFinal.cpp:188:32: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+   display->Print("Desconhecido");
+                                ^
+../src/ProjetoFinal.cpp:194:35: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+   display->Print("Presenca para: ");
+                                   ^
+../src/ProjetoFinal.cpp:179:10: warning: unused variable ‘i’ [-Wunused-variable]
+  int fd, i = 0;
+          ^
+../src/ProjetoFinal.cpp:180:7: warning: unused variable ‘c’ [-Wunused-variable]
+  char c;
+       ^
+Finished building: ../src/ProjetoFinal.cpp
+ 
+Building target: Projeto_Final
+Invoking: GCC C++ Linker
+g++ -L/usr/local/lib -o "Projeto_Final"  ./src/Botao.o ./src/Display.o ./src/ProjetoFinal.o ./src/main.o   -lpthread -lopencv_dnn -lopencv_ml -lopencv_objdetect -lopencv_shape -lopencv_stitching -lopencv_superres -lopencv_videostab -lopencv_calib3d -lopencv_features2d -lopencv_highgui -lopencv_videoio -lopencv_imgcodecs -lopencv_video -lopencv_photo -lopencv_imgproc -lopencv_flann -lopencv_core
+Finished building target: Projeto_Final
+ 

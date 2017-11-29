@@ -35,7 +35,7 @@ int main() {
 				i = 0;
 			}
 		}
-		Tomar_Decisao(&decisao);
+		Tomar_Decisao(&decisao,&display);
 		Realizar_Acao(&decisao,&display);
 		usleep(150000);
 		i++;
